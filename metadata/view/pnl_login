@@ -16,7 +16,7 @@
         "designer|userAlias": "pnl_login",
         "designer|userClassName": "pnl_login",
         "header": false,
-        "height": 413,
+        "height": null,
         "id": "pnl_login",
         "layout": "vbox",
         "margin": 0,
@@ -400,6 +400,24 @@
             },
             "name": "MyContainer2",
             "designerId": "c4a838a4-1919-41c9-8d87-45b165252810"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onPnl_loginRender",
+                "implHandler": [
+                    "component.setHeight(window.innerHeight);"
+                ],
+                "name": "render",
+                "scope": "me"
+            },
+            "name": "onPnl_loginRender",
+            "designerId": "5e65d06e-8003-46c6-892b-333ac931d16a"
         }
     ]
 }
