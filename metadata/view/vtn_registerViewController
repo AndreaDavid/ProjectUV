@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "login",
-        "designer|userClassName": "LoginViewController"
+        "designer|userAlias": "vtn_register",
+        "designer|userClassName": "vtn_registerViewController"
     },
-    "designerId": "2247ecbf-18a3-46dd-9b2e-a62497fe7e92"
+    "designerId": "5845c7a9-d7c4-48bc-8ad8-bc4f35edbf54"
 }

@@ -1,0 +1,17 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defer": false,
+        "designer|userClassName": "js_v0yno96g",
+        "id": "HighchartExporting",
+        "url": "resources/js/highchart/modules/exporting.js",
+        "x-compile": true
+    },
+    "name": "js",
+    "designerId": "9aff3505-c9f2-46bc-8d1f-8d87a258c04b"
+}

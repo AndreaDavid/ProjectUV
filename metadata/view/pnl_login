@@ -1,5 +1,5 @@
 {
-    "type": "Ext.container.Viewport",
+    "type": "Ext.panel.Panel",
     "reference": {
         "name": "items",
         "type": "array"
@@ -12,13 +12,16 @@
         ],
         "componentCls": null,
         "container|align": "stretch",
-        "container|pack": "center",
-        "designer|userAlias": "login",
-        "designer|userClassName": "Login",
+        "designer|initialView": true,
+        "designer|userAlias": "pnl_login",
+        "designer|userClassName": "pnl_login",
+        "header": false,
+        "height": 413,
+        "id": "pnl_login",
         "layout": "vbox",
+        "margin": 0,
         "style": null
     },
-    "name": "MyViewport",
     "configAlternates": {
         "style": "string"
     },
@@ -200,8 +203,13 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
+                                                "allowBlank": false,
+                                                "blankText": "Este campo es requerido",
                                                 "emptyText": "Correo",
-                                                "fieldLabel": ""
+                                                "fieldLabel": "",
+                                                "id": "correoLogin",
+                                                "inputType": "email",
+                                                "name": "correo"
                                             },
                                             "name": "MyTextField",
                                             "designerId": "0915b629-c3a4-4517-a3cf-6c3743f7a607"
@@ -214,8 +222,13 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
+                                                "allowBlank": false,
+                                                "blankText": "Este campo es requerido",
                                                 "emptyText": "Contraseña",
-                                                "fieldLabel": ""
+                                                "fieldLabel": "",
+                                                "id": "contrasenaLogin",
+                                                "inputType": "password",
+                                                "name": "password"
                                             },
                                             "name": "MyTextField1",
                                             "designerId": "c73c7dd7-a512-431f-ad68-a4d49ffd6231"
@@ -251,7 +264,74 @@
                                                 "text": "Entrar"
                                             },
                                             "name": "MyButton",
-                                            "designerId": "4366cd17-9be9-4572-825d-da2fcf35aa82"
+                                            "designerId": "4366cd17-9be9-4572-825d-da2fcf35aa82",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onIngresarClick",
+                                                        "implHandler": [
+                                                            "var form=button.up(\"form\").getForm();//al ejecutarse el evento del boton obtengo el formulario",
+                                                            "if(form.isValid()){//valido el formulario con los requisitos previos",
+                                                            "    form.submit(//hacer submit (la peticion) al sevidor",
+                                                            "        {",
+                                                            "            url:\"accesscontroller/login\",",
+                                                            "            method:\"POST\",",
+                                                            "            waitMsg:\"Ingresando\",",
+                                                            "            success:function(frm,out){//aprobacion de la peticion",
+                                                            "                ",
+                                                            "                Ext.getCmp(\"pnl_login\").hide();",
+                                                            "                Ext.widget(\"main\");",
+                                                            "",
+                                                            "            },",
+                                                            "            failure:function(frm,out){//negacion de la peticion",
+                                                            "",
+                                                            "                if(out.result!==undefined &&out.result.message===\"usuarioNoRegistrado\"){",
+                                                            "                    if(Ext.getCmp(\"toast\")===undefined){",
+                                                            "                        Ext.toast({",
+                                                            "                            timeout: 2000,",
+                                                            "                            id:\"toast\",",
+                                                            "                            html: '<center>login incorrecto</center>',",
+                                                            "                            title: 'Alerta',",
+                                                            "                            width: 300,",
+                                                            "                            align: 't'",
+                                                            "                        });",
+                                                            "                    }",
+                                                            "                }else{",
+                                                            "                    if(Ext.getCmp(\"toast\")===undefined){",
+                                                            "                        Ext.toast({",
+                                                            "                            timeout: 2000,",
+                                                            "                            id:\"toast\",",
+                                                            "                            html: '<center>Error servidor</center>',",
+                                                            "                            title: 'Alerta',",
+                                                            "                            width: 300,",
+                                                            "                            align: 't'",
+                                                            "                        });",
+                                                            "                    }",
+                                                            "                }",
+                                                            "",
+                                                            "            }",
+                                                            "        }",
+                                                            "    );",
+                                                            "",
+                                                            "}else{",
+                                                            "",
+                                                            "}",
+                                                            "",
+                                                            ""
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onIngresarClick",
+                                                    "designerId": "1c9a02a8-2128-47f1-aa44-c55a8cefc6e8"
+                                                }
+                                            ]
                                         },
                                         {
                                             "type": "Ext.button.Button",
@@ -277,7 +357,7 @@
                                                     "userConfig": {
                                                         "fn": "onRegistrarClick",
                                                         "implHandler": [
-                                                            "Ext.widget(\"window\").show();"
+                                                            "Ext.widget(\"vtn_register\").show();"
                                                         ],
                                                         "name": "click",
                                                         "scope": "me"

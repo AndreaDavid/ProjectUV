@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "login",
-        "designer|userClassName": "LoginViewModel"
+        "designer|userAlias": "vtn_register",
+        "designer|userClassName": "vtn_registerViewModel"
     },
-    "designerId": "05f8084f-7cd7-4337-aee6-c5869d4445c0"
+    "designerId": "1ca900b3-af65-41b3-961c-46bae04bb279"
 }

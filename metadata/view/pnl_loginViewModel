@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "myviewport1",
-        "designer|userClassName": "MyViewport1ViewModel"
+        "designer|userAlias": "pnl_login",
+        "designer|userClassName": "pnl_loginViewModel"
     },
-    "designerId": "4b387882-5114-4333-94da-083912ae1742"
+    "designerId": "05f8084f-7cd7-4337-aee6-c5869d4445c0"
 }

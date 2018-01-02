@@ -1,0 +1,250 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userAlias": "vtn_register",
+        "designer|userClassName": "vtn_register",
+        "height": 250,
+        "id": "vtn_register",
+        "modal": true,
+        "title": "Registro",
+        "width": 400
+    },
+    "name": "MyWindow",
+    "designerId": "424b4ffd-d26e-468c-95c1-e6018584ab29",
+    "viewControllerInstanceId": "5845c7a9-d7c4-48bc-8ad8-bc4f35edbf54",
+    "viewModelInstanceId": "1ca900b3-af65-41b3-961c-46bae04bb279",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "center",
+                "container|pack": "center",
+                "header": false,
+                "height": null,
+                "layout": "vbox",
+                "margin": "",
+                "padding": null,
+                "scrollable": true,
+                "title": "Registro",
+                "width": null
+            },
+            "name": "MyForm1",
+            "configAlternates": {
+                "scrollable": "boolean"
+            },
+            "designerId": "c6b293a7-6795-425c-8cc8-06ca1177b3ef",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "anchor": null,
+                        "container|align": "stretch",
+                        "container|pack": "center",
+                        "height": null,
+                        "layout": "vbox",
+                        "layout|flex": 6,
+                        "scrollable": true,
+                        "title": "Mi Registro"
+                    },
+                    "name": "MyFieldSet",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "b093da6e-d82d-4aad-83de-aafee4c3ff10",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Nombre",
+                                "name": "nombre"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "54947b63-fe59-4229-a422-0b674c323eea"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Correo",
+                                "name": "correo"
+                            },
+                            "name": "MyTextField2",
+                            "designerId": "14aedc53-580c-4aa1-8224-ca59237fb9eb"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Contraseña",
+                                "id": "password",
+                                "maxLength": 10,
+                                "minLength": 4,
+                                "minLengthText": "la contraseña debe tener minimo 4 caracteres",
+                                "name": "password"
+                            },
+                            "name": "MyTextField3",
+                            "designerId": "6207a256-7bca-4ea0-bac9-6dda1c68210d"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "enableKeyEvents": true,
+                                "fieldLabel": "Confirmar contraseña"
+                            },
+                            "name": "MyTextField4",
+                            "designerId": "b98db20a-49e9-4c8f-a280-3a77666f6f02",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "value"
+                                        ],
+                                        "fn": "validator",
+                                        "implHandler": [
+                                            "if(Ext.getCmp(\"password\").getvalue()!==undefined){",
+                                            "if(Ext.getCmp(\"password\").getValue()===value){",
+                                            "  return true;",
+                                            "}else{",
+                                            "   return \"Contraseñas no coinciden\";",
+                                            "}",
+                                            "}else{",
+                                            "    return \"campo obligatorio\";",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "validator",
+                                    "designerId": "977e9f0a-786c-4813-b670-fa93d5ae40e2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "layout": "hbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer14",
+                    "designerId": "7154e850-8a58-453a-87c2-bb51e18dae02",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Cancelar"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "79ed96bb-0505-4b0e-9d51-d3b8766f3509",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick",
+                                        "implHandler": [
+                                            "Ext.getCmp(\"window\").close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick",
+                                    "designerId": "c0363f29-f547-469f-8417-0073a0376348"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "registrarme",
+                                "text": "Registrarme"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "0d73fe25-61ef-4871-98dc-18e5caf4910a",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|commentHeader": [
+                                            ""
+                                        ],
+                                        "fn": "onRegistrarmeClick",
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onRegistrarmeClick",
+                                    "designerId": "6a0fea77-e899-4bd5-8af7-308ee424bfcf"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "designer|userAlias": "main",
-        "designer|userClassName": "MainViewController"
+        "designer|userClassName": "mainViewController"
     },
     "designerId": "14978ea9-9d9d-4364-b8b6-fcc51a53ee33"
 }

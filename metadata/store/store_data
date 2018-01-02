@@ -1,0 +1,49 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "store_data",
+        "model": "model_lecturas",
+        "storeId": "store_data"
+    },
+    "name": "MyJsonStore",
+    "designerId": "19e9938c-4c17-46db-9985-09c47d4c0a22",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{",
+                    "read:'raspberrycontroller/obtenerAllTracksForRange.action'",
+                    "}"
+                ]
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "2db93785-0898-434a-9ed9-247b7127dd45",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "f60cec4f-575d-403c-b08b-3e1ceab2cae4"
+                }
+            ]
+        }
+    ]
+}

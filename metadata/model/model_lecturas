@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "model_lecturas"
+    },
+    "name": "MyModel",
+    "designerId": "c23a1077-ec93-46f5-b909-425b87fa0365",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "fechaServidor"
+            },
+            "name": "MyField",
+            "designerId": "d8aa3a0e-66ea-4b83-979e-39f9117dd464"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lectura"
+            },
+            "name": "MyField1",
+            "designerId": "e264865d-f409-49b7-9761-2be0dc34f676"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField2",
+            "designerId": "70bef028-d02f-4499-b788-03887f541805"
+        }
+    ]
+}

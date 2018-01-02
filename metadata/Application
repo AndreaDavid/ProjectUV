@@ -6,10 +6,18 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "model_lecturas"
+        ],
         "name": "MyApp",
+        "requires": [
+            "Ext.window.Toast"
+        ],
+        "stores": [
+            "store_data"
+        ],
         "views": [
-            "MyViewport1",
-            "window"
+            "vtn_register"
         ]
     },
     "name": "Application",
