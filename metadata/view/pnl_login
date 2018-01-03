@@ -1,5 +1,5 @@
 {
-    "type": "Ext.panel.Panel",
+    "type": "Ext.container.Viewport",
     "reference": {
         "name": "items",
         "type": "array"
@@ -15,8 +15,6 @@
         "designer|initialView": true,
         "designer|userAlias": "pnl_login",
         "designer|userClassName": "pnl_login",
-        "header": false,
-        "height": null,
         "id": "pnl_login",
         "layout": "vbox",
         "margin": 0,
@@ -284,9 +282,9 @@
                                                             "            method:\"POST\",",
                                                             "            waitMsg:\"Ingresando\",",
                                                             "            success:function(frm,out){//aprobacion de la peticion",
-                                                            "                ",
-                                                            "                Ext.getCmp(\"pnl_login\").hide();",
-                                                            "                Ext.widget(\"main\");",
+                                                            "        ",
+                                                            "                Ext.getCmp(\"pnl_login\").destroy();",
+                                                            "                Ext.widget(\"main\").show();",
                                                             "",
                                                             "            },",
                                                             "            failure:function(frm,out){//negacion de la peticion",
@@ -357,7 +355,9 @@
                                                     "userConfig": {
                                                         "fn": "onRegistrarClick",
                                                         "implHandler": [
-                                                            "Ext.widget(\"vtn_register\").show();"
+                                                            "var register=Ext.widget(\"vtn_register\");",
+                                                            "register.center();",
+                                                            "register.show();"
                                                         ],
                                                         "name": "click",
                                                         "scope": "me"
@@ -411,7 +411,7 @@
             "userConfig": {
                 "fn": "onPnl_loginRender",
                 "implHandler": [
-                    "component.setHeight(window.innerHeight);"
+                    "//component.setHeight(window.innerHeight);"
                 ],
                 "name": "render",
                 "scope": "me"
