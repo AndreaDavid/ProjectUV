@@ -42,10 +42,137 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "baseCls": "general-panel-header-container",
+                        "container|align": "stretch",
+                        "designer|displayName": "ctn_main_navigation",
+                        "height": null,
+                        "id": "ctn_main_navigation",
+                        "layout": "hbox",
                         "layout|flex": 1
                     },
-                    "name": "MyContainer11",
-                    "designerId": "bb1f561c-b841-4cda-82c6-c40f4ee044ce"
+                    "name": "MyContainer2",
+                    "designerId": "eaa46174-e2ad-45e5-a594-024af376d5ac",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "header",
+                                "iconCls": "x-fa fa-navicon",
+                                "id": "main-navigation-btn",
+                                "layout|flex": 1,
+                                "text": null,
+                                "ui": "header"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "0139a059-7e66-465f-93d2-a311d9c36544",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "designer|viewControllerFn": "onToggleNavigationSize",
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "",
+                                            "",
+                                            "var me = this,",
+                                            "    refs = me.getReferences(),",
+                                            "    navigationList = refs.navigationTreeList,",
+                                            "    wrapContainer = refs.mainContainerWrap,//panelPrincipal = refs.panel_principal,",
+                                            "",
+                                            "    collapsing = !navigationList.getMicro(),",
+                                            "    //new_width = collapsing ? 64 : 250;",
+                                            "    new_width = collapsing ? 0 : 100;",
+                                            "if (Ext.isIE9m || !Ext.os.is.Desktop) {",
+                                            "    Ext.suspendLayouts();",
+                                            "",
+                                            "    //refs.senchaLogo.setWidth(new_width);",
+                                            "",
+                                            "    navigationList.setWidth(new_width);",
+                                            "    navigationList.setMicro(collapsing);",
+                                            "    var panel = Ext.getCmp('pnl_menu').setWidth(new_width);",
+                                            "    Ext.resumeLayouts(); // do not flush the layout here...",
+                                            "",
+                                            "    // No animation for IE9 or lower...",
+                                            "    wrapContainer.layout.animatePolicy = wrapContainer.layout.animate = null;",
+                                            "    wrapContainer.updateLayout();  // ... since this will flush them",
+                                            "}else {",
+                                            "",
+                                            "    if (!collapsing) {",
+                                            "        // If we are leaving micro mode (expanding), we do that first so that the",
+                                            "        // text of the items in the navlist will be revealed by the animation.",
+                                            "        navigationList.setMicro(false);",
+                                            "    }else{",
+                                            "        navigationList.setMicro(true);",
+                                            "    }",
+                                            "    var panel = Ext.getCmp('pnl_menu').setWidth(new_width);",
+                                            "    //Ext.getCmp('btn_usuarios').setHidden(true);",
+                                            "    Ext.getCmp('btn_cerrarSesion').setHidden(Ext.getCmp('pnl_menu').getWidth()===0?true:false);",
+                                            "",
+                                            "    //funcion para restablecer las imagenes y el estilo anterior del main (top)********",
+                                            "    // Start this layout first since it does not require a layout",
+                                            "    //refs.senchaLogo.animate({dynamic: true, to: {width: new_width}});",
+                                            "",
+                                            "    // Directly adjust the width config and then run the main wrap container layout",
+                                            "    // as the root layout (it and its chidren). This will cause the adjusted size to",
+                                            "    // be flushed to the element and animate to that new size.",
+                                            "    navigationList.width = new_width;",
+                                            "    wrapContainer.updateLayout({isRoot: true});",
+                                            "    navigationList.el.addCls('nav-tree-animating');",
+                                            "    //panelPrincipal.el.addCls('nav-tree-animating');",
+                                            "",
+                                            "    // We need to switch to micro mode on the navlist *after* the animation (this",
+                                            "    // allows the \"sweep\" to leave the item text in place until it is no longer",
+                                            "    // visible.",
+                                            "    if (collapsing) {",
+                                            "        navigationList.on({",
+                                            "            afterlayoutanimation: function () {",
+                                            "                //navigationList.setMicro(true);",
+                                            "                navigationList.el.removeCls('nav-tree-animating');",
+                                            "            },",
+                                            "            single: true",
+                                            "        });",
+                                            "    }",
+                                            "}",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "89ba2436-d687-4943-82d4-9478b92af8fa"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "id": "lbl_nombre_app",
+                                "layout|flex": 1,
+                                "margin": "0 0 0 15",
+                                "text": "NombreApp"
+                            },
+                            "name": "MyLabel42",
+                            "designerId": "5ff1a154-a803-4aa0-aadf-daa76397d3b9"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.container.Container",
@@ -58,7 +185,7 @@
                         "container|align": "middle",
                         "container|pack": "center",
                         "layout": "hbox",
-                        "layout|flex": 1
+                        "layout|flex": 3
                     },
                     "name": "MyContainer12",
                     "designerId": "b3a2041f-ff2e-489e-a08d-feb0e7f53169",
@@ -126,7 +253,299 @@
                         "layout|flex": null
                     },
                     "name": "MyContainer13",
-                    "designerId": "c5598ee9-3bf0-4c6a-8b2c-5b8eba333d7c"
+                    "designerId": "c5598ee9-3bf0-4c6a-8b2c-5b8eba333d7c",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "ctn-menu-fondo"
+                                ],
+                                "container|align": "center",
+                                "defaultAlign": null,
+                                "floating": null,
+                                "height": "auto",
+                                "hideMode": null,
+                                "id": "ctn_menu",
+                                "layout": "vbox",
+                                "layout|flex": 1,
+                                "maxWidth": null,
+                                "width": null
+                            },
+                            "name": "MyContainer4",
+                            "designerId": "41a097ec-051c-4778-b32b-fe4b7954b5cf",
+                            "cn": [
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "componentCls": null,
+                                        "container|align": "stretch",
+                                        "flex": null,
+                                        "height": null,
+                                        "id": "pnl_menu",
+                                        "layout": "vbox",
+                                        "layout|flex": 1,
+                                        "width": null
+                                    },
+                                    "name": "MyContainer",
+                                    "designerId": "3bb263ea-557d-431e-ab2f-9a27829c4453",
+                                    "cn": [
+                                        {
+                                            "type": "basicfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "beforeLayout",
+                                                "implHandler": [
+                                                    "var contenido = Ext.getCmp('main-view-detail-wrap');",
+                                                    "if(!contenido){",
+                                                    "    Ext.getCmp('pnl_menu').add({",
+                                                    "        xtype: 'container',",
+                                                    "        id: 'main-view-detail-wrap',",
+                                                    "        reference: 'mainContainerWrap',",
+                                                    "        flex: 1,",
+                                                    "        scrollable: 'y',",
+                                                    "        layout: {",
+                                                    "            type: 'hbox',",
+                                                    "            align: 'stretch',",
+                                                    "            animatePolicy: {",
+                                                    "                x: true,",
+                                                    "                width: true",
+                                                    "            }",
+                                                    "        },",
+                                                    "",
+                                                    "        beforeLayout : function() {",
+                                                    "            var me = this,",
+                                                    "                height = Ext.Element.getViewportHeight() - 79,",
+                                                    "                navTree = me.getComponent('navigationTreeList');",
+                                                    "",
+                                                    "            me.minHeight = height;",
+                                                    "            navTree.setStyle({",
+                                                    "                'min-height': height + 'px'",
+                                                    "            });",
+                                                    "",
+                                                    "        },",
+                                                    "        items: [",
+                                                    "            {",
+                                                    "                xtype: 'treelist',",
+                                                    "                reference: 'navigationTreeList',",
+                                                    "                itemId: 'navigationTreeList',",
+                                                    "                id:'navigationTreeList',",
+                                                    "                ui: 'navigation',",
+                                                    "                store: 'store_navigation_tree',",
+                                                    "                width: 100,",
+                                                    "                expanderFirst: false,",
+                                                    "                selectionchange: function(model, selected, eOpts){",
+                                                    "                    var tabPanel = Ext.getCmp('ctn_paneles')!==undefined ? Ext.getCmp(\"ctn_paneles\"):Ext.widget(\"ctn_paneles\");",
+                                                    "                    var tab;",
+                                                    "",
+                                                    "                    switch(selected.id){",
+                                                    "                        case 'reportes':",
+                                                    "                            containerApp.hide();",
+                                                    "                            tabPanel.removeAll();",
+                                                    "                            tabPanel.add({",
+                                                    "                                xtype: 'component',",
+                                                    "                                id: 'component_report',",
+                                                    "                                cls: 'component_apps',",
+                                                    "                                autoEl: {",
+                                                    "                                    tag: 'iframe',",
+                                                    "                                    src: 'http://52.70.227.200:8149/'",
+                                                    "                                }",
+                                                    "                            });",
+                                                    "                            tabPanel.show();",
+                                                    "                            Ext.getCmp(\"pnl_menu\").on_app=false;",
+                                                    "                            break;",
+                                                    "                        case 'empresas':",
+                                                    "                            containerApp.hide();",
+                                                    "                            tabPanel.removeAll();",
+                                                    "                            tab = Ext.widget('pnl_empresas');",
+                                                    "                            tabPanel.add(tab);",
+                                                    "                            Ext.getCmp(\"pnl_menu\").on_app=false;",
+                                                    "                            tabPanel.show();",
+                                                    "                            break;",
+                                                    "                        case 'planes':",
+                                                    "                            containerApp.hide();",
+                                                    "                            tabPanel.removeAll();",
+                                                    "                            tab = Ext.widget('pnl_planes');",
+                                                    "                            tabPanel.add(tab);",
+                                                    "                            Ext.getCmp(\"pnl_menu\").on_app=false;",
+                                                    "                            tabPanel.show();",
+                                                    "                            break;",
+                                                    "                        case 'licencias':",
+                                                    "                            containerApp.hide();",
+                                                    "                            tabPanel.removeAll();",
+                                                    "                            tab = Ext.widget('pnl_licencias');",
+                                                    "                            tabPanel.add(tab);",
+                                                    "                            Ext.getCmp(\"pnl_menu\").on_app=false;",
+                                                    "                            tabPanel.show();",
+                                                    "                            break;",
+                                                    "                        case 'suscripciones':",
+                                                    "                            containerApp.hide();",
+                                                    "                            tabPanel.removeAll();",
+                                                    "                            tab = Ext.widget('pnl_suscripciones');",
+                                                    "                            tabPanel.add(tab);",
+                                                    "                            Ext.getCmp(\"pnl_menu\").on_app=false;",
+                                                    "                            tabPanel.show();",
+                                                    "                            break;",
+                                                    "                    }",
+                                                    "",
+                                                    "",
+                                                    "                },",
+                                                    "",
+                                                    "                listeners: {",
+                                                    "                    boxready: function(component, width, height, eOpts) {",
+                                                    "                        //var com = component;",
+                                                    "                    },",
+                                                    "                    afterrender:function(){",
+                                                    "",
+                                                    "                    }",
+                                                    "                }",
+                                                    "            }",
+                                                    "        ]",
+                                                    "    });",
+                                                    "}"
+                                                ]
+                                            },
+                                            "name": "beforeLayout",
+                                            "designerId": "4181e635-d250-4eb6-a99a-aa6eb5bf4530"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "componentCls": null,
+                                        "container|align": "stretch",
+                                        "container|pack": null,
+                                        "dock": "bottom",
+                                        "height": null,
+                                        "id": "ctn_fijo",
+                                        "layout": "vbox",
+                                        "layout|flex": null,
+                                        "minHeight": null,
+                                        "width": "auto"
+                                    },
+                                    "name": "MyContainer8",
+                                    "designerId": "830ad6ca-16c4-4053-a3f5-81c691fe773c",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "baseCls": null,
+                                                "cls": "cerrar-sesion",
+                                                "hidden": true,
+                                                "iconAlign": "top",
+                                                "iconCls": "x-app app-usuarios",
+                                                "id": "btn_usuarios",
+                                                "layout|flex": null,
+                                                "maxHeight": null,
+                                                "overCls": "x-btn-over cerrar-sesion-over",
+                                                "text": "Usuarios",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyButton11",
+                                            "designerId": "f3378059-2867-4c9f-ae7c-591758b0f390",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick2",
+                                                        "implHandler": [
+                                                            "var panel = Ext.getCmp('pnl_principal');",
+                                                            "panel.removeAll();",
+                                                            "panel.add(Ext.widget('pnl_usuarios'));"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick2",
+                                                    "designerId": "fe845900-bfbd-438f-8f2e-ce344796828d"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "arrowAlign": null,
+                                                "baseCls": null,
+                                                "cls": "cerrar-sesion",
+                                                "focusCls": null,
+                                                "height": null,
+                                                "icon": null,
+                                                "iconAlign": "top",
+                                                "iconCls": "x-app app-cerrarsesion",
+                                                "id": "btn_cerrarSesion",
+                                                "layout|flex": null,
+                                                "margin": null,
+                                                "maxHeight": null,
+                                                "overCls": "x-btn-over cerrar-sesion-over",
+                                                "text": "Cerrar Sesión",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyButton10",
+                                            "designerId": "768e3440-1c42-4d78-a4ff-32f3c15790a0",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick",
+                                                        "implHandler": [
+                                                            "//window.location.href = window.location.href;",
+                                                            "",
+                                                            "window.location.href = \"/usuariocontroller/logout\";",
+                                                            ""
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick",
+                                                    "designerId": "d95423c7-d66e-4a46-b18b-d4d92de39e44"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.container.Container",

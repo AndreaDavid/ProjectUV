@@ -1,0 +1,71 @@
+{
+    "type": "Ext.data.TreeStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "store_navigation_tree",
+        "model": "model_items_navigation",
+        "storeId": "store_navigation_tree"
+    },
+    "name": "MyTreeStore1",
+    "designerId": "0405cb19-10e2-499c-ae56-9db32cae8d76",
+    "cn": [
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTreeStoreLoad",
+                "implHandler": [
+                    "",
+                    "var root = Ext.getStore('store_navigation_tree').getRootNode(),",
+                    "    tree = Ext.getCmp('navigationTreeList'),",
+                    "    selModel  = tree.getSelectionModel();",
+                    "selModel.select(root.firstChild);",
+                    "tree.fireEvent('itemselect', root.firstChild);",
+                    "",
+                    "var tree = Ext.getCmp('navigationTreeList');",
+                    "var store = Ext.getStore('store_navigation_tree');",
+                    "var node = store.getAt(0);",
+                    "",
+                    "",
+                    "tree.getSelectionModel().select(tree);",
+                    ""
+                ],
+                "name": "load",
+                "scope": "me"
+            },
+            "name": "onTreeStoreLoad",
+            "designerId": "9cf637f4-4e21-4f77-9651-33a1137e39e3"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTreeStoreNodeappend",
+                "implHandler": [
+                    "//if(node.id !== 'root' && first){",
+                    "if(node.id !== 'root'){",
+                    "    var tree = Ext.getCmp('navigationTreeList');",
+                    "    tree.setSelection(node);",
+                    "    first = false;",
+                    "}"
+                ],
+                "name": "nodeappend",
+                "scope": "me"
+            },
+            "name": "onTreeStoreNodeappend",
+            "designerId": "25f1d54d-056d-4520-a6b5-7fbb35b619fa"
+        }
+    ]
+}
