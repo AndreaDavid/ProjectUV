@@ -7,19 +7,94 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "model_lecturas"
+            "model_lecturas",
+            "model_items_navigation"
         ],
-        "name": "MyApp",
+        "name": "ProjectUV",
         "requires": [
             "Ext.window.Toast"
         ],
         "stores": [
-            "store_data"
+            "store_data",
+            "store_navigation_tree"
         ],
         "views": [
-            "vtn_register"
+            "vtn_register",
+            "pnl_main"
         ]
     },
     "name": "Application",
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": null
+            },
+            "name": "launch",
+            "designerId": "d1c0daee-d02a-41c9-a4e9-602e2f374ac5"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "usuario"
+                ],
+                "fn": "fn_render_menu",
+                "implHandler": [
+                    "",
+                    "//MANEJO DEL GRID",
+                    "var treeStore = Ext.getStore('store_navigation_tree');",
+                    "var node = treeStore.getRootNode();",
+                    "var childs=Ext.getStore('store_navigation_tree').getRootNode().childNodes;",
+                    "",
+                    "while(childs.length>0){",
+                    "    Ext.getStore('store_navigation_tree').getRootNode().removeChild(childs[0]);",
+                    "}",
+                    "var treelist = Ext.getCmp(\"navigationTreeList\");",
+                    "treelist.on(\"selectionchange\",function(){",
+                    "",
+                    "});",
+                    "//Esta función permite realizar el salto o interacción entre los paneles de EMA,",
+                    "//la gestión de cuenta o las aplicaciones",
+                    "function viewsChange(){",
+                    "    for (var x in treeStore.byIdMap){",
+                    "        if(x!==\"root\"){",
+                    "            treelist.setSelection(treeStore.byIdMap[x]);",
+                    "            break;",
+                    "        }",
+                    "    }",
+                    "}",
+                    "",
+                    "",
+                    "node.appendChild({",
+                    "    text: '<label data-qtip=menu>hola</label>',",
+                    "    id: \"itemId\",",
+                    "    iconCls: 'x-app app-itemId',",
+                    "    leaf: true",
+                    "});",
+                    "",
+                    "var treelist = Ext.getCmp(\"navigationTreeList\");",
+                    "var sel;",
+                    "treelist.setSelection(0);",
+                    "treelist.on(\"selectionchange\",treelist.selectionchange);",
+                    "//Esta función es la que va a encargarse de",
+                    ""
+                ]
+            },
+            "name": "fn_render_menu",
+            "designerId": "25b4e3d2-b193-4ae6-97ee-f52112af1e53"
+        }
+    ]
 }
