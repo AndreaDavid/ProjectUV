@@ -1,0 +1,15 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css_dztvkfi7",
+        "id": "admin-all",
+        "url": "resources/css/admin-all.css"
+    },
+    "name": "css1",
+    "designerId": "f46868da-0dba-4368-945e-037a24f52c2b"
+}

@@ -19,7 +19,8 @@
             "store_navigation_tree"
         ],
         "views": [
-            "vtn_register"
+            "vtn_register",
+            "pnl_main"
         ]
     },
     "name": "Application",
@@ -78,9 +79,9 @@
                     "",
                     "",
                     "node.appendChild({",
-                    "    text: '<label data-qtip=menu>hola</label>',",
+                    "    text: '<label data-qtip=graficas>Graficas</label>',",
                     "    id: \"itemId\",",
-                    "    iconCls: 'x-app app-itemId',",
+                    "    iconCls: 'icon-stats-dots',",
                     "    leaf: true",
                     "});",
                     "",

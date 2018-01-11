@@ -1,0 +1,15 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css_70ih97bt",
+        "id": "style-icons",
+        "url": "resources/css/style-icons.css"
+    },
+    "name": "css1",
+    "designerId": "a5bb73d1-950f-4358-85db-c9d7200696da"
+}

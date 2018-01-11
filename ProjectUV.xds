@@ -26,7 +26,8 @@
         "lastBuildSelection": {
             "value": "webBuild",
             "display": "Build web app"
-        }
+        },
+        "installStatus": "Not Installed"
     },
     "xdsVersion": "3.5.1",
     "xdsBuild": 348,
@@ -35,15 +36,15 @@
     "framework": "ext60",
     "viewOrderMap": {
         "view": [
-            "0cbef2b3-6489-475c-885d-ff9bc127fd1f",
-            "05f8084f-7cd7-4337-aee6-c5869d4445c0",
-            "2247ecbf-18a3-46dd-9b2e-a62497fe7e92",
             "dd4a615a-67b9-4c8a-b269-1409e449e923",
             "aa6cb8be-5f45-4690-b62c-5083937c0f89",
             "14978ea9-9d9d-4364-b8b6-fcc51a53ee33",
             "424b4ffd-d26e-468c-95c1-e6018584ab29",
             "1ca900b3-af65-41b3-961c-46bae04bb279",
-            "5845c7a9-d7c4-48bc-8ad8-bc4f35edbf54"
+            "5845c7a9-d7c4-48bc-8ad8-bc4f35edbf54",
+            "47ee8d71-413a-497c-987c-512ec61cfa43",
+            "5411db45-091b-4c4b-9290-e2ac4e5b304d",
+            "46b840e5-d259-401c-862c-de600eb9884c"
         ],
         "store": [
             "19e9938c-4c17-46db-9985-09c47d4c0a22",
@@ -55,9 +56,11 @@
             "09e5990c-b210-4f17-a7ca-d42c1902d9f3"
         ],
         "resource": [
+            "f46868da-0dba-4368-945e-037a24f52c2b",
             "b125fea0-a2be-4339-97c9-14a52f93a769",
             "c2b9a19b-1b06-4362-80a2-54efdc6027d9",
             "b992bb4f-6b26-4bb3-befb-bdb5690b819b",
+            "a5bb73d1-950f-4358-85db-c9d7200696da",
             "015e9d40-0806-4482-b11c-5826d0aacc8a",
             "c2ad42be-fde5-481c-a618-f03dbddb9f8a",
             "9aff3505-c9f2-46bc-8d1f-8d87a258c04b"

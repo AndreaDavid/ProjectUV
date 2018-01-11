@@ -1,0 +1,696 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "pnl_main",
+        "designer|userClassName": "pnl_main",
+        "height": null,
+        "id": "pnl_main",
+        "layout": "vbox",
+        "width": null
+    },
+    "designerId": "47ee8d71-413a-497c-987c-512ec61cfa43",
+    "viewControllerInstanceId": "46b840e5-d259-401c-862c-de600eb9884c",
+    "viewModelInstanceId": "5411db45-091b-4c4b-9290-e2ac4e5b304d",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "hbox"
+            },
+            "name": "MyContainer10",
+            "designerId": "b0e988ac-96ff-44fd-b0bd-9ee2d6a73369",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "baseCls": "general-panel-header-container",
+                        "container|align": "stretch",
+                        "designer|displayName": "ctn_main_navigation",
+                        "height": 30,
+                        "id": "ctn_main_navigation",
+                        "layout": "hbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "eaa46174-e2ad-45e5-a594-024af376d5ac",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "src": "resources/image/leaf.svg"
+                            },
+                            "name": "MyImg2",
+                            "designerId": "13827051-0a5e-43a3-8111-adacece59b9d"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "header",
+                                "iconCls": "icon-menu",
+                                "id": "main-navigation-btn",
+                                "layout|flex": 1,
+                                "text": null,
+                                "ui": "header"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "0139a059-7e66-465f-93d2-a311d9c36544",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "designer|viewControllerFn": "onToggleNavigationSize",
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "",
+                                            "",
+                                            "var me = this,",
+                                            "    refs = me.getReferences(),",
+                                            "    navigationList = refs.navigationTreeList,",
+                                            "    wrapContainer = refs.mainContainerWrap,//panelPrincipal = refs.panel_principal,",
+                                            "",
+                                            "    collapsing = !navigationList.getMicro(),",
+                                            "    //new_width = collapsing ? 64 : 250;",
+                                            "    new_width = collapsing ? 0 : 100;",
+                                            "if (Ext.isIE9m || !Ext.os.is.Desktop) {",
+                                            "    Ext.suspendLayouts();",
+                                            "",
+                                            "    //refs.senchaLogo.setWidth(new_width);",
+                                            "",
+                                            "    navigationList.setWidth(new_width);",
+                                            "    navigationList.setMicro(collapsing);",
+                                            "    var panel = Ext.getCmp('pnl_menu').setWidth(new_width);",
+                                            "    Ext.resumeLayouts(); // do not flush the layout here...",
+                                            "",
+                                            "    // No animation for IE9 or lower...",
+                                            "    wrapContainer.layout.animatePolicy = wrapContainer.layout.animate = null;",
+                                            "    wrapContainer.updateLayout();  // ... since this will flush them",
+                                            "}else {",
+                                            "",
+                                            "    if (!collapsing) {",
+                                            "        // If we are leaving micro mode (expanding), we do that first so that the",
+                                            "        // text of the items in the navlist will be revealed by the animation.",
+                                            "        navigationList.setMicro(false);",
+                                            "    }else{",
+                                            "        navigationList.setMicro(true);",
+                                            "    }",
+                                            "    var panel = Ext.getCmp('pnl_menu').setWidth(new_width);",
+                                            "    //Ext.getCmp('btn_usuarios').setHidden(true);",
+                                            "    Ext.getCmp('btn_cerrarSesion').setHidden(Ext.getCmp('pnl_menu').getWidth()===0?true:false);",
+                                            "",
+                                            "    //funcion para restablecer las imagenes y el estilo anterior del main (top)********",
+                                            "    // Start this layout first since it does not require a layout",
+                                            "    //refs.senchaLogo.animate({dynamic: true, to: {width: new_width}});",
+                                            "",
+                                            "    // Directly adjust the width config and then run the main wrap container layout",
+                                            "    // as the root layout (it and its chidren). This will cause the adjusted size to",
+                                            "    // be flushed to the element and animate to that new size.",
+                                            "    navigationList.width = new_width;",
+                                            "    wrapContainer.updateLayout({isRoot: true});",
+                                            "    navigationList.el.addCls('nav-tree-animating');",
+                                            "    //panelPrincipal.el.addCls('nav-tree-animating');",
+                                            "",
+                                            "    // We need to switch to micro mode on the navlist *after* the animation (this",
+                                            "    // allows the \"sweep\" to leave the item text in place until it is no longer",
+                                            "    // visible.",
+                                            "    if (collapsing) {",
+                                            "        navigationList.on({",
+                                            "            afterlayoutanimation: function () {",
+                                            "                //navigationList.setMicro(true);",
+                                            "                navigationList.el.removeCls('nav-tree-animating');",
+                                            "            },",
+                                            "            single: true",
+                                            "        });",
+                                            "    }",
+                                            "}",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "89ba2436-d687-4943-82d4-9478b92af8fa"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "id": "lbl_nombre_app",
+                                "layout|flex": 1,
+                                "margin": "0 0 0 15",
+                                "text": "NombreApp"
+                            },
+                            "name": "MyLabel42",
+                            "designerId": "5ff1a154-a803-4aa0-aadf-daa76397d3b9"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "layout": "hbox",
+                        "layout|flex": 3
+                    },
+                    "name": "MyContainer12",
+                    "designerId": "b3a2041f-ff2e-489e-a08d-feb0e7f53169",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 2
+                            },
+                            "name": "MyContainer17",
+                            "designerId": "7b8caf38-99e2-4905-a2a8-7f56ce8975d7"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": null,
+                                "layout|flex": 1,
+                                "margin": null,
+                                "text": "Nombre del Usuario"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "ad384909-c4cb-43e6-8c5e-29999f6f76e4"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": null,
+                                "text": "MyButton"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "017c1d45-005d-4cda-8396-3a288eb584e3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "hbox",
+                "layout|flex": 1
+            },
+            "name": "MyContainer9",
+            "designerId": "99a959c7-637f-4043-a1c9-938834d864ed",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "dock": null,
+                        "layout": "vbox",
+                        "layout|flex": null
+                    },
+                    "name": "MyContainer13",
+                    "designerId": "c5598ee9-3bf0-4c6a-8b2c-5b8eba333d7c",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "ctn-menu-fondo"
+                                ],
+                                "container|align": "center",
+                                "defaultAlign": null,
+                                "floating": null,
+                                "height": "auto",
+                                "hideMode": null,
+                                "id": "ctn_menu",
+                                "layout": "vbox",
+                                "layout|flex": 1,
+                                "maxWidth": null,
+                                "width": null
+                            },
+                            "name": "MyContainer4",
+                            "designerId": "41a097ec-051c-4778-b32b-fe4b7954b5cf",
+                            "cn": [
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "componentCls": null,
+                                        "container|align": "stretch",
+                                        "flex": null,
+                                        "height": null,
+                                        "id": "pnl_menu",
+                                        "layout": "vbox",
+                                        "layout|flex": 1,
+                                        "width": null
+                                    },
+                                    "name": "MyContainer",
+                                    "designerId": "3bb263ea-557d-431e-ab2f-9a27829c4453",
+                                    "cn": [
+                                        {
+                                            "type": "basicfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "beforeLayout",
+                                                "implHandler": [
+                                                    "var contenido = Ext.getCmp('main-view-detail-wrap');",
+                                                    "if(!contenido){",
+                                                    "    Ext.getCmp('pnl_menu').add({",
+                                                    "        xtype: 'container',",
+                                                    "        id: 'main-view-detail-wrap',",
+                                                    "        reference: 'mainContainerWrap',",
+                                                    "        flex: 1,",
+                                                    "        scrollable: 'y',",
+                                                    "        layout: {",
+                                                    "            type: 'hbox',",
+                                                    "            align: 'stretch',",
+                                                    "            animatePolicy: {",
+                                                    "                x: true,",
+                                                    "                width: true",
+                                                    "            }",
+                                                    "        },",
+                                                    "",
+                                                    "        beforeLayout : function() {",
+                                                    "            var me = this,",
+                                                    "                height = Ext.Element.getViewportHeight() - 79,",
+                                                    "                navTree = me.getComponent('navigationTreeList');",
+                                                    "",
+                                                    "            me.minHeight = height;",
+                                                    "            navTree.setStyle({",
+                                                    "                'min-height': height + 'px'",
+                                                    "            });",
+                                                    "",
+                                                    "        },",
+                                                    "        items: [",
+                                                    "            {",
+                                                    "                xtype: 'treelist',",
+                                                    "                reference: 'navigationTreeList',",
+                                                    "                itemId: 'navigationTreeList',",
+                                                    "                id:'navigationTreeList',",
+                                                    "                ui: 'navigation',",
+                                                    "                store: 'store_navigation_tree',",
+                                                    "                width: 100,",
+                                                    "                expanderFirst: false,",
+                                                    "                selectionchange: function(model, selected, eOpts){",
+                                                    "                    ",
+                                                    "                    var tab;",
+                                                    "",
+                                                    "                    switch(selected.id){",
+                                                    "                        case 'reportes':",
+                                                    "                            containerApp.hide();",
+                                                    "                            tabPanel.removeAll();",
+                                                    "                            tabPanel.add({",
+                                                    "                                xtype: 'component',",
+                                                    "                                id: 'component_report',",
+                                                    "                                cls: 'component_apps',",
+                                                    "                                autoEl: {",
+                                                    "                                    tag: 'iframe',",
+                                                    "                                    src: 'http://52.70.227.200:8149/'",
+                                                    "                                }",
+                                                    "                            });",
+                                                    "                            tabPanel.show();",
+                                                    "                            Ext.getCmp(\"pnl_menu\").on_app=false;",
+                                                    "                            break;",
+                                                    "                        case 'empresas':",
+                                                    "                            containerApp.hide();",
+                                                    "                            tabPanel.removeAll();",
+                                                    "                            tab = Ext.widget('pnl_empresas');",
+                                                    "                            tabPanel.add(tab);",
+                                                    "                            Ext.getCmp(\"pnl_menu\").on_app=false;",
+                                                    "                            tabPanel.show();",
+                                                    "                            break;",
+                                                    "                        case 'planes':",
+                                                    "                            containerApp.hide();",
+                                                    "                            tabPanel.removeAll();",
+                                                    "                            tab = Ext.widget('pnl_planes');",
+                                                    "                            tabPanel.add(tab);",
+                                                    "                            Ext.getCmp(\"pnl_menu\").on_app=false;",
+                                                    "                            tabPanel.show();",
+                                                    "                            break;",
+                                                    "                        case 'licencias':",
+                                                    "                            containerApp.hide();",
+                                                    "                            tabPanel.removeAll();",
+                                                    "                            tab = Ext.widget('pnl_licencias');",
+                                                    "                            tabPanel.add(tab);",
+                                                    "                            Ext.getCmp(\"pnl_menu\").on_app=false;",
+                                                    "                            tabPanel.show();",
+                                                    "                            break;",
+                                                    "                        case 'suscripciones':",
+                                                    "                            containerApp.hide();",
+                                                    "                            tabPanel.removeAll();",
+                                                    "                            tab = Ext.widget('pnl_suscripciones');",
+                                                    "                            tabPanel.add(tab);",
+                                                    "                            Ext.getCmp(\"pnl_menu\").on_app=false;",
+                                                    "                            tabPanel.show();",
+                                                    "                            break;",
+                                                    "                    }",
+                                                    "",
+                                                    "",
+                                                    "                },",
+                                                    "",
+                                                    "                listeners: {",
+                                                    "                    boxready: function(component, width, height, eOpts) {",
+                                                    "                        //var com = component;",
+                                                    "                    },",
+                                                    "                    afterrender:function(){",
+                                                    "",
+                                                    "                    }",
+                                                    "                }",
+                                                    "            }",
+                                                    "        ]",
+                                                    "    });",
+                                                    "}"
+                                                ]
+                                            },
+                                            "name": "beforeLayout",
+                                            "designerId": "4181e635-d250-4eb6-a99a-aa6eb5bf4530"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "componentCls": null,
+                                        "container|align": "stretch",
+                                        "container|pack": null,
+                                        "dock": "bottom",
+                                        "height": null,
+                                        "id": "ctn_fijo",
+                                        "layout": "vbox",
+                                        "layout|flex": null,
+                                        "minHeight": null,
+                                        "width": "auto"
+                                    },
+                                    "name": "MyContainer8",
+                                    "designerId": "830ad6ca-16c4-4053-a3f5-81c691fe773c",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "baseCls": null,
+                                                "cls": "cerrar-sesion",
+                                                "hidden": true,
+                                                "iconAlign": "top",
+                                                "iconCls": "x-app app-usuarios",
+                                                "id": "btn_usuarios",
+                                                "layout|flex": null,
+                                                "maxHeight": null,
+                                                "overCls": "x-btn-over cerrar-sesion-over",
+                                                "text": "Usuarios",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyButton11",
+                                            "designerId": "f3378059-2867-4c9f-ae7c-591758b0f390",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick2",
+                                                        "implHandler": [
+                                                            "var panel = Ext.getCmp('pnl_principal');",
+                                                            "panel.removeAll();",
+                                                            "panel.add(Ext.widget('pnl_usuarios'));"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick2",
+                                                    "designerId": "fe845900-bfbd-438f-8f2e-ce344796828d"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "arrowAlign": null,
+                                                "baseCls": null,
+                                                "cls": "cerrar-sesion",
+                                                "focusCls": null,
+                                                "height": null,
+                                                "icon": null,
+                                                "iconAlign": "top",
+                                                "iconCls": "icon-exit",
+                                                "id": "btn_cerrarSesion",
+                                                "layout|flex": null,
+                                                "margin": null,
+                                                "maxHeight": null,
+                                                "overCls": "x-btn-over cerrar-sesion-over",
+                                                "text": "Cerrar Sesión",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyButton10",
+                                            "designerId": "768e3440-1c42-4d78-a4ff-32f3c15790a0",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick",
+                                                        "implHandler": [
+                                                            "//window.location.href = window.location.href;",
+                                                            "",
+                                                            "window.location.href = \"/usuariocontroller/logout\";",
+                                                            ""
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick",
+                                                    "designerId": "d95423c7-d66e-4a46-b18b-d4d92de39e44"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "ctn_grafica",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer16",
+                    "designerId": "0eeca407-f33d-4010-85b7-01f545b8e3e5"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onPnl_mainAfterRender",
+                "implHandler": [
+                    "//Esta es una manera más rápida y fácil para pasar las series directamente en lugar de un csv",
+                    "function incluirSerie(a){",
+                    "    return a !== 0;",
+                    "}",
+                    "var store = Ext.getStore('store_data');",
+                    "store.load({",
+                    "    params:{",
+                    "        range:100",
+                    "    },",
+                    "    callback: function(records, operation, success) {",
+                    "        if(records.length>0){",
+                    "            var series = [];",
+                    "            var data = [];",
+                    "            //var fechas =[];",
+                    "            debugger;",
+                    "            for (var r in records){",
+                    "                var fecha = records[r].data.fechaServidor;",
+                    "                var arrfecha = fecha.split(\"/\");",
+                    "                var fechaParse = Date.UTC(arrfecha[0],arrfecha[1],arrfecha[2],arrfecha[3],arrfecha[4],arrfecha[5]);",
+                    "                data.push([fechaParse,parseFloat(records[r].data.lectura)]);",
+                    "                //fechas.push(fechaParse);",
+                    "            }",
+                    "            series.push({",
+                    "                name: \"lectura\",",
+                    "                data: data,",
+                    "                visible: true",
+                    "            });",
+                    "            /*CONFIGURACIÓN GENERAL DEL GRÁFICO*/",
+                    "",
+                    "            Highcharts.setOptions({",
+                    "                lang: {",
+                    "                    months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',  'Julio', 'Aagosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],",
+                    "                    weekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],",
+                    "                    downloadJPEG:\"Descargar JPEG\",",
+                    "                    downloadPNG:\"Descargar PNG\",",
+                    "                    downloadPDF:\"Descargar PDF\",",
+                    "                    downloadSVG:\"Descargar SVG\",",
+                    "                    loading:\"Cargando..\",",
+                    "                    printChart:\"Imprimir Chart\",",
+                    "                    resetZoom:\"Resetear Zoom\",",
+                    "                    resetZoomTitle:\"Resetear Zoom nivel 1:1\",",
+                    "                    noData:\"No existen datos para mostrar\"",
+                    "",
+                    "                }",
+                    "            });",
+                    "",
+                    "            /**/",
+                    "",
+                    "            Highcharts.chart('ctn_grafica', {",
+                    "                chart: {",
+                    "                    type: 'areaspline'",
+                    "                },",
+                    "                title: {",
+                    "                    text: '<label style=\"font-size: 20px; font-family: Fira Sans, serif; font-weight: 600;\">Aplicaciones en uso</label>'",
+                    "                },",
+                    "                legend: {",
+                    "                    layout: 'vertical',",
+                    "                    align: 'right',",
+                    "                    verticalAlign: 'middle',",
+                    "                    width: 150",
+                    "                },",
+                    "                xAxis: {",
+                    "                    type: 'datetime'",
+                    "                },",
+                    "                yAxis: {",
+                    "                    title: {",
+                    "                        text: ''",
+                    "                    }",
+                    "                },",
+                    "                tooltip: {",
+                    "                    shared: true,",
+                    "                    valueSuffix: ' aplicaciones'",
+                    "                },",
+                    "                credits: {",
+                    "                    enabled: false",
+                    "                },",
+                    "                plotOptions: {",
+                    "                    areaspline: {",
+                    "                        fillOpacity: 0.5",
+                    "                    }",
+                    "                },",
+                    "                series: series",
+                    "            });",
+                    "",
+                    "        }",
+                    "    }",
+                    "});"
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "name": "onPnl_mainAfterRender",
+            "designerId": "8ad5a2e7-9ae1-4922-98d4-c4a7c37a8562"
+        }
+    ]
+}

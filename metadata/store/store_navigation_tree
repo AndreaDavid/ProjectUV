@@ -8,6 +8,12 @@
     "userConfig": {
         "designer|userClassName": "store_navigation_tree",
         "model": "model_items_navigation",
+        "root": [
+            "{",
+            "",
+            "}",
+            ""
+        ],
         "storeId": "store_navigation_tree"
     },
     "name": "MyTreeStore1",
