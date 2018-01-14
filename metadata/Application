@@ -8,7 +8,8 @@
     "userConfig": {
         "models": [
             "model_lecturas",
-            "model_items_navigation"
+            "model_items_navigation",
+            "model_usuario"
         ],
         "name": "ProjectUV",
         "requires": [
@@ -16,11 +17,13 @@
         ],
         "stores": [
             "store_data",
-            "store_navigation_tree"
+            "store_navigation_tree",
+            "store_login"
         ],
         "views": [
             "vtn_register",
-            "pnl_main"
+            "pnl_main",
+            "pnl_graficas"
         ]
     },
     "name": "Application",
@@ -35,7 +38,19 @@
             "codeClass": null,
             "userConfig": {
                 "fn": "launch",
-                "implHandler": null
+                "implHandler": [
+                    "Ext.getCmp(\"main\").hide();",
+                    "var store = Ext.getStore(\"store_login\");",
+                    "store.load({",
+                    "    callback: function(records, operation, success){",
+                    "        Ext.getCmp(\"main\").show();",
+                    "        if(success){",
+                    "            Ext.getCmp(\"ctn_main\").removeAll();",
+                    "            Ext.getCmp(\"ctn_main\").add(Ext.widget(\"pnl_main\"));",
+                    "        }",
+                    "    }",
+                    "});"
+                ]
             },
             "name": "launch",
             "designerId": "d1c0daee-d02a-41c9-a4e9-602e2f374ac5"
@@ -48,9 +63,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|params": [
-                    "usuario"
-                ],
                 "fn": "fn_render_menu",
                 "implHandler": [
                     "",
@@ -80,7 +92,7 @@
                     "",
                     "node.appendChild({",
                     "    text: '<label data-qtip=graficas>Graficas</label>',",
-                    "    id: \"itemId\",",
+                    "    id: \"graficas\",",
                     "    iconCls: 'icon-stats-dots',",
                     "    leaf: true",
                     "});",

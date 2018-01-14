@@ -1,0 +1,52 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "store_login",
+        "model": "model_usuario",
+        "storeId": "store_login"
+    },
+    "name": "store_login",
+    "designerId": "66c8e556-f01e-434f-b795-505ebb5580d3",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{",
+                    "read: 'accesscontroller/verificarSesion.action'",
+                    "}"
+                ],
+                "designer|displayName": "Proxy_Login"
+            },
+            "name": "MyAjaxProxy_store_login",
+            "designerId": "ffeeb8f8-9563-4a6f-90d4-05ac211f5450",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "Reader_Login",
+                        "messageProperty": "message",
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader_store_login",
+                    "designerId": "172aafa4-ab40-4396-a731-34320dba364f"
+                }
+            ]
+        }
+    ]
+}

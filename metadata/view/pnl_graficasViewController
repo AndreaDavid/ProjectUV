@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnl_graficas",
+        "designer|userClassName": "pnl_graficasViewController"
+    },
+    "designerId": "77dff545-14b9-428d-ba87-5ceb069e251f"
+}
