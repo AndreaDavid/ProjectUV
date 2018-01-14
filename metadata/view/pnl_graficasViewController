@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "pnl_login",
-        "designer|userClassName": "pnl_loginViewController"
+        "designer|userAlias": "pnl_graficas",
+        "designer|userClassName": "pnl_graficasViewController"
     },
-    "designerId": "2247ecbf-18a3-46dd-9b2e-a62497fe7e92"
+    "designerId": "77dff545-14b9-428d-ba87-5ceb069e251f"
 }

@@ -6,13 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "cls": [
-            "main"
-        ],
         "container|align": "stretch",
+        "designer|initialView": true,
         "designer|userAlias": "main",
         "designer|userClassName": "main",
-        "id": "pnl_main",
+        "id": "main",
         "layout": "vbox"
     },
     "designerId": "dd4a615a-67b9-4c8a-b269-1409e449e923",
@@ -28,11 +26,12 @@
             "codeClass": null,
             "userConfig": {
                 "container|align": "stretch",
-                "layout": "hbox",
+                "id": "ctn_main",
+                "layout": "vbox",
                 "layout|flex": 1
             },
-            "name": "MyContainer10",
-            "designerId": "d35b8120-f334-4c57-9cec-f2077e8d0c54",
+            "name": "MyContainer15",
+            "designerId": "95b3603c-ed9c-4f27-91a6-4d33a8ce270b",
             "cn": [
                 {
                     "type": "Ext.container.Container",
@@ -42,104 +41,23 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": 1
+                        "baseCls": null,
+                        "cls": [
+                            "main"
+                        ],
+                        "componentCls": null,
+                        "container|align": "stretch",
+                        "id": "pnl_login",
+                        "layout": "vbox",
+                        "layout|flex": 1,
+                        "margin": 0,
+                        "style": null
                     },
                     "name": "MyContainer11",
-                    "designerId": "bb1f561c-b841-4cda-82c6-c40f4ee044ce"
-                },
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
+                    "configAlternates": {
+                        "style": "string"
                     },
-                    "codeClass": null,
-                    "userConfig": {
-                        "container|align": "middle",
-                        "container|pack": "center",
-                        "layout": "hbox",
-                        "layout|flex": 1
-                    },
-                    "name": "MyContainer12",
-                    "designerId": "b3a2041f-ff2e-489e-a08d-feb0e7f53169",
-                    "cn": [
-                        {
-                            "type": "Ext.form.Label",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "dock": null,
-                                "layout|flex": 1,
-                                "margin": null,
-                                "text": "Nombre del Usuario"
-                            },
-                            "name": "MyLabel",
-                            "designerId": "ad384909-c4cb-43e6-8c5e-29999f6f76e4"
-                        },
-                        {
-                            "type": "Ext.button.Button",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "dock": null,
-                                "text": "MyButton"
-                            },
-                            "name": "MyButton2",
-                            "designerId": "017c1d45-005d-4cda-8396-3a288eb584e3"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "Ext.container.Container",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "container|align": "stretch",
-                "layout": "hbox",
-                "layout|flex": 11
-            },
-            "name": "MyContainer9",
-            "designerId": "bd6a83d5-e335-49c6-8e46-455b66c5b58b",
-            "cn": [
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "container|align": "stretch",
-                        "dock": null,
-                        "layout": "vbox",
-                        "layout|flex": null
-                    },
-                    "name": "MyContainer13",
-                    "designerId": "c5598ee9-3bf0-4c6a-8b2c-5b8eba333d7c"
-                },
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "layout|flex": 1
-                    },
-                    "name": "MyContainer16",
-                    "designerId": "0eeca407-f33d-4010-85b7-01f545b8e3e5",
+                    "designerId": "0cbef2b3-6489-475c-885d-ff9bc127fd1f",
                     "cn": [
                         {
                             "type": "Ext.container.Container",
@@ -149,118 +67,392 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "id": "ctn_grafica"
+                                "baseCls": null,
+                                "layout|flex": 2
                             },
-                            "name": "MyContainer15",
-                            "designerId": "a70801c2-55a0-4cc6-8709-49224b69413a"
+                            "name": "MyContainer",
+                            "designerId": "d8f6291e-2541-4b62-a527-28c8fdb85339"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "hbox",
+                                "layout|flex": 4
+                            },
+                            "name": "MyContainer1",
+                            "designerId": "5eeae047-9369-4580-92d8-87a1c8d5d4e4",
+                            "cn": [
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1
+                                    },
+                                    "name": "MyContainer3",
+                                    "designerId": "249ab58e-bc9b-4afe-b3d5-0970917aaf4f"
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": true,
+                                        "container|align": "stretch",
+                                        "layout": "hbox",
+                                        "layout|flex": 2.5,
+                                        "modal": true,
+                                        "title": "Login"
+                                    },
+                                    "name": "MyPanel",
+                                    "designerId": "94fe5d12-3380-418e-a25e-0191bc4889e9",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.container.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "baseCls": null,
+                                                "layout": "card",
+                                                "layout|flex": 1
+                                            },
+                                            "name": "MyContainer5",
+                                            "designerId": "597d618e-220b-4cf9-ab79-4faf709153be",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.Img",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "height": null,
+                                                        "src": "resources/image/gifsun.gif",
+                                                        "width": null
+                                                    },
+                                                    "name": "MyImg1",
+                                                    "designerId": "f89df122-dc79-4c71-8d4c-3d950b3abe09"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.form.Panel",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "bodyPadding": 10,
+                                                "bodyStyle": [
+                                                    "background: rgba(195, 242, 224, 0.789)"
+                                                ],
+                                                "container|align": "stretch",
+                                                "header": false,
+                                                "layout": "vbox",
+                                                "layout|flex": 1,
+                                                "style": null,
+                                                "title": "My Form"
+                                            },
+                                            "name": "MyForm",
+                                            "designerId": "c8cca58e-7c32-44a1-8bf7-416305793975",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.container.Container",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "container|align": "stretchmax",
+                                                        "container|pack": "center",
+                                                        "layout": "hbox",
+                                                        "layout|flex": 3
+                                                    },
+                                                    "name": "MyContainer4",
+                                                    "designerId": "f06ca80d-d3e7-4e21-bbd9-4c428951cbef",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.Img",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "flex": 1,
+                                                                "height": 201,
+                                                                "layout|flex": 1,
+                                                                "src": "resources/image/TITULO.gif",
+                                                                "width": 201
+                                                            },
+                                                            "name": "MyImg",
+                                                            "designerId": "5f2d9e8c-2977-449a-b464-82a0d5a717d9"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Ext.container.Container",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "container|align": "center",
+                                                        "container|pack": "center",
+                                                        "flex": null,
+                                                        "layout": "vbox",
+                                                        "layout|flex": 2
+                                                    },
+                                                    "name": "MyContainer7",
+                                                    "designerId": "88aedbce-dd2d-47f5-a3cd-6c734db73c54",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.form.field.Text",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "allowBlank": false,
+                                                                "blankText": "Este campo es requerido",
+                                                                "emptyText": "Correo",
+                                                                "fieldLabel": "",
+                                                                "id": "correoLogin",
+                                                                "inputType": "email",
+                                                                "name": "correo"
+                                                            },
+                                                            "name": "MyTextField",
+                                                            "designerId": "0915b629-c3a4-4517-a3cf-6c3743f7a607"
+                                                        },
+                                                        {
+                                                            "type": "Ext.form.field.Text",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "allowBlank": false,
+                                                                "blankText": "Este campo es requerido",
+                                                                "emptyText": "Contraseña",
+                                                                "fieldLabel": "",
+                                                                "id": "contrasenaLogin",
+                                                                "inputType": "password",
+                                                                "name": "password"
+                                                            },
+                                                            "name": "MyTextField1",
+                                                            "designerId": "c73c7dd7-a512-431f-ad68-a4d49ffd6231"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Ext.container.Container",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "container|pack": "center",
+                                                        "dock": null,
+                                                        "flex": null,
+                                                        "layout": "hbox",
+                                                        "layout|flex": 1
+                                                    },
+                                                    "name": "MyContainer6",
+                                                    "designerId": "51fec213-9ede-41fc-b658-3c5132c0bdeb",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.button.Button",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "id": "ingresar",
+                                                                "text": "Entrar"
+                                                            },
+                                                            "name": "MyButton",
+                                                            "designerId": "4366cd17-9be9-4572-825d-da2fcf35aa82",
+                                                            "cn": [
+                                                                {
+                                                                    "type": "basiceventbinding",
+                                                                    "reference": {
+                                                                        "name": "listeners",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "fn": "onIngresarClick",
+                                                                        "implHandler": [
+                                                                            "var form=button.up(\"form\").getForm();//al ejecutarse el evento del boton obtengo el formulario",
+                                                                            "if(form.isValid()){//valido el formulario con los requisitos previos",
+                                                                            "    form.submit(//hacer submit (la peticion) al sevidor",
+                                                                            "        {",
+                                                                            "            url:\"accesscontroller/login\",",
+                                                                            "            method:\"POST\",",
+                                                                            "            waitMsg:\"Ingresando\",",
+                                                                            "            success:function(frm,out){//aprobacion de la peticion",
+                                                                            "",
+                                                                            "                Ext.getCmp(\"ctn_main\").removeAll();",
+                                                                            "                Ext.getCmp(\"ctn_main\").add(Ext.widget(\"pnl_main\"));",
+                                                                            "            },",
+                                                                            "            failure:function(frm,out){//negacion de la peticion",
+                                                                            "",
+                                                                            "                if(out.result!==undefined &&out.result.message===\"usuarioNoRegistrado\"){",
+                                                                            "                    if(Ext.getCmp(\"toast\")===undefined){",
+                                                                            "                        Ext.toast({",
+                                                                            "                            timeout: 2000,",
+                                                                            "                            id:\"toast\",",
+                                                                            "                            html: '<center>login incorrecto</center>',",
+                                                                            "                            title: 'Alerta',",
+                                                                            "                            width: 300,",
+                                                                            "                            align: 't'",
+                                                                            "                        });",
+                                                                            "                    }",
+                                                                            "                }else{",
+                                                                            "                    if(Ext.getCmp(\"toast\")===undefined){",
+                                                                            "                        Ext.toast({",
+                                                                            "                            timeout: 2000,",
+                                                                            "                            id:\"toast\",",
+                                                                            "                            html: '<center>Error servidor</center>',",
+                                                                            "                            title: 'Alerta',",
+                                                                            "                            width: 300,",
+                                                                            "                            align: 't'",
+                                                                            "                        });",
+                                                                            "                    }",
+                                                                            "                }",
+                                                                            "",
+                                                                            "            }",
+                                                                            "        }",
+                                                                            "    );",
+                                                                            "",
+                                                                            "}else{",
+                                                                            "",
+                                                                            "}",
+                                                                            "",
+                                                                            ""
+                                                                        ],
+                                                                        "name": "click",
+                                                                        "scope": "me"
+                                                                    },
+                                                                    "name": "onIngresarClick",
+                                                                    "designerId": "1c9a02a8-2128-47f1-aa44-c55a8cefc6e8"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Ext.button.Button",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "id": "registrar",
+                                                                "text": "Registrarme"
+                                                            },
+                                                            "name": "MyButton1",
+                                                            "designerId": "c97f15ee-0005-4341-8bea-5365de659bbd",
+                                                            "cn": [
+                                                                {
+                                                                    "type": "basiceventbinding",
+                                                                    "reference": {
+                                                                        "name": "listeners",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "fn": "onRegistrarClick",
+                                                                        "implHandler": [
+                                                                            "var register=Ext.widget(\"vtn_register\");",
+                                                                            "register.center();",
+                                                                            "register.show();"
+                                                                        ],
+                                                                        "name": "click",
+                                                                        "scope": "me"
+                                                                    },
+                                                                    "name": "onRegistrarClick",
+                                                                    "designerId": "b5b51bc2-de21-4d55-beca-e09f429188fe"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1
+                                    },
+                                    "name": "MyContainer8",
+                                    "designerId": "f662eff6-c072-418b-8d49-22e18649ab1d"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 2
+                            },
+                            "name": "MyContainer2",
+                            "designerId": "c4a838a4-1919-41c9-8d87-45b165252810"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onPnl_loginRender",
+                                "implHandler": [
+                                    "//component.setHeight(window.innerHeight);"
+                                ],
+                                "name": "render",
+                                "scope": "me"
+                            },
+                            "name": "onPnl_loginRender",
+                            "designerId": "5e65d06e-8003-46c6-892b-333ac931d16a"
                         }
                     ]
                 }
             ]
-        },
-        {
-            "type": "basiceventbinding",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "onPnl_mainAfterRender",
-                "implHandler": [
-                    "//Esta es una manera más rápida y fácil para pasar las series directamente en lugar de un csv",
-                    "function incluirSerie(a){",
-                    "    return a !== 0;",
-                    "}",
-                    "var store = Ext.getStore('store_data');",
-                    "store.load({",
-                    "    params:{",
-                    "        range:100",
-                    "    },",
-                    "    callback: function(records, operation, success) {",
-                    "        if(records.length>0){",
-                    "            var series = [];",
-                    "            var data = [];",
-                    "            //var fechas =[];",
-                    "            debugger;",
-                    "            for (var r in records){",
-                    "                var fecha = records[r].data.fechaServidor;",
-                    "                var arrfecha = fecha.split(\"/\");",
-                    "                var fechaParse = Date.UTC(arrfecha[0],arrfecha[1],arrfecha[2],arrfecha[3],arrfecha[4],arrfecha[5]);",
-                    "                data.push([fechaParse,parseFloat(records[r].data.lectura)]);",
-                    "                //fechas.push(fechaParse);",
-                    "            }",
-                    "            series.push({",
-                    "                name: \"lectura\",",
-                    "                data: data,",
-                    "                visible: true",
-                    "            });",
-                    "            /*CONFIGURACIÓN GENERAL DEL GRÁFICO*/",
-                    "",
-                    "            Highcharts.setOptions({",
-                    "                lang: {",
-                    "                    months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',  'Julio', 'Aagosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],",
-                    "                    weekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],",
-                    "                    downloadJPEG:\"Descargar JPEG\",",
-                    "                    downloadPNG:\"Descargar PNG\",",
-                    "                    downloadPDF:\"Descargar PDF\",",
-                    "                    downloadSVG:\"Descargar SVG\",",
-                    "                    loading:\"Cargando..\",",
-                    "                    printChart:\"Imprimir Chart\",",
-                    "                    resetZoom:\"Resetear Zoom\",",
-                    "                    resetZoomTitle:\"Resetear Zoom nivel 1:1\",",
-                    "                    noData:\"No existen datos para mostrar\"",
-                    "",
-                    "                }",
-                    "            });",
-                    "",
-                    "            /**/",
-                    "",
-                    "            Highcharts.chart('ctn_grafica', {",
-                    "                chart: {",
-                    "                    type: 'areaspline'",
-                    "                },",
-                    "                title: {",
-                    "                    text: '<label style=\"font-size: 20px; font-family: Fira Sans, serif; font-weight: 600;\">Aplicaciones en uso</label>'",
-                    "                },",
-                    "                legend: {",
-                    "                    layout: 'vertical',",
-                    "                    align: 'right',",
-                    "                    verticalAlign: 'middle',",
-                    "                    width: 150",
-                    "                },",
-                    "                xAxis: {",
-                    "                    type: 'datetime'",
-                    "                },",
-                    "                yAxis: {",
-                    "                    title: {",
-                    "                        text: ''",
-                    "                    }",
-                    "                },",
-                    "                tooltip: {",
-                    "                    shared: true,",
-                    "                    valueSuffix: ' aplicaciones'",
-                    "                },",
-                    "                credits: {",
-                    "                    enabled: false",
-                    "                },",
-                    "                plotOptions: {",
-                    "                    areaspline: {",
-                    "                        fillOpacity: 0.5",
-                    "                    }",
-                    "                },",
-                    "                series: series",
-                    "            });",
-                    "",
-                    "        }",
-                    "    }",
-                    "});"
-                ],
-                "name": "afterrender",
-                "scope": "me"
-            },
-            "name": "onPnl_mainAfterRender",
-            "designerId": "c6e29082-319d-43da-aabb-f87e07318730"
         }
     ]
 }
