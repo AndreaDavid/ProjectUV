@@ -234,7 +234,51 @@
                                 "text": "Nombre del Usuario"
                             },
                             "name": "MyLabel",
-                            "designerId": "ad384909-c4cb-43e6-8c5e-29999f6f76e4"
+                            "designerId": "ad384909-c4cb-43e6-8c5e-29999f6f76e4",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onLabelRender",
+                                        "implHandler": [
+                                            "var store = Ext.getStore(\"store_login\");",
+                                            "store.load({",
+                                            "    callback: function(records, operation, success){//traer",
+                                            "        ",
+                                            "        if(success){",
+                                            "        ",
+                                            "            if (records.length>0){",
+                                            "                component.setText(records[0].data.nombreUsuario);",
+                                            "                ",
+                                            "            }",
+                                            "        }",
+                                            "        else{",
+                                            "            if(Ext.getCmp(\"toast\")===undefined){",
+                                            "                        Ext.toast({",
+                                            "                            timeout: 2000,",
+                                            "                            id:\"toast\",",
+                                            "                            html: '<center>Error servidor</center>',",
+                                            "                            title: 'Alerta',",
+                                            "                            width: 300,",
+                                            "                            align: 't'",
+                                            "                        });",
+                                            "                    }",
+                                            "        }",
+                                            "    }",
+                                            "});"
+                                        ],
+                                        "name": "render",
+                                        "scope": "me"
+                                    },
+                                    "name": "onLabelRender",
+                                    "designerId": "af30f7cb-e625-4aad-b343-5269d7f40ee4"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.button.Button",
@@ -387,6 +431,7 @@
                                                     "                            tab = Ext.widget('pnl_graficas');",
                                                     "                            tabPanel.add(tab);",
                                                     "                            tabPanel.show();",
+                                                    "                            tab.add(Ext.widget(\"panellinks\"));",
                                                     "                            break;",
                                                     "                    }",
                                                     "",
@@ -467,9 +512,7 @@
                                                     "userConfig": {
                                                         "fn": "onButtonClick2",
                                                         "implHandler": [
-                                                            "var panel = Ext.getCmp('pnl_principal');",
-                                                            "panel.removeAll();",
-                                                            "panel.add(Ext.widget('pnl_usuarios'));"
+                                                            ""
                                                         ],
                                                         "name": "click",
                                                         "scope": "me"
