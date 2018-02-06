@@ -19,9 +19,13 @@
         "id": "pnl_graficas",
         "layout": "vbox",
         "minHeight": null,
+        "scrollable": true,
         "width": null
     },
     "name": "MyPanel",
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
     "designerId": "43bce990-8f4b-46a5-ab6a-3863db8c7502",
     "viewControllerInstanceId": "143d9af9-c965-4e50-b6f8-28bf196bb030",
     "viewModelInstanceId": "bd558fa0-758d-4d6c-bbc9-8bdbd2cdd563",
@@ -116,13 +120,68 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "container|align": "center",
                         "designer|displayName": "chart_pie",
                         "flex": 1,
                         "id": "chart_pie_highchart",
+                        "layout": "vbox",
                         "layout|flex": 1
                     },
                     "name": "MyContainer10",
-                    "designerId": "c2230e9e-6785-494b-a0ba-62947f602f39"
+                    "designerId": "c2230e9e-6785-494b-a0ba-62947f602f39",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "indice UV"
+                            },
+                            "name": "MyLabel1",
+                            "designerId": "9fc01352-2e91-4f98-9d7e-cdd0eedcbc70"
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "title": "My Panel"
+                            },
+                            "name": "MyPanel3",
+                            "designerId": "b2e6c280-ee5e-456c-926c-a28ec7f80827",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": null,
+                                        "style": [
+                                            "{",
+                                            "color:\"#119933\",",
+                                            "font-weight:\"bold\"",
+                                            "",
+                                            "}"
+                                        ],
+                                        "text": "",
+                                        "width": null
+                                    },
+                                    "name": "MyLabel2",
+                                    "designerId": "17cca108-beea-4d34-8268-772b0d734724"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },

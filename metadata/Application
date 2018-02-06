@@ -23,7 +23,8 @@
         "views": [
             "vtn_register",
             "pnl_main",
-            "pnl_graficas"
+            "pnl_graficas",
+            "panellinks"
         ]
     },
     "name": "Application",
@@ -37,16 +38,32 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|commentHeader": [
+                    ""
+                ],
                 "fn": "launch",
                 "implHandler": [
-                    "Ext.getCmp(\"main\").hide();",
+                    "//ejecutar cuando se inicia la app",
+                    "Ext.getCmp(\"main\").hide();//oculta main",
                     "var store = Ext.getStore(\"store_login\");",
                     "store.load({",
-                    "    callback: function(records, operation, success){",
+                    "    callback: function(records, operation, success){//traer",
                     "        Ext.getCmp(\"main\").show();",
                     "        if(success){",
                     "            Ext.getCmp(\"ctn_main\").removeAll();",
                     "            Ext.getCmp(\"ctn_main\").add(Ext.widget(\"pnl_main\"));",
+                    "        }",
+                    "        else{",
+                    "            if(Ext.getCmp(\"toast\")===undefined){",
+                    "                        Ext.toast({",
+                    "                            timeout: 2000,",
+                    "                            id:\"toast\",",
+                    "                            html: '<center>Error servidor</center>',",
+                    "                            title: 'Alerta',",
+                    "                            width: 300,",
+                    "                            align: 't'",
+                    "                        });",
+                    "                    }",
                     "        }",
                     "    }",
                     "});"

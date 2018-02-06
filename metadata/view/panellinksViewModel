@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "panellinks",
+        "designer|userClassName": "panellinksViewModel"
+    },
+    "designerId": "ae3018df-6973-468b-9fd8-db90caa7227e"
+}
