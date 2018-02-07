@@ -1,4 +1,4 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+﻿@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 .main{
     background: url('../image/day_sun.jpg') no-repeat !important;
      background-size: cover !important; 
@@ -57,4 +57,7 @@
 /* Color blanco en imagen y texto cuando esta seleccionado */
 .x-treelist-navigation .x-treelist-item-selected .x-treelist-item-text, .x-treelist-navigation .x-treelist-item-selected .x-treelist-item-icon{
     color: #f0f0f0 !important;
+}
+.pnl-principal-style{
+    background: #f7f7f7;
 }
