@@ -1,5 +1,5 @@
 {
-    "type": "Ext.container.Container",
+    "type": "Ext.panel.Panel",
     "reference": {
         "name": "items",
         "type": "array"
@@ -9,6 +9,8 @@
         "container|align": "stretch",
         "designer|userAlias": "pnl_main",
         "designer|userClassName": "pnl_main",
+        "flex": 1,
+        "header": false,
         "height": null,
         "id": "pnl_main",
         "layout": "vbox",
@@ -131,11 +133,9 @@
                                             "    }else{",
                                             "        navigationList.setMicro(true);",
                                             "    }",
-                                            "    try{",
+                                            "  ",
                                             "    var panel = Ext.getCmp('pnl_menu').setWidth(new_width);",
-                                            "    }catch(e){",
-                                            "        console.log(e);",
-                                            "    }",
+                                            "    ",
                                             "    //Ext.getCmp('btn_usuarios').setHidden(true);",
                                             "    Ext.getCmp('btn_cerrarSesion').setHidden(Ext.getCmp('pnl_menu').getWidth()===0?true:false);",
                                             "",
@@ -431,7 +431,7 @@
                                                     "                            tab = Ext.widget('pnl_graficas');",
                                                     "                            tabPanel.add(tab);",
                                                     "                            tabPanel.show();",
-                                                    "                            tab.add(Ext.widget(\"panellinks\"));",
+                                                    "                            //tab.add(Ext.widget(\"panellinks\"));",
                                                     "                            break;",
                                                     "                    }",
                                                     "",
@@ -589,10 +589,30 @@
                         "container|align": "stretch",
                         "id": "ctn_container",
                         "layout": "vbox",
-                        "layout|flex": 1
+                        "layout|flex": 1,
+                        "scrollable": true
                     },
                     "name": "MyContainer16",
-                    "designerId": "0eeca407-f33d-4010-85b7-01f545b8e3e5"
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "0eeca407-f33d-4010-85b7-01f545b8e3e5",
+                    "cn": [
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1
+                            },
+                            "name": "pnl_graficas2",
+                            "designerId": "3e5df55a-52f2-4515-a535-d2796bbe742d",
+                            "masterInstanceId": "43bce990-8f4b-46a5-ab6a-3863db8c7502"
+                        }
+                    ]
                 }
             ]
         },

@@ -18,7 +18,7 @@
     "viewModelInstanceId": "aa6cb8be-5f45-4690-b62c-5083937c0f89",
     "cn": [
         {
-            "type": "Ext.container.Container",
+            "type": "Ext.panel.Panel",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -26,11 +26,13 @@
             "codeClass": null,
             "userConfig": {
                 "container|align": "stretch",
+                "flex": 1,
+                "header": false,
                 "id": "ctn_main",
                 "layout": "vbox",
                 "layout|flex": 1
             },
-            "name": "MyContainer15",
+            "name": "MyPanel2",
             "designerId": "95b3603c-ed9c-4f27-91a6-4d33a8ce270b",
             "cn": [
                 {

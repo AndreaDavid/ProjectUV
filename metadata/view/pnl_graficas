@@ -86,30 +86,38 @@
             "userConfig": {
                 "container|align": "stretch",
                 "designer|displayName": "ctn_contenido",
-                "flex": 1,
+                "flex": null,
+                "height": 450,
                 "layout": "hbox",
-                "layout|flex": 1
+                "layout|flex": null,
+                "maxHeight": null,
+                "minHeight": null
             },
             "name": "MyContainer11",
             "designerId": "6364f733-e1ca-4f8e-8803-f0bdbf336422",
             "cn": [
                 {
-                    "type": "Ext.panel.Panel",
+                    "type": "Ext.container.Container",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "autoRender": true,
+                        "container|align": "stretch",
                         "designer|createAlias": null,
                         "designer|displayName": "ctn_chart",
                         "flex": 1,
                         "height": null,
                         "id": "ctn_highchart",
+                        "layout": "vbox",
                         "layout|flex": 1,
-                        "width": null
+                        "maxWidth": 500,
+                        "minWidth": 500,
+                        "width": 500
                     },
-                    "name": "MyPanel1",
+                    "name": "MyContainer15",
                     "designerId": "11251b63-def5-4615-b33c-c8e1e9743230"
                 },
                 {
@@ -186,6 +194,290 @@
             ]
         },
         {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "flex": null,
+                "height": 450,
+                "id": "panellinks",
+                "layout": "vbox",
+                "layout|flex": null,
+                "maxHeight": null,
+                "minHeight": null
+            },
+            "name": "MyContainer",
+            "designerId": "df391292-9b84-4223-a427-3b8d9f6b184b",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "layout": "hbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer18",
+                    "designerId": "75646daa-91a9-4fa9-a020-e78c52197710",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 2
+                            },
+                            "name": "MyContainer20",
+                            "designerId": "1c51be92-0dbe-4afd-bc8d-3a70631957e2"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer21",
+                            "designerId": "ae39fcac-371c-404f-9d05-f8f718dd88f8"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "container|pack": "center",
+                        "layout": "hbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer19",
+                    "designerId": "bc1e8baa-7c56-4034-9209-a98f49b8334c",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "enlace2",
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer22",
+                            "designerId": "5adc22f9-56b9-4d35-be8b-9ec68952ad2b"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer23",
+                            "designerId": "00df52cf-db0b-478f-96eb-511cb1411b2f",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "MyButton"
+                                    },
+                                    "name": "MyButton6",
+                                    "designerId": "0f5e3c9c-b1ee-4c97-b4d5-6ace5a42dd04"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basicfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "record"
+                        ],
+                        "fn": "fn_create_template",
+                        "implHandler": [
+                            "return Ext.create('Ext.container.Container',{",
+                            "    record: record,",
+                            "    flex: 1,",
+                            "    alignOnScroll: false,",
+                            "    baseCls: 'general-template-container',",
+                            "    cls: 'ctn-paneles-aplicaciones',",
+                            "    height: 150,",
+                            "    margin: '10 10 10 10',",
+                            "    scrollable: false,",
+                            "    width: '',",
+                            "    defaultListenerScope: true,",
+                            "",
+                            "    layout: {",
+                            "        type: 'hbox',",
+                            "        align: 'stretch',",
+                            "        pack: 'center'",
+                            "    },",
+                            "    items: [",
+                            "        {",
+                            "            xtype: 'container',",
+                            "            flex: 1,",
+                            "            layout: {",
+                            "                type: 'vbox',",
+                            "                align: 'stretch'",
+                            "            },",
+                            "            items: [",
+                            "                {",
+                            "                    xtype: 'container',",
+                            "                    flex: 1,",
+                            "                    layout: {",
+                            "                        type: 'vbox',",
+                            "                        align: 'center',",
+                            "                        pack: 'center'",
+                            "                    },",
+                            "                    items: [",
+                            "                        {",
+                            "                            xtype: 'container',",
+                            "                            flex: 1",
+                            "                        },",
+                            "                        {",
+                            "",
+                            "                            xtype: 'image',",
+                            "                            alt:\"app\",",
+                            "                            flex: 1,",
+                            "                            height: 70,",
+                            "                            maxHeight: 70,",
+                            "                            maxWidth: 70,",
+                            "                            minHeight: 70,",
+                            "                            minWidth: 70,",
+                            "                            width: 70,",
+                            "                            src: \"https://www.nivea.es/-/media/global/advice/sun-protection/uv-radiation/uv-strahlung.jpg\"",
+                            "                        },",
+                            "                        {",
+                            "                            xtype: 'container',",
+                            "                            flex: 2,",
+                            "                            dock: 'bottom'",
+                            "                        }",
+                            "                    ]",
+                            "                }",
+                            "            ]",
+                            "        },",
+                            "        {",
+                            "            xtype: 'container',",
+                            "            flex: 2.3,",
+                            "            dock: 'top',",
+                            "            layout: {",
+                            "                type: 'vbox',",
+                            "                align: 'stretch'",
+                            "            },",
+                            "            items: [",
+                            "                {",
+                            "                    xtype: 'container',",
+                            "                    flex: 1,",
+                            "                    layout: {",
+                            "                        type: 'hbox',",
+                            "                        align: 'middle'",
+                            "                    },",
+                            "                    items: [",
+                            "                        {",
+                            "                            xtype: 'label',",
+                            "                            margin: '2 2 2 0',",
+                            "                            baseCls: 'general-nombre-aplicacion-container',",
+                            "                            html: \"<b>title</b>\",",
+                            "                            text: ''",
+                            "                        }",
+                            "                    ]",
+                            "                },",
+                            "                {",
+                            "                    xtype: 'label',",
+                            "                    flex: 2,",
+                            "                    alignOnScroll: false,",
+                            "                    dock: 'bottom',",
+                            "                    maxWidth: 300,",
+                            "                    scrollable: false,",
+                            "                    width: 500,",
+                            "                    text: \"Tis is a text\"",
+                            "                }",
+                            "            ]",
+                            "        }",
+                            "    ]",
+                            "});"
+                        ]
+                    },
+                    "name": "fn_create_template",
+                    "designerId": "d01863c0-b0b7-4a1b-bf83-4a780d0d6b4a"
+                },
+                {
+                    "type": "basicfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "fn_load_links",
+                        "implHandler": [
+                            "var templatelink2=this.fn_create_template({",
+                            "    titulo:\"noticias UVI\", ",
+                            "    abstract:\"lo que sea que deba ir de la noticia en resumen por qeu es asi\",",
+                            "    icono:\"url:\"",
+                            "    ",
+                            "});",
+                            "Ext.getCmp(\"enlace2\").add(templatelink2);"
+                        ]
+                    },
+                    "name": "fn_load_links",
+                    "designerId": "49dd467a-e836-4333-beb3-0eb50ea943bb"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onPanelAfterRender",
+                        "implHandler": [
+                            "component.fn_load_links();"
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "name": "onPanelAfterRender",
+                    "designerId": "80ec4781-ee5d-49d0-9751-990dcb7a6edc"
+                }
+            ]
+        },
+        {
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -202,7 +494,7 @@
                     "var store = Ext.getStore('store_data');",
                     "store.load({",
                     "    params:{",
-                    "        range:100",
+                    "        range:500",
                     "    },",
                     "    callback: function(records, operation, success) {",
                     "        if(records.length>0){",
