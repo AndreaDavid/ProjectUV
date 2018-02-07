@@ -115,9 +115,9 @@
                         "itemId": null,
                         "layout": "hbox",
                         "layout|flex": 1,
-                        "maxWidth": 500,
-                        "minWidth": 500,
-                        "width": 500
+                        "maxWidth": null,
+                        "minWidth": null,
+                        "width": null
                     },
                     "name": "MyContainer15",
                     "designerId": "11251b63-def5-4615-b33c-c8e1e9743230"
