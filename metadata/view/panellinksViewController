@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "panellinks",
+        "designer|userClassName": "panellinksViewController"
+    },
+    "designerId": "93c3799a-0b88-42b2-99b2-cf75badebf86"
+}

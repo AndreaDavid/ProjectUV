@@ -23,7 +23,8 @@
         "views": [
             "vtn_register",
             "pnl_main",
-            "pnl_graficas"
+            "pnl_graficas",
+            "panellinks"
         ]
     },
     "name": "Application",
