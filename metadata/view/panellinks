@@ -109,11 +109,11 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "id": "enlace2",
+                                "id": "enlace",
                                 "layout|flex": 1
                             },
-                            "name": "MyContainer22",
-                            "designerId": "5adc22f9-56b9-4d35-be8b-9ec68952ad2b"
+                            "name": "MyContainer23",
+                            "designerId": "00df52cf-db0b-478f-96eb-511cb1411b2f"
                         },
                         {
                             "type": "Ext.container.Container",
@@ -123,25 +123,11 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "id": "enlace2",
                                 "layout|flex": 1
                             },
-                            "name": "MyContainer23",
-                            "designerId": "00df52cf-db0b-478f-96eb-511cb1411b2f",
-                            "cn": [
-                                {
-                                    "type": "Ext.button.Button",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "text": "MyButton"
-                                    },
-                                    "name": "MyButton6",
-                                    "designerId": "0f5e3c9c-b1ee-4c97-b4d5-6ace5a42dd04"
-                                }
-                            ]
+                            "name": "MyContainer22",
+                            "designerId": "5adc22f9-56b9-4d35-be8b-9ec68952ad2b"
                         }
                     ]
                 },
@@ -208,7 +194,7 @@
                             "                            minHeight: 70,",
                             "                            minWidth: 70,",
                             "                            width: 70,",
-                            "                            src: \"https://www.nivea.es/-/media/global/advice/sun-protection/uv-radiation/uv-strahlung.jpg\"",
+                            "                            src: record.icono",
                             "                        },",
                             "                        {",
                             "                            xtype: 'container',",
@@ -240,7 +226,7 @@
                             "                            xtype: 'label',",
                             "                            margin: '2 2 2 0',",
                             "                            baseCls: 'general-nombre-aplicacion-container',",
-                            "                            html: \"<b>title</b>\",",
+                            "                            html: \"<b>\"+record.titulo+\"</b>\",",
                             "                            text: ''",
                             "                        }",
                             "                    ]",
@@ -253,7 +239,7 @@
                             "                    maxWidth: 300,",
                             "                    scrollable: false,",
                             "                    width: 500,",
-                            "                    text: \"Tis is a text\"",
+                            "                    text: record.abstract",
                             "                }",
                             "            ]",
                             "        }",
@@ -275,12 +261,19 @@
                         "fn": "fn_load_links",
                         "implHandler": [
                             "var templatelink2=this.fn_create_template({",
-                            "    titulo:\"noticias UVI\", ",
+                            "    titulo:\"noticias UVI\",",
                             "    abstract:\"lo que sea que deba ir de la noticia en resumen por qeu es asi\",",
-                            "    icono:\"url:\"",
-                            "    ",
+                            "    icono:\"https://www.nivea.es/-/media/global/advice/sun-protection/uv-radiation/uv-strahlung.jpg\"",
+                            "",
                             "});",
-                            "Ext.getCmp(\"enlace2\").add(templatelink2);"
+                            "var templatelink=this.fn_create_template({",
+                            "    titulo:\"noticias UVI\",",
+                            "    abstract:\"lo que sea que deba ir de la noticia en resumen por qeu es asi\",",
+                            "    icono:\"https://www.nivea.es/-/media/global/advice/sun-protection/uv-radiation/uv-strahlung.jpg\"",
+                            "",
+                            "});",
+                            "Ext.getCmp(\"enlace2\").add(templatelink2);",
+                            "Ext.getCmp(\"enlace\").add(templatelink);"
                         ]
                     },
                     "name": "fn_load_links",

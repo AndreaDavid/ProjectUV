@@ -69,7 +69,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|flex": null,
-                        "text": "Highchart"
+                        "text": "RADIACION UV"
                     },
                     "name": "MyLabel",
                     "designerId": "cc6a2f43-18fb-4483-bf5b-d809a90e181a"
@@ -152,44 +152,6 @@
                             },
                             "name": "MyLabel1",
                             "designerId": "9fc01352-2e91-4f98-9d7e-cdd0eedcbc70"
-                        },
-                        {
-                            "type": "Ext.panel.Panel",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "layout|flex": 1,
-                                "title": "My Panel"
-                            },
-                            "name": "MyPanel3",
-                            "designerId": "b2e6c280-ee5e-456c-926c-a28ec7f80827",
-                            "cn": [
-                                {
-                                    "type": "Ext.form.Label",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "html": null,
-                                        "style": [
-                                            "{",
-                                            "color:\"#119933\",",
-                                            "font-weight:\"bold\"",
-                                            "",
-                                            "}"
-                                        ],
-                                        "text": "",
-                                        "width": null
-                                    },
-                                    "name": "MyLabel2",
-                                    "designerId": "17cca108-beea-4d34-8268-772b0d734724"
-                                }
-                            ]
                         }
                     ]
                 }
@@ -234,7 +196,7 @@
                     "                name: \"lectura\",",
                     "                data: data,",
                     "                color:'#a9d479',",
-                    "                visible: false",
+                    "                visible: true",
                     "            });",
                     "",
                     "",
@@ -301,141 +263,6 @@
             "designerId": "a027fd7e-cc52-49db-a211-be4e16cbaf35"
         },
         {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|params": [
-                    "records"
-                ],
-                "fn": "fn_create_piechart",
-                "implHandler": [
-                    "var data=[];",
-                    "var total=0;",
-                    "for(var a in records[0].data.cantidad){",
-                    "    total = total+records[0].data.cantidad[a];",
-                    "}",
-                    "var colors=records[0].data.colores;",
-                    "for(var m in records[0].data.eventos){",
-                    "    var data1= {",
-                    "        color:colors[m],",
-                    "        drilldown: {",
-                    "            name: records[0].data.eventos[m],",
-                    "            categories: [records[0].data.eventos[m]],",
-                    "            data: [parseFloat(Math.round((100*records[0].data.cantidad[m]/total).toFixed(2)))],",
-                    "            cantidad:records[0].data.cantidad[m],",
-                    "            color: colors[m]",
-                    "        }",
-                    "    };",
-                    "    data.push(data1);",
-                    "}",
-                    "var colors = records[0].data.colores,",
-                    "    versionsData = [],",
-                    "    i,",
-                    "    j,",
-                    "    dataLen = data.length,",
-                    "    drillDataLen,",
-                    "    brightness;",
-                    "",
-                    "",
-                    "for (i = 0; i < dataLen; i += 1) {",
-                    "    drillDataLen = data[i].drilldown.data.length;",
-                    "    for (j = 0; j < drillDataLen; j += 1) {",
-                    "        brightness = - (j / drillDataLen) / 5;",
-                    "        versionsData.push({",
-                    "            name: data[i].drilldown.categories[j],",
-                    "            porcentaje: data[i].drilldown.data[j],",
-                    "            y:data[i].drilldown.cantidad,",
-                    "            color: Highcharts.Color(data[i].color).brighten(brightness).get()",
-                    "        });",
-                    "    }",
-                    "}",
-                    "Highcharts.setOptions({",
-                    "    lang: {",
-                    "\t\tmonths: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',  'Julio', 'Aagosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],",
-                    "\t\tweekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],",
-                    "        downloadJPEG:\"Descargar JPEG\",",
-                    "        downloadPNG:\"Descargar PNG\",",
-                    "        downloadPDF:\"Descargar PDF\",",
-                    "        downloadSVG:\"Descargar SVG\",",
-                    "        loading:\"Cargando..\",",
-                    "        printChart:\"Imprimir Chart\",",
-                    "        resetZoom:\"Resetear Zoom\",",
-                    "        resetZoomTitle:\"Resetear Zoom nivel 1:1\",",
-                    "        noData:\"No existen datos para mostrar\"",
-                    "",
-                    "    }",
-                    "});",
-                    "Highcharts.chart('chart_pie_highchart', {",
-                    "    chart: {",
-                    "        type: 'pie'",
-                    "    },",
-                    "    title: {",
-                    "        margin:0,",
-                    "        useHTML:true,",
-                    "        text: '<div style=\"text-align: center;\"><div style=\"font-weight:bold; font-size:25px\">Gráfico de Dona</div><div>Track vs Total</div></div>'",
-                    "    },",
-                    "    subtitle: {",
-                    "        y:28,",
-                    "        useHTML:true,",
-                    "        verticalAlign:\"middle\",",
-                    "        text: '<div style=\"text-align: center;\"><div style=\"font-weight:bold; font-size:15px\">Total</div><div>'+total+'</div></div>'",
-                    "    },",
-                    "    yAxis: {",
-                    "        title: {",
-                    "            text: 'Total percent market share'",
-                    "        }",
-                    "    },",
-                    "    plotOptions: {",
-                    "        pie: {",
-                    "            shadow: false,",
-                    "            center: ['50%', '50%']",
-                    "        }",
-                    "    },",
-                    "    credits: {",
-                    "        enabled: false",
-                    "    },",
-                    "    series: [",
-                    "        {",
-                    "            name: 'cantidad',",
-                    "            data: versionsData,",
-                    "            size: '50%',",
-                    "            innerSize: '60%',",
-                    "            dataLabels: {",
-                    "                formatter: function () {",
-                    "                    // display only if larger than 1",
-                    "                    return '<b>' + this.point.name + ':</b> ' +",
-                    "                        this.point.options.porcentaje + '%';",
-                    "                }",
-                    "            },",
-                    "            id: 'versions'",
-                    "        }],",
-                    "    responsive: {",
-                    "        rules: [{",
-                    "            condition: {",
-                    "                maxWidth: 400,",
-                    "                marginBottom:20",
-                    "            },",
-                    "            chartOptions: {",
-                    "                series: [{",
-                    "                    id: 'versions',",
-                    "                    dataLabels: {",
-                    "                        enabled: false",
-                    "                    }",
-                    "                }]",
-                    "            }",
-                    "        }]",
-                    "    }",
-                    "});"
-                ]
-            },
-            "name": "fn_create_piechart",
-            "designerId": "f1541739-6cfc-4752-a80c-961679201c33"
-        },
-        {
             "type": "basiceventbinding",
             "reference": {
                 "name": "listeners",
@@ -452,87 +279,6 @@
             },
             "name": "onPnl_highchartRender",
             "designerId": "b746a8af-4ddd-48ff-8b9d-856542bc993c"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|params": [
-                    "records"
-                ],
-                "fn": "make_csv_linechart",
-                "implHandler": [
-                    "",
-                    "var ctx = Ext.getCmp('ctn_chartjs_line');",
-                    "var datasets=[];",
-                    "var dt = records[0].data.datasets;",
-                    "var csv=\"\";",
-                    "var colores=[];",
-                    "var header=\"\\n\";",
-                    "header+=\"dia\";",
-                    "for(var h in dt){",
-                    "    colores.push({color:dt[h].borderColor});",
-                    "    header+=\",\";",
-                    "    header+=dt[h].label;",
-                    "}",
-                    "header+=\"\\n\";",
-                    "csv+=header;",
-                    "for(var r in records[0].data.fechas){",
-                    "    var row=records[0].data.fechas[r];",
-                    "    for(var data in dt){",
-                    "        row+=\",\";",
-                    "        row+=dt[data].cantidad[r];",
-                    "    }",
-                    "    row+=\"\\n\";",
-                    "    csv+=row;",
-                    "}",
-                    "",
-                    "return [csv,colores];"
-                ]
-            },
-            "name": "make_csv_linechart",
-            "designerId": "0c516a6f-2daf-48d9-a24a-33794bc476c8"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "fn_reload_piechart_store",
-                "implHandler": [
-                    "var store = Ext.getStore('Store_Estados_Track');",
-                    "var records = store.data.items;",
-                    "this.fn_create_piechart(records);",
-                    ""
-                ]
-            },
-            "name": "fn_reload_piechart_store",
-            "designerId": "24c54b3f-bd37-4322-b292-d2bbac48b361"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "fn_reload_linechart_store",
-                "implHandler": [
-                    "var store = Ext.getStore('Store_Track');",
-                    "var records =store.data.items;",
-                    "this.fn_create_linechart(records);"
-                ]
-            },
-            "name": "fn_reload_linechart_store",
-            "designerId": "8a48623c-b329-4cbc-83ec-23f9cbd669ec"
         }
     ]
 }
