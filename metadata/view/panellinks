@@ -32,7 +32,7 @@
             "userConfig": {
                 "container|align": "stretch",
                 "flex": null,
-                "height": 450,
+                "height": 380,
                 "id": null,
                 "layout": "vbox",
                 "layout|flex": null,
@@ -52,7 +52,7 @@
                     "userConfig": {
                         "container|align": "stretch",
                         "layout": "hbox",
-                        "layout|flex": 1
+                        "layout|flex": 1.5
                     },
                     "name": "MyContainer18",
                     "designerId": "75646daa-91a9-4fa9-a020-e78c52197710",
@@ -65,6 +65,9 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "container|align": "stretch",
+                                "id": "video",
+                                "layout": "hbox",
                                 "layout|flex": 2
                             },
                             "name": "MyContainer20",
@@ -78,6 +81,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "id": "enlace3",
                                 "layout|flex": 1
                             },
                             "name": "MyContainer21",
@@ -260,22 +264,47 @@
                     "userConfig": {
                         "fn": "fn_load_links",
                         "implHandler": [
-                            "var templatelink2=this.fn_create_template({",
+                            "var templatelink3=this.fn_create_template({",
                             "    titulo:\"noticias UVI\",",
-                            "    url:\"www.google.com\",",
+                            "    url:\"http://www.semana.com/vida-moderna/articulo/sintomas-y-tratamiento-del-cancer-de-piel/484586\",",
                             "    abstract:\"lo que sea que deba ir de la noticia en resumen por qeu es asi\",",
-                            "    icono:\"https://www.nivea.es/-/media/global/advice/sun-protection/uv-radiation/uv-strahlung.jpg\"",
+                            "    icono:\"https://static.iris.net.co/semana/upload/images/2016/8/4/484584_1.jpg\"",
+                            "",
+                            "});",
+                            "var templatelink2=this.fn_create_template({",
+                            "    titulo:\"Cancer de piel, una amenaza prevenible\",",
+                            "    url:\"http://www.eluniversal.com.co/salud/cancer-de-piel-una-amenaza-prevenible-253675\",",
+                            "    abstract:\"El cáncer de piel, se define como el grupo de tumores que se originan en los tejidos de la piel y cuya causa principal es la exposición crónica al sol y a los rayos ultravioleta.\",",
+                            "    icono:\"http://www.eluniversal.com.co/sites/default/files/styles/630x415/public/201705/cancer-08.jpg?itok=Tekl0Cfy\"",
                             "",
                             "});",
                             "var templatelink=this.fn_create_template({",
-                            "    titulo:\"noticias UVI\",",
-                            "    url:\"www.google.com\",",
-                            "    abstract:\"lo que sea que deba ir de la noticia en resumen por qeu es asi\",",
-                            "    icono:\"https://www.nivea.es/-/media/global/advice/sun-protection/uv-radiation/uv-strahlung.jpg\"",
+                            "    titulo:\"Detectar a tiempo el cancer de piel, una forma de convatir esta enfermedad\",",
+                            "    url:\"http://caracol.com.co/programa/2016/07/30/sanamente/1469831760_330228.html\",",
+                            "    abstract:\"El Cáncer de Piel es principalmente causado por la exposición prolongada a rayos ultravioleta, por esta razón la educación es una herramienta importante para la prevención de la enfermedad, lo que lograría una detección temprana que podría cambiar la calidad de vida de un paciente.\",",
+                            "    icono:\"http://cr00.epimg.net/programa/imagenes/2016/07/30/sanamente/1469831760_330228_1469832149_noticia_normal.jpg\"",
                             "",
                             "});",
+                            "",
+                            "Ext.getCmp(\"enlace3\").add(templatelink3);",
                             "Ext.getCmp(\"enlace2\").add(templatelink2);",
-                            "Ext.getCmp(\"enlace\").add(templatelink);"
+                            "Ext.getCmp(\"enlace\").add(templatelink);",
+                            "",
+                            "",
+                            "//Video",
+                            "var video = new Ext.Component({",
+                            "            xtype: 'component',",
+                            "            id:'iframeVideo',",
+                            "            cls: 'component_apps',",
+                            "            hideMode:\"offsets\",",
+                            "            hidden:false,",
+                            "            autoEl: {",
+                            "                tag: 'iframe',",
+                            "                src:\"https://www.youtube.com/embed/aMEtQxkcLxs\"",
+                            "            }",
+                            "        });",
+                            "Ext.getCmp(\"video\").add(video);",
+                            ""
                         ]
                     },
                     "name": "fn_load_links",
