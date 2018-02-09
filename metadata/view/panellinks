@@ -14,6 +14,7 @@
         "height": null,
         "id": "panellinks",
         "layout": "vbox",
+        "margin": "20 20 20 20",
         "title": "My Panel",
         "width": null
     },
@@ -32,10 +33,10 @@
             "userConfig": {
                 "container|align": "stretch",
                 "flex": null,
-                "height": 380,
+                "height": null,
                 "id": null,
                 "layout": "vbox",
-                "layout|flex": null,
+                "layout|flex": 1,
                 "maxHeight": null,
                 "minHeight": null
             },
@@ -52,7 +53,7 @@
                     "userConfig": {
                         "container|align": "stretch",
                         "layout": "hbox",
-                        "layout|flex": 1.5
+                        "layout|flex": 2
                     },
                     "name": "MyContainer18",
                     "designerId": "75646daa-91a9-4fa9-a020-e78c52197710",
@@ -66,9 +67,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "container|align": "stretch",
+                                "container|pack": "center",
                                 "id": "video",
-                                "layout": "hbox",
-                                "layout|flex": 2
+                                "layout": "vbox",
+                                "layout|flex": 5
                             },
                             "name": "MyContainer20",
                             "designerId": "1c51be92-0dbe-4afd-bc8d-3a70631957e2"
@@ -81,8 +83,10 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "container|align": "bottom",
                                 "id": "enlace3",
-                                "layout|flex": 1
+                                "layout": "hbox",
+                                "layout|flex": 5
                             },
                             "name": "MyContainer21",
                             "designerId": "ae39fcac-371c-404f-9d05-f8f718dd88f8"
@@ -293,16 +297,17 @@
                             "",
                             "//Video",
                             "var video = new Ext.Component({",
-                            "            xtype: 'component',",
-                            "            id:'iframeVideo',",
-                            "            cls: 'component_apps',",
-                            "            hideMode:\"offsets\",",
-                            "            hidden:false,",
-                            "            autoEl: {",
-                            "                tag: 'iframe',",
-                            "                src:\"https://www.youtube.com/embed/aMEtQxkcLxs\"",
-                            "            }",
-                            "        });",
+                            "    xtype: 'component',",
+                            "    id:'iframeVideo',",
+                            "    cls: 'component_apps',",
+                            "    hideMode:\"offsets\",",
+                            "    height:400,",
+                            "    hidden:false,",
+                            "    autoEl: {",
+                            "        tag: 'iframe',",
+                            "        src:\"https://www.youtube.com/embed/aMEtQxkcLxs\"",
+                            "    }",
+                            "});",
                             "Ext.getCmp(\"video\").add(video);",
                             ""
                         ]
