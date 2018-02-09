@@ -12,6 +12,11 @@
     background: url('/image/sunEarth.jpg') no-repeat;
     background-size: 100% 100% !important;
 }
+.linkscustom{
+    color: black;
+    text-decoration-line: none;
+    
+}
 .general-template-container{
     background-color: white;
     cursor: pointer;
