@@ -224,7 +224,7 @@
                     "                },",
                     "                title: {",
                     "                    text: '<label style=\"font-size: 20px; font-family: Fira Sans, serif; font-weight: 600;\">'+",
-                    "                    'Radiación UV histórico</label>'",
+                    "                    'HISTORIAL RADIACION UV </label>'",
                     "                },",
                     "                legend: {",
                     "                    layout: 'vertical',",
