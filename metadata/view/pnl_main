@@ -54,21 +54,6 @@
                     "designerId": "eaa46174-e2ad-45e5-a594-024af376d5ac",
                     "cn": [
                         {
-                            "type": "Ext.Img",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "layout|flex": null,
-                                "src": "resources/image/leaf.svg",
-                                "width": 100
-                            },
-                            "name": "MyImg2",
-                            "designerId": "13827051-0a5e-43a3-8111-adacece59b9d"
-                        },
-                        {
                             "type": "Ext.button.Button",
                             "reference": {
                                 "name": "items",

@@ -1,0 +1,192 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "border": true,
+        "container|align": "stretch",
+        "container|pack": "center",
+        "designer|initialView": true,
+        "designer|userAlias": "pnl_UVI",
+        "designer|userClassName": "pnl_UVI",
+        "header": false,
+        "height": null,
+        "layout": "vbox",
+        "title": "My Panel",
+        "width": null
+    },
+    "name": "MyPanel3",
+    "designerId": "e28b9e1a-3ad9-437f-bea7-3772571414a5",
+    "viewControllerInstanceId": "a87c96b8-e4b3-4f3a-be41-aeb4ea53ac39",
+    "viewModelInstanceId": "da239c6c-616c-4c5a-bb65-99a286c9362c",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "hbox",
+                "layout|flex": 1
+            },
+            "name": "MyContainer14",
+            "designerId": "f252f237-753c-4793-af6c-4d86f907c3a7",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "layout": "vbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer16",
+                    "designerId": "b515dd74-a3e9-4eb8-9762-c241df234008",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "<h1>SVG Circle Progress</h1><h2>Based off of CSS3 circle progress bars</h2><div id=\"cont\" data-pct=\"100\"><svg id=\"svg\" width=\"200\" height=\"200\" viewPort=\"0 0 100 100\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">  <circle r=\"90\" cx=\"100\" cy=\"100\" fill=\"transparent\" stroke-dasharray=\"565.48\" stroke-dashoffset=\"0\"></circle>  <circle id=\"bar\" r=\"90\" cx=\"100\" cy=\"100\" fill=\"transparent\" stroke-dasharray=\"565.48\" stroke-dashoffset=\"0\"></circle></svg></div><label for=\"percent\">Type a percent!</label><input id=\"percent\" name=\"percent\">",
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer25",
+                            "configAlternates": {
+                                "html": "string"
+                            },
+                            "designerId": "a1911dd2-c29a-4f7f-8486-c21f44ffeb52"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "dock": "top",
+                                "layout": "vbox",
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer26",
+                            "designerId": "af3120e1-26f6-4432-8d26-c13274923893",
+                            "cn": [
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 201,
+                                        "src": "resources/image/uvi.jpg",
+                                        "width": 201
+                                    },
+                                    "name": "MyImg3",
+                                    "designerId": "1f9e4509-9392-4f33-bba8-739853bc5249"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "layout": "vbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer24",
+                    "designerId": "4dbead8a-709e-404d-a339-2b6b7ded8c4c",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": "text_title_infUVI",
+                                "cls": [
+                                    "text_title_infUVI"
+                                ],
+                                "dock": "top",
+                                "text": "Recomendaciones exposicion solar actual"
+                            },
+                            "name": "MyLabel2",
+                            "designerId": "809fab46-5a12-4195-9cbf-82ef650cd97e"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "text_var"
+                                ],
+                                "id": "text_var",
+                                "layout|flex": 1,
+                                "layout|margins": null,
+                                "text": "recomendaciones segun el indice UV actual"
+                            },
+                            "name": "MyLabel3",
+                            "designerId": "e7ff4b0c-16c5-4a53-8b6a-c5c071a9b523",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onText_varRender",
+                                        "implHandler": [
+                                            "/*var num_text = Ext.getStore(\"\");",
+                                            "store.load({",
+                                            "",
+                                            "",
+                                            "",
+                                            "});*/",
+                                            ""
+                                        ],
+                                        "name": "render",
+                                        "scope": "me"
+                                    },
+                                    "name": "onText_varRender",
+                                    "designerId": "caacb79f-82bd-4bb2-af83-8af3ce32f310"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

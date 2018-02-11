@@ -64,5 +64,24 @@
     color: #f0f0f0 !important;
 }
 .pnl-principal-style{
-    background: #f7f7f7;
+    background: white !important;
+}
+
+/*Estilos pnl_UVI*/
+.text_var{
+    display: block;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 25px;
+    font-family: merriweather;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    letter-spacing: 1px;
+}
+.text_title_infUVI{
+    font-family: sofia-pro, sans-serif;
+    color: rgb(174, 12, 214);
+    text-align: center;
 }

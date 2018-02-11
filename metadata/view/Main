@@ -7,7 +7,6 @@
     "codeClass": null,
     "userConfig": {
         "container|align": "stretch",
-        "designer|initialView": true,
         "designer|userAlias": "main",
         "designer|userClassName": "main",
         "id": "main",

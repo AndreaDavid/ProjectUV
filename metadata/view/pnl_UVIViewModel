@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnl_uvi",
+        "designer|userClassName": "pnl_UVIViewModel"
+    },
+    "designerId": "da239c6c-616c-4c5a-bb65-99a286c9362c"
+}

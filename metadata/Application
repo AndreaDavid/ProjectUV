@@ -24,7 +24,8 @@
             "vtn_register",
             "pnl_main",
             "pnl_graficas",
-            "panellinks"
+            "panellinks",
+            "pnl_UVI"
         ]
     },
     "name": "Application",
@@ -43,7 +44,7 @@
                 ],
                 "fn": "launch",
                 "implHandler": [
-                    "//ejecutar cuando se inicia la app",
+                    "/*//ejecutar cuando se inicia la app",
                     "Ext.getCmp(\"main\").hide();//oculta main",
                     "var store = Ext.getStore(\"store_login\");",
                     "store.load({",
@@ -68,7 +69,7 @@
                     "            }",
                     "        }",
                     "    }",
-                    "});"
+                    "});*/"
                 ]
             },
             "name": "launch",
