@@ -1,0 +1,17 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defer": false,
+        "designer|userClassName": "js_hc60fqm6",
+        "id": "stomp",
+        "url": "resources/js/sockjs-client/stomp.min.js",
+        "x-compile": true
+    },
+    "name": "js1",
+    "designerId": "446f7c53-6a45-467a-bb06-5e077dc1fb41"
+}

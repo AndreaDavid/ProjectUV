@@ -1,0 +1,17 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defer": false,
+        "designer|userClassName": "js_yoy1ml56",
+        "id": "jquery.min",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",
+        "x-compile": true
+    },
+    "name": "js1",
+    "designerId": "d741358c-9b20-4a51-9895-7b4cc9bb16b9"
+}
