@@ -7,6 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "container|align": "stretch",
+        "designer|initialView": true,
         "designer|userAlias": "main",
         "designer|userClassName": "main",
         "id": "main",
@@ -110,8 +111,13 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "bodyBorder": false,
+                                        "bodyCls": [
+                                            "bagroundWheater"
+                                        ],
                                         "border": true,
                                         "container|align": "stretch",
+                                        "headerOverCls": "headermain",
                                         "layout": "hbox",
                                         "layout|flex": 2.5,
                                         "modal": true,
@@ -144,7 +150,8 @@
                                                     "codeClass": null,
                                                     "userConfig": {
                                                         "height": null,
-                                                        "src": "resources/image/gifsun.gif",
+                                                        "imgCls": "imgWeather",
+                                                        "src": "resources/image/suntitle.gif",
                                                         "width": null
                                                     },
                                                     "name": "MyImg1",
@@ -160,10 +167,11 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "bodyPadding": 10,
-                                                "bodyStyle": [
-                                                    "background: rgba(195, 242, 224, 0.789)"
+                                                "baseCls": null,
+                                                "bodyCls": [
+                                                    "bagroundWheater"
                                                 ],
+                                                "bodyPadding": 10,
                                                 "container|align": "stretch",
                                                 "header": false,
                                                 "layout": "vbox",
@@ -182,30 +190,31 @@
                                                     },
                                                     "codeClass": null,
                                                     "userConfig": {
-                                                        "container|align": "stretchmax",
-                                                        "container|pack": "center",
+                                                        "container|align": "stretch",
+                                                        "container|pack": "end",
                                                         "layout": "hbox",
-                                                        "layout|flex": 3
+                                                        "layout|flex": 1
                                                     },
                                                     "name": "MyContainer4",
                                                     "designerId": "f06ca80d-d3e7-4e21-bbd9-4c428951cbef",
                                                     "cn": [
                                                         {
-                                                            "type": "Ext.Img",
+                                                            "type": "Ext.form.Label",
                                                             "reference": {
                                                                 "name": "items",
                                                                 "type": "array"
                                                             },
                                                             "codeClass": null,
                                                             "userConfig": {
-                                                                "flex": 1,
-                                                                "height": 201,
+                                                                "cls": [
+                                                                    "title_main"
+                                                                ],
                                                                 "layout|flex": 1,
-                                                                "src": "resources/image/TITULO.gif",
-                                                                "width": 201
+                                                                "margin": "35 0 0 0",
+                                                                "text": "Iniciar sesión"
                                                             },
-                                                            "name": "MyImg",
-                                                            "designerId": "5f2d9e8c-2977-449a-b464-82a0d5a717d9"
+                                                            "name": "MyLabel4",
+                                                            "designerId": "0cf3a491-7c08-4177-9a51-24aa8ba8fb0b"
                                                         }
                                                     ]
                                                 },
@@ -240,6 +249,7 @@
                                                                 "fieldLabel": "",
                                                                 "id": "correoLogin",
                                                                 "inputType": "email",
+                                                                "labelCls": null,
                                                                 "name": "correo"
                                                             },
                                                             "name": "MyTextField",
@@ -372,6 +382,7 @@
                                                             "codeClass": null,
                                                             "userConfig": {
                                                                 "id": "registrar",
+                                                                "margin": "0 0 0 10",
                                                                 "text": "Registrarme"
                                                             },
                                                             "name": "MyButton1",

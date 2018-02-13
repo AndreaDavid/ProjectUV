@@ -8,6 +8,10 @@
    
     width:100vw !important;
 }
+.headermain{
+    background-color:rgb(46, 27, 21);
+}
+
 .imgMain{
     background: url('/image/sunEarth.jpg') no-repeat;
     background-size: 100% 100% !important;
@@ -49,6 +53,21 @@
     margin-right:0px !important;
     font-size:12px !important;
     line-height: 12px !important;
+}
+.title_main{
+letter-spacing: 4px;
+font-size: 2em;
+text-align: center;
+color:#E64A19;
+}
+.bagroundWheater{
+    background:rgba(0, 0, 0, 0.3);
+}
+
+.imgWeather{
+
+    opacity: 0.6;
+
 }
 /*Estilos de iconos de los items del treelist*/
 .x-treelist-navigation .x-treelist-item-icon, .x-treelist-navigation .x-treelist-item-tool{

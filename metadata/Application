@@ -45,12 +45,12 @@
                 "fn": "launch",
                 "implHandler": [
                     "ProjectUV.globals = {",
-                    "    ",
+                    "",
                     "    MENSAJEUNO:\"mensaje uno\"",
-                    "    ",
+                    "",
                     "};",
                     "",
-                    "/*//ejecutar cuando se inicia la app",
+                    "//ejecutar cuando se inicia la app",
                     "Ext.getCmp(\"main\").hide();//oculta main",
                     "var store = Ext.getStore(\"store_login\");",
                     "store.load({",
@@ -75,7 +75,7 @@
                     "            }",
                     "        }",
                     "    }",
-                    "});*/"
+                    "});"
                 ]
             },
             "name": "launch",

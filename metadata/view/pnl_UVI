@@ -9,7 +9,6 @@
         "border": true,
         "container|align": "stretch",
         "container|pack": "center",
-        "designer|initialView": true,
         "designer|userAlias": "pnl_UVI",
         "designer|userClassName": "pnl_UVI",
         "header": false,
