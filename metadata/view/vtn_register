@@ -7,6 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "autoShow": true,
+        "border": false,
         "designer|userAlias": "vtn_register",
         "designer|userClassName": "vtn_register",
         "height": 380,
@@ -28,6 +29,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "bodyBorder": true,
                 "bodyPadding": 10,
                 "container|align": "center",
                 "container|pack": "center",
@@ -218,6 +220,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "id": "registrarme",
+                                "margin": "0 0 0 10",
                                 "text": "Registrarme"
                             },
                             "name": "MyButton4",

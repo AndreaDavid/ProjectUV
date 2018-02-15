@@ -42,10 +42,11 @@
                 "border": null,
                 "componentCls": null,
                 "container|align": "middle",
+                "container|pack": "center",
                 "container|padding": "0 5 0 0",
                 "designer|displayName": "ctn_header",
                 "disabledCls": null,
-                "height": 40,
+                "height": 50,
                 "layout": "hbox",
                 "layout|flex": null,
                 "overCls": null,
@@ -69,9 +70,14 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|flex": null,
-                        "text": "RADIACION UV"
+                        "margin": null,
+                        "style": "font-family: sofia-pro, sans-serif;   letter-spacing: 5px;   font-size: 3em;   color: hsla(33, 95%, 45%, 1);",
+                        "text": "REGISTROS RADIACIÓN ULTRAVIOLETA"
                     },
                     "name": "MyLabel",
+                    "configAlternates": {
+                        "style": "string"
+                    },
                     "designerId": "cc6a2f43-18fb-4483-bf5b-d809a90e181a"
                 }
             ]
@@ -90,6 +96,7 @@
                 "height": 400,
                 "layout": "hbox",
                 "layout|flex": null,
+                "margin": "40 0 0 0",
                 "maxHeight": null,
                 "minHeight": null
             },
@@ -148,7 +155,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "text": "indice UV"
+                                "text": "Ubicacion"
                             },
                             "name": "MyLabel1",
                             "designerId": "9fc01352-2e91-4f98-9d7e-cdd0eedcbc70"
@@ -174,7 +181,7 @@
                     "var store = Ext.getStore('store_data');",
                     "store.load({",
                     "    params:{",
-                    "        range:500",
+                    "        range:ProjectUV.globals.DEFAULTRANGE",
                     "    },",
                     "    callback: function(records, operation, success) {",
                     "        if(records.length>0){",
@@ -217,7 +224,6 @@
                     "                }",
                     "            });",
                     "",
-                    "",
                     "            Highcharts.chart(\"ctn_highchart-targetEl\", {",
                     "                chart: {",
                     "                    type: 'areaspline'",
@@ -225,7 +231,9 @@
                     "                title: {",
                     "                    text: '<label style=\"font-size: 20px; font-family: Fira Sans, serif; font-weight: 600;\">'+",
                     "                    'HISTORIAL RADIACION UV </label>'",
+                    "",
                     "                },",
+                    "",
                     "                legend: {",
                     "                    layout: 'vertical',",
                     "                    align: 'right',",

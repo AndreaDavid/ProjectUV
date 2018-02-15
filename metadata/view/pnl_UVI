@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "border": true,
+        "border": false,
         "container|align": "stretch",
         "container|pack": "center",
         "designer|userAlias": "pnl_UVI",
@@ -60,9 +60,45 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "container|align": "center",
+                                "layout": "vbox",
+                                "layout|flex": 0.6
+                            },
+                            "name": "MyContainer27",
+                            "designerId": "82a279c9-97c7-4060-b798-a10f2a32ad97",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "text_title_infUVI"
+                                        ],
+                                        "dock": null,
+                                        "layout|flex": 0.7,
+                                        "margin": "15 0 0 0",
+                                        "text": "UVI ACTUAL"
+                                    },
+                                    "name": "MyLabel5",
+                                    "designerId": "bbc8c02f-24c0-40ac-820e-882d93e19cfa"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
                                 "html": "<div id=\"cont\" data-pct=\"\"><svg id=\"svg\" width=\"200\" height=\"200\" viewPort=\"0 0 100 100\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">  <circle r=\"90\" cx=\"100\" cy=\"100\" fill=\"transparent\" stroke-dasharray=\"565.48\" stroke-dashoffset=\"0\"></circle>  <circle id=\"bar\" r=\"90\" cx=\"100\" cy=\"100\" fill=\"transparent\" stroke-dasharray=\"565.48\" stroke-dashoffset=\"0\"></circle></svg></div>",
                                 "id": "containerUVI",
-                                "layout|flex": 1
+                                "layout|flex": 3
                             },
                             "name": "MyContainer25",
                             "configAlternates": {
@@ -81,7 +117,7 @@
                                 "container|align": "stretch",
                                 "dock": "top",
                                 "layout": "vbox",
-                                "layout|flex": 1
+                                "layout|flex": 2
                             },
                             "name": "MyContainer26",
                             "designerId": "af3120e1-26f6-4432-8d26-c13274923893",
@@ -95,8 +131,8 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "height": 201,
-                                        "src": "resources/image/uvi.jpg",
-                                        "width": 201
+                                        "src": "resources/image/rangos.jpg",
+                                        "width": null
                                     },
                                     "name": "MyImg3",
                                     "designerId": "1f9e4509-9392-4f33-bba8-739853bc5249"
@@ -129,12 +165,15 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "baseCls": "text_title_infUVI",
+                                "baseCls": null,
                                 "cls": [
                                     "text_title_infUVI"
                                 ],
-                                "dock": "top",
-                                "text": "Recomendaciones exposicion solar actual"
+                                "dock": null,
+                                "layout|flex": 2,
+                                "margin": null,
+                                "maxWidth": null,
+                                "text": "Recomendaciones sobre protección solar"
                             },
                             "name": "MyLabel2",
                             "designerId": "809fab46-5a12-4195-9cbf-82ef650cd97e"
@@ -151,7 +190,7 @@
                                     "text_var"
                                 ],
                                 "id": "text_var",
-                                "layout|flex": 1,
+                                "layout|flex": 8,
                                 "layout|margins": null,
                                 "text": "recomendaciones segun el indice UV actual"
                             },

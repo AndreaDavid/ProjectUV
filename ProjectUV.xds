@@ -9,10 +9,10 @@
         "urlPrefix": "http://localhost:1841/",
         "canvasControls": {
             "viewportSize": {
-                "name": "Small",
+                "name": "Auto Expand",
                 "builtIn": true,
-                "height": 600,
-                "width": 800
+                "height": null,
+                "width": null
             }
         },
         "exportPath": "",

@@ -6,12 +6,18 @@
     },
     "codeClass": null,
     "userConfig": {
+        "baseCls": null,
         "container|align": "stretch",
+        "container|pack": "center",
         "designer|initialView": true,
         "designer|userAlias": "main",
         "designer|userClassName": "main",
+        "html": null,
         "id": "main",
         "layout": "vbox"
+    },
+    "configAlternates": {
+        "html": "string"
     },
     "designerId": "dd4a615a-67b9-4c8a-b269-1409e449e923",
     "viewControllerInstanceId": "14978ea9-9d9d-4364-b8b6-fcc51a53ee33",
@@ -25,14 +31,24 @@
             },
             "codeClass": null,
             "userConfig": {
+                "baseCls": null,
+                "cls": [
+                    "main"
+                ],
                 "container|align": "stretch",
                 "flex": 1,
                 "header": false,
+                "html": "",
                 "id": "ctn_main",
                 "layout": "vbox",
-                "layout|flex": 1
+                "layout|flex": 1,
+                "style": "background: url('../image/fondo.gif');"
             },
             "name": "MyPanel2",
+            "configAlternates": {
+                "html": "string",
+                "style": "string"
+            },
             "designerId": "95b3603c-ed9c-4f27-91a6-4d33a8ce270b",
             "cn": [
                 {
@@ -44,11 +60,9 @@
                     "codeClass": null,
                     "userConfig": {
                         "baseCls": null,
-                        "cls": [
-                            "main"
-                        ],
                         "componentCls": null,
                         "container|align": "stretch",
+                        "html": "<canvas id=\"canvas\" width=\"1450\" height=\"900\"></canvas> \t<h1>UV.RADIATION</h1> \t<link href=\"https://fonts.googleapis.com/css?family=Orbitron:700\" rel=\"stylesheet\">",
                         "id": "pnl_login",
                         "layout": "vbox",
                         "layout|flex": 1,
@@ -57,7 +71,8 @@
                     },
                     "name": "MyContainer11",
                     "configAlternates": {
-                        "style": "string"
+                        "style": "string",
+                        "html": "string"
                     },
                     "designerId": "0cbef2b3-6489-475c-885d-ff9bc127fd1f",
                     "cn": [
@@ -69,7 +84,11 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "baseCls": null,
+                                "baseCls": "universe",
+                                "cls": [
+                                    "universe"
+                                ],
+                                "id": null,
                                 "layout|flex": 2
                             },
                             "name": "MyContainer",
@@ -115,11 +134,13 @@
                                         "bodyCls": [
                                             "bagroundWheater"
                                         ],
-                                        "border": true,
+                                        "border": false,
                                         "container|align": "stretch",
+                                        "frameHeader": false,
+                                        "header": false,
                                         "headerOverCls": "headermain",
                                         "layout": "hbox",
-                                        "layout|flex": 2.5,
+                                        "layout|flex": 2,
                                         "modal": true,
                                         "title": "Login"
                                     },
@@ -136,7 +157,7 @@
                                             "userConfig": {
                                                 "baseCls": null,
                                                 "layout": "card",
-                                                "layout|flex": 1
+                                                "layout|flex": 3
                                             },
                                             "name": "MyContainer5",
                                             "designerId": "597d618e-220b-4cf9-ab79-4faf709153be",
@@ -175,7 +196,7 @@
                                                 "container|align": "stretch",
                                                 "header": false,
                                                 "layout": "vbox",
-                                                "layout|flex": 1,
+                                                "layout|flex": 2,
                                                 "style": null,
                                                 "title": "My Form"
                                             },
@@ -328,6 +349,7 @@
                                                                             "",
                                                                             "                Ext.getCmp(\"ctn_main\").removeAll();",
                                                                             "                Ext.getCmp(\"ctn_main\").add(Ext.widget(\"pnl_main\"));",
+                                                                            "                ProjectUV.app.fn_connect_websocket();",
                                                                             "            },",
                                                                             "            failure:function(frm,out){//negacion de la peticion",
                                                                             "",

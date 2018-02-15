@@ -65,10 +65,16 @@
                                 "iconCls": "icon-menu",
                                 "id": "main-navigation-btn",
                                 "layout|flex": null,
+                                "maxWidth": null,
+                                "style": "background-color:#37474F",
                                 "text": null,
-                                "ui": "header"
+                                "ui": "header",
+                                "width": 103
                             },
                             "name": "MyButton1",
+                            "configAlternates": {
+                                "style": "string"
+                            },
                             "designerId": "0139a059-7e66-465f-93d2-a311d9c36544",
                             "cn": [
                                 {
@@ -156,23 +162,6 @@
                                     "designerId": "89ba2436-d687-4943-82d4-9478b92af8fa"
                                 }
                             ]
-                        },
-                        {
-                            "type": "Ext.form.Label",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "hidden": true,
-                                "id": "lbl_nombre_app",
-                                "layout|flex": 1,
-                                "margin": "0 0 0 15",
-                                "text": "NombreApp"
-                            },
-                            "name": "MyLabel42",
-                            "designerId": "5ff1a154-a803-4aa0-aadf-daa76397d3b9"
                         }
                     ]
                 },
@@ -213,9 +202,34 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "border": "5 0 0 0",
+                                "dock": null,
+                                "layout|flex": null,
+                                "margin": null,
+                                "style": "background: #37474F;   color: #ffffff;   font-weight: bold;  text-align: center;",
+                                "text": "Usuario",
+                                "width": 70
+                            },
+                            "name": "MyLabel7",
+                            "configAlternates": {
+                                "style": "string"
+                            },
+                            "designerId": "2c749cc6-a0d6-43db-a1de-d4edf7823444"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "nameUser"
+                                ],
                                 "dock": null,
                                 "layout|flex": 1,
-                                "margin": null,
+                                "margin": "0 0 0 10",
                                 "text": "Nombre del Usuario"
                             },
                             "name": "MyLabel",
@@ -519,10 +533,13 @@
                         "id": "ctn_container",
                         "layout": "fit",
                         "layout|flex": 1,
-                        "margin": "0 20 0 0",
-                        "scrollable": null
+                        "margin": "30 10 0 20",
+                        "scrollable": true
                     },
                     "name": "MyPanel1",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
                     "designerId": "0eeca407-f33d-4010-85b7-01f545b8e3e5"
                 }
             ]
