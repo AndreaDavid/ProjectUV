@@ -93,7 +93,7 @@
                 "container|align": "stretch",
                 "designer|displayName": "ctn_contenido",
                 "flex": null,
-                "height": 400,
+                "height": 480,
                 "layout": "hbox",
                 "layout|flex": null,
                 "margin": "40 0 0 0",
@@ -111,23 +111,172 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "autoRender": true,
-                        "baseCls": "pnl-principal-style",
                         "container|align": "stretch",
-                        "designer|createAlias": null,
-                        "designer|displayName": "ctn_highchart",
-                        "flex": 1.7,
-                        "height": null,
-                        "id": "ctn_highchart",
-                        "itemId": null,
-                        "layout": "hbox",
-                        "layout|flex": 1.7,
-                        "maxWidth": null,
-                        "minWidth": null,
-                        "width": null
+                        "layout": "vbox",
+                        "layout|flex": 1.7
                     },
-                    "name": "MyContainer15",
-                    "designerId": "11251b63-def5-4615-b33c-c8e1e9743230"
+                    "name": "MyContainer30",
+                    "designerId": "7c57ef65-935e-4e42-822e-2b0277cb804a",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "autoRender": true,
+                                "baseCls": "pnl-principal-style",
+                                "container|align": "stretch",
+                                "designer|createAlias": null,
+                                "designer|displayName": "ctn_highchart",
+                                "flex": 1.7,
+                                "height": null,
+                                "id": "ctn_highchart",
+                                "itemId": null,
+                                "layout": "hbox",
+                                "layout|flex": 1.7,
+                                "margin": null,
+                                "maxWidth": null,
+                                "minWidth": null,
+                                "width": null
+                            },
+                            "name": "MyContainer15",
+                            "designerId": "11251b63-def5-4615-b33c-c8e1e9743230"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "container|pack": "center",
+                                "height": 40,
+                                "layout": "hbox",
+                                "layout|flex": null,
+                                "margin": "10 0 0 0"
+                            },
+                            "name": "MyContainer31",
+                            "designerId": "fb4efb8f-0bbf-4b26-9f46-f88a9bc94d37",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "margin": "0 10 0 10",
+                                        "text": "último dia"
+                                    },
+                                    "name": "MyButton6",
+                                    "designerId": "2e6da1bf-9b5d-4ed0-ad1d-8bac56e678c8",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick",
+                                                "implHandler": [
+                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.DEFAULTRANGE);",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick",
+                                            "designerId": "4e7de843-41bb-469b-b038-46577106fa0e"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "semana",
+                                        "layout|flex": 1,
+                                        "layout|margins": null,
+                                        "margin": "0 10 0 10",
+                                        "text": "última semana"
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "d862354d-2a9c-44eb-8aa0-a03def251349",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onSemanaClick",
+                                                "implHandler": [
+                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.SEMANA);",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onSemanaClick",
+                                            "designerId": "284195a3-cbf4-471e-aa9f-0118c61a82f9"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "mes",
+                                        "layout|flex": 1,
+                                        "margin": "0 10 0 10",
+                                        "text": "último mes"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "6586ba20-bbab-44d3-9795-a7fcd372779a",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMesClick",
+                                                "implHandler": [
+                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.MES);",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onMesClick",
+                                            "designerId": "cfc2836e-60d8-464c-82c6-aa9ae8e82f17"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.container.Container",
@@ -172,6 +321,9 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|params": [
+                    "rango"
+                ],
                 "fn": "fn_create_linechart",
                 "implHandler": [
                     "",
@@ -181,7 +333,8 @@
                     "var store = Ext.getStore('store_data');",
                     "store.load({",
                     "    params:{",
-                    "        range:ProjectUV.globals.DEFAULTRANGE",
+                    "        range:rango",
+                    "",
                     "    },",
                     "    callback: function(records, operation, success) {",
                     "        if(records.length>0){",
@@ -281,7 +434,7 @@
             "userConfig": {
                 "fn": "onPnl_highchartRender",
                 "implHandler": [
-                    "this.fn_create_linechart();"
+                    "this.fn_create_linechart(ProjectUV.globals.DEFAULTRANGE);"
                 ],
                 "name": "render",
                 "scope": "me"

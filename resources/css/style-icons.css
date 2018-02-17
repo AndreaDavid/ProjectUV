@@ -66,3 +66,9 @@
 .icon-exit:before {
   content: "\ea14";
 }
+.iconLocation{
+  content: "\e947";
+}
+.iconInf{
+  content: "\e904";
+}
