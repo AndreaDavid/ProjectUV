@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "map_panel",
+        "designer|userClassName": "map_panelViewController"
+    },
+    "designerId": "f6b26033-3373-4932-813c-3fc3e0d2c341"
+}
