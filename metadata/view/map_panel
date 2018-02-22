@@ -56,7 +56,7 @@
                 "implHandler": [
                     "var uluru = {lat: 2.9376189, lng: -75.3074082};",
                     "  var map = new google.maps.Map(document.getElementById('mapa'), {",
-                    "    zoom: 28,",
+                    "    zoom: 10,",
                     "    center: uluru",
                     "  });",
                     "  var marker = new google.maps.Marker({",
