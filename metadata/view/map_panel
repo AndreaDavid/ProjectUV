@@ -14,6 +14,7 @@
         "height": null,
         "id": "map_panel",
         "layout": "vbox",
+        "margin": "0 20 20 20 ",
         "title": "My Panel",
         "width": null
     },
@@ -44,21 +45,6 @@
             "designerId": "1b907cdc-00ad-4d36-ab84-82313c260dca"
         },
         {
-            "type": "Ext.form.Label",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "html": "<a id=\"fancybutton\" class=\"icon map_icon\">Load Map</a>",
-                "layout|flex": 1,
-                "text": null
-            },
-            "name": "MyLabel8",
-            "designerId": "882d8ab0-4ac0-48e7-99d8-72b8e26a5e24"
-        },
-        {
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -70,7 +56,7 @@
                 "implHandler": [
                     "var uluru = {lat: 2.9376189, lng: -75.3074082};",
                     "  var map = new google.maps.Map(document.getElementById('mapa'), {",
-                    "    zoom: 8,",
+                    "    zoom: 28,",
                     "    center: uluru",
                     "  });",
                     "  var marker = new google.maps.Marker({",
