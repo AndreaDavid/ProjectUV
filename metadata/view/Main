@@ -32,6 +32,9 @@
             "codeClass": null,
             "userConfig": {
                 "baseCls": null,
+                "bodyCls": [
+                    "main"
+                ],
                 "cls": [
                     "main"
                 ],
@@ -42,7 +45,7 @@
                 "id": "ctn_main",
                 "layout": "vbox",
                 "layout|flex": 1,
-                "style": "background: url('../image/fondo.gif');"
+                "style": null
             },
             "name": "MyPanel2",
             "configAlternates": {
@@ -62,7 +65,7 @@
                         "baseCls": null,
                         "componentCls": null,
                         "container|align": "stretch",
-                        "html": "<canvas id=\"canvas\" width=\"1450\" height=\"900\"></canvas> \t<h1>UV.RADIATION</h1> \t<link href=\"https://fonts.googleapis.com/css?family=Orbitron:700\" rel=\"stylesheet\">",
+                        "html": "",
                         "id": "pnl_login",
                         "layout": "vbox",
                         "layout|flex": 1,
@@ -171,7 +174,7 @@
                                                     "codeClass": null,
                                                     "userConfig": {
                                                         "height": null,
-                                                        "imgCls": "imgWeather",
+                                                        "imgCls": null,
                                                         "src": "resources/image/suntitle.gif",
                                                         "width": null
                                                     },

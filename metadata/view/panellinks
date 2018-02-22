@@ -119,7 +119,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "border": "0 0 15 0",
+                                "border": null,
                                 "container|align": "middle",
                                 "container|padding": null,
                                 "id": "enlace3",
@@ -155,6 +155,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "border": null,
                                 "container|align": "middle",
                                 "dock": null,
                                 "id": "enlace",
@@ -172,6 +173,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "border": null,
                                 "container|align": "middle",
                                 "dock": null,
                                 "id": "enlace2",
