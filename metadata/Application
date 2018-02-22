@@ -25,7 +25,8 @@
             "pnl_main",
             "pnl_graficas",
             "panellinks",
-            "pnl_UVI"
+            "pnl_UVI",
+            "map_panel"
         ]
     },
     "name": "Application",
@@ -125,7 +126,7 @@
                     "    iconCls: 'icon-stats-dots',",
                     "    leaf: true",
                     "});",
-                    "",
+                    "/*",
                     "node.appendChild({",
                     "    text: '<label data-qtip=graficas>Graficas ultima semana</label>',",
                     "    id: \"graficasSemana\",",
@@ -151,11 +152,11 @@
                     "    id: \"inf2\",",
                     "    iconCls: 'iconInf',",
                     "    leaf: true",
-                    "});",
+                    "});*/",
                     "node.appendChild({",
                     "    text: '<label data-qtip=graficas>informacion</label>',",
                     "    id: \"informacion\",",
-                    "    iconCls: 'icon-info:before',",
+                    "    iconCls: 'icon-info',",
                     "    leaf: true",
                     "});",
                     "",
@@ -367,6 +368,23 @@
             },
             "name": "fn_fondo_main",
             "designerId": "1d45ad80-f579-486c-babf-5e3c759f5f51"
+        },
+        {
+            "type": "Ext.Loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "paths": [
+                    "{",
+                    "'Ext.map':'resources/js/ux/map/google'",
+                    "}"
+                ]
+            },
+            "name": "Loader15",
+            "designerId": "cffbf0cc-654b-4580-aacf-d29ac4e27a38"
         }
     ]
 }

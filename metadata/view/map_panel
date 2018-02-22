@@ -1,0 +1,104 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "map_panel",
+        "designer|userClassName": "map_panel",
+        "flex": null,
+        "header": false,
+        "height": null,
+        "id": "map_panel",
+        "layout": "vbox",
+        "title": "My Panel",
+        "width": null
+    },
+    "name": "MyPanel3",
+    "designerId": "576e487d-fdc9-4512-8dc1-7d258e266744",
+    "viewControllerInstanceId": "f6b26033-3373-4932-813c-3fc3e0d2c341",
+    "viewModelInstanceId": "37f1bd10-16e1-4787-bcfe-438a8d663778",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "flex": 1,
+                "html": "<script> function initMap() {         var uluru = {lat: 2.9376189, lng: -75.3074082};         var map = new google.maps.Map(document.getElementById('mapa'), {           zoom: 4,           center: uluru         });         var marker = new google.maps.Marker({           position: uluru,           map: map         });       } </script> <script async defer   src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyABnlrfH6S8yVjN1Onis3zCSqstiymlN5g&callback=initMap\"> </script>  <div id=\"mapa\"></div>",
+                "id": "mapa",
+                "layout": "vbox",
+                "layout|flex": null
+            },
+            "name": "MyContainer14",
+            "configAlternates": {
+                "html": "string"
+            },
+            "designerId": "1b907cdc-00ad-4d36-ab84-82313c260dca"
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "<a id=\"fancybutton\" class=\"icon map_icon\">Load Map</a>",
+                "layout|flex": 1,
+                "text": null
+            },
+            "name": "MyLabel8",
+            "designerId": "882d8ab0-4ac0-48e7-99d8-72b8e26a5e24"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "cargar_mapa",
+                "implHandler": [
+                    "var uluru = {lat: 2.9376189, lng: -75.3074082};",
+                    "  var map = new google.maps.Map(document.getElementById('mapa'), {",
+                    "    zoom: 8,",
+                    "    center: uluru",
+                    "  });",
+                    "  var marker = new google.maps.Marker({",
+                    "    position: uluru,",
+                    "    map: map",
+                    "  });"
+                ]
+            },
+            "name": "cargar_mapa",
+            "designerId": "ae90c4fe-2694-47b7-8221-a32d0cb33dae"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMap_panelAfterRender",
+                "implHandler": [
+                    "Ext.getCmp(\"map_panel\").cargar_mapa();"
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "name": "onMap_panelAfterRender",
+            "designerId": "5ee0d9a8-131b-4589-a555-40ea3d72d7bd"
+        }
+    ]
+}

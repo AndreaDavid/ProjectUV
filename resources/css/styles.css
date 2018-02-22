@@ -113,5 +113,9 @@ color:#E64A19;
     font-family: sofia-pro, sans-serif,;
     width:400px;
 }
+#map {
+  height: 400px;
+  width: 100%;
+ }
 
 

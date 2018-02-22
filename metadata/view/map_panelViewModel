@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "map_panel",
+        "designer|userClassName": "map_panelViewModel"
+    },
+    "designerId": "37f1bd10-16e1-4787-bcfe-438a8d663778"
+}
