@@ -207,6 +207,46 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onPanelAfterRender",
+                "implHandler": [
+                    "var store = Ext.getStore(\"store_last_uvi\");",
+                    "store.load({",
+                    "    callback: function(records, operation, success){//traer",
+                    "        if(success){",
+                    "           ProjectUV.app.fn_actualizar_uvi(records[0].uvi);",
+                    "        }",
+                    "        else{",
+                    "            if(operation===undefined||operation.error!==\"noSesion\"){",
+                    "                if(Ext.getCmp(\"toast\")===undefined){",
+                    "                    Ext.toast({",
+                    "                        timeout: 2000,",
+                    "                        id:\"toast\",",
+                    "                        html: '<center>'+ProjectUV.globals.MENSAJE_ERROR+'</center>',",
+                    "                        title: 'Alerta',",
+                    "                        width: 300,",
+                    "                        align: 't'",
+                    "                    });",
+                    "                }",
+                    "            }",
+                    "        }",
+                    "    }",
+                    "});",
+                    ""
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "name": "onPanelAfterRender",
+            "designerId": "eac5dad6-6f0b-482c-9650-eec1b5f27ed4"
         }
     ]
 }

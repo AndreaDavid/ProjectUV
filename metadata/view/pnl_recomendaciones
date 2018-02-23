@@ -288,7 +288,7 @@
                     "Ext.getCmp(\"imagenUVI\").setSrc(datos.img);",
                     "Ext.getCmp(\"pielClara\").setValue(datos.pielClara);",
                     "Ext.getCmp(\"pielOscura\").setValue(datos.pielOscura);",
-                    "Ext.getCmp(\"recomendacion\").setValue(recomendacion);",
+                    "Ext.getCmp(\"recomendacion\").setValue(datos.recomendacion); //estaba mal",
                     "",
                     "this.show();",
                     ""

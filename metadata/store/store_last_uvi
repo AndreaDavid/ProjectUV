@@ -1,0 +1,50 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "store_last_uvi",
+        "model": "model_lecturas",
+        "storeId": "store_last_uvi"
+    },
+    "name": "MyJsonStore",
+    "designerId": "2e6ad20f-763b-4ebe-a2fd-bb0205478162",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{",
+                    "read:'raspberrycontroller/findLastTrackDataUvi.action'",
+                    "}"
+                ],
+                "designer|displayName": "lastUviProxi"
+            },
+            "name": "MyAjaxProxy1",
+            "designerId": "c60fe743-e096-42c6-8874-1cde66a0df60",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "50966678-ecc8-43bb-ade0-bd2e7ba235cc"
+                }
+            ]
+        }
+    ]
+}
