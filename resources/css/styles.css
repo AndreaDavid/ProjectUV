@@ -1,12 +1,11 @@
 ﻿@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 .main{
     background: url('../image/fondo1.gif') no-repeat !important;
-    background-size: cover !important; 
+     background-size: cover !important; 
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
-    height:100vh;
-    width:100vw;
+    width:100vw !important;
 }
 .headermain{
     background-color:rgb(46, 27, 21);
@@ -73,7 +72,7 @@ color:#E64A19;
     border-radius: 5px;
 }
 
-¿
+
 /*Estilos de iconos de los items del treelist*/
 .x-treelist-navigation .x-treelist-item-icon, .x-treelist-navigation .x-treelist-item-tool{
     color:#cbe5f1 !important;
@@ -90,7 +89,9 @@ color:#E64A19;
 .pnl-principal-style{
     background: white !important;
 }
-
+.justifyText{
+    text-align : justify; 
+}
 /*Estilos pnl_UVI*/
 .text_var{
     display: block;

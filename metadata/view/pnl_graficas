@@ -308,6 +308,20 @@
                             },
                             "name": "MyLabel1",
                             "designerId": "9fc01352-2e91-4f98-9d7e-cdd0eedcbc70"
+                        },
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1
+                            },
+                            "name": "map_panel1",
+                            "designerId": "3dd2b67c-f1b5-49b1-8cce-f2241baadfc7",
+                            "masterInstanceId": "576e487d-fdc9-4512-8dc1-7d258e266744"
                         }
                     ]
                 }
