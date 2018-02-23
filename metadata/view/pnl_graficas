@@ -38,6 +38,28 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": [
+                    "imgLogo"
+                ],
+                "container|align": "center",
+                "container|pack": "center",
+                "height": 80,
+                "layout": "vbox",
+                "layout|flex": 1,
+                "maxHeight": 80,
+                "minHeight": 80
+            },
+            "name": "MyContainer17",
+            "designerId": "fc9f18be-130b-4273-a8ae-cbcf1142d0c8"
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
                 "baseCls": "general-panel-header-container",
                 "border": null,
                 "componentCls": null,
@@ -172,7 +194,7 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "layout|flex": 1,
-                                        "margin": "0 10 0 10",
+                                        "margin": "0 15 0 15",
                                         "text": "último dia"
                                     },
                                     "name": "MyButton6",
@@ -210,7 +232,7 @@
                                         "id": "semana",
                                         "layout|flex": 1,
                                         "layout|margins": null,
-                                        "margin": "0 10 0 10",
+                                        "margin": "0 15 0 15",
                                         "text": "última semana"
                                     },
                                     "name": "MyButton2",
@@ -247,7 +269,7 @@
                                     "userConfig": {
                                         "id": "mes",
                                         "layout|flex": 1,
-                                        "margin": "0 10 0 10",
+                                        "margin": "0 15 0 15",
                                         "text": "último mes"
                                     },
                                     "name": "MyButton5",
@@ -286,7 +308,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "container|align": "center",
+                        "container|align": "stretch",
                         "designer|displayName": "chart_pie",
                         "flex": 1,
                         "id": "chart_pie_highchart",
@@ -319,7 +341,7 @@
                             "userConfig": {
                                 "layout|flex": 1
                             },
-                            "name": "map_panel1",
+                            "name": "map_panel2",
                             "designerId": "3dd2b67c-f1b5-49b1-8cce-f2241baadfc7",
                             "masterInstanceId": "576e487d-fdc9-4512-8dc1-7d258e266744"
                         }

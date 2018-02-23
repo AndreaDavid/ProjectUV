@@ -149,7 +149,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "container|align": "center",
+                        "container|align": "stretch",
                         "container|pack": "center",
                         "layout": "vbox",
                         "layout|flex": 1
@@ -170,7 +170,7 @@
                                     "text_title_infUVI"
                                 ],
                                 "dock": null,
-                                "layout|flex": 2,
+                                "layout|flex": 1,
                                 "margin": null,
                                 "maxWidth": null,
                                 "text": "Recomendaciones sobre protección solar"
@@ -179,47 +179,28 @@
                             "designerId": "809fab46-5a12-4195-9cbf-82ef650cd97e"
                         },
                         {
-                            "type": "Ext.form.Label",
+                            "type": "Ext.container.Container",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "cls": [
-                                    "text_var"
-                                ],
-                                "id": "text_var",
-                                "layout|flex": 8,
-                                "layout|margins": null,
-                                "text": "recomendaciones segun el indice UV actual"
+                                "layout|flex": 8
                             },
-                            "name": "MyLabel3",
-                            "designerId": "e7ff4b0c-16c5-4a53-8b6a-c5c071a9b523",
+                            "name": "MyContainer37",
+                            "designerId": "6a423eac-17b8-4a0f-8722-fefc021af8df",
                             "cn": [
                                 {
-                                    "type": "basiceventbinding",
+                                    "type": "linkedinstance",
                                     "reference": {
-                                        "name": "listeners",
+                                        "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
-                                    "userConfig": {
-                                        "fn": "onText_varRender",
-                                        "implHandler": [
-                                            "/*var num_text = Ext.getStore(\"\");",
-                                            "store.load({",
-                                            "",
-                                            "",
-                                            "",
-                                            "});*/",
-                                            ""
-                                        ],
-                                        "name": "render",
-                                        "scope": "me"
-                                    },
-                                    "name": "onText_varRender",
-                                    "designerId": "caacb79f-82bd-4bb2-af83-8af3ce32f310"
+                                    "name": "pnl_recomendaciones1",
+                                    "designerId": "209af2fe-ed09-454f-9649-fb8b30784208",
+                                    "masterInstanceId": "95fcd542-6b31-48b5-af03-3ef1d06a9813"
                                 }
                             ]
                         }
