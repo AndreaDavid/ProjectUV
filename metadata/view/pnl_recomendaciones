@@ -1,0 +1,301 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "pnl_recomendaciones",
+        "designer|userClassName": "pnl_recomendaciones",
+        "header": false,
+        "height": null,
+        "hidden": true,
+        "id": "pnl_recomendaciones",
+        "layout": "vbox",
+        "title": "My Panel",
+        "width": null
+    },
+    "name": "MyPanel3",
+    "designerId": "95fcd542-6b31-48b5-af03-3ef1d06a9813",
+    "viewControllerInstanceId": "30209295-f130-44ef-8989-1d0e8b8aa06d",
+    "viewModelInstanceId": "a8ef312d-c579-46e3-8346-dad9452f41a3",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "middle",
+                "container|pack": "center",
+                "id": "title_uvi",
+                "layout": "hbox",
+                "layout|flex": 1
+            },
+            "name": "MyContainer1",
+            "designerId": "b2f9e194-f5a2-4126-9391-ff4cc8fc2f2c",
+            "cn": [
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Recomendaciones segun el UVI presente"
+                    },
+                    "name": "MyLabel8",
+                    "designerId": "efcb044e-4d36-46fc-aff2-72afab3b2216"
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "vbox",
+                "layout|flex": 10
+            },
+            "name": "MyContainer3",
+            "designerId": "677a8bd4-02d4-4bbd-96c9-e62c9e0cc52d",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "id": "img_uvi",
+                        "layout": "hbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer5",
+                    "designerId": "acb03e2e-033e-4646-9623-6123b869da9d",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 201,
+                                "id": "imagenUVI",
+                                "src": "resources/image/imgWebUVI/UVindex.jpg",
+                                "width": 201
+                            },
+                            "name": "MyImg",
+                            "designerId": "e59467f2-7b36-48d0-b395-d36a1c324b25"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "layout": "vbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer6",
+                    "designerId": "7d6c47de-ff73-491a-aee1-72394e825115",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": "",
+                                "container|align": "middle",
+                                "container|pack": "center",
+                                "id": "title_FPS",
+                                "layout": "hbox",
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer32",
+                            "designerId": "2cbc1013-2a53-453f-a29e-49faa075bafe",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Factor de proteccion (FPS) indicado"
+                                    },
+                                    "name": "MyLabel9",
+                                    "designerId": "5ba83910-214a-4204-bd57-3b99901b397b"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "hbox",
+                                "layout|flex": 8
+                            },
+                            "name": "MyContainer33",
+                            "designerId": "201624dc-ef67-4e04-9bdf-eef331fbc2be",
+                            "cn": [
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "container|align": "center",
+                                        "container|pack": "center",
+                                        "id": "ctn_pielClara",
+                                        "layout": "vbox",
+                                        "layout|flex": 1
+                                    },
+                                    "name": "MyContainer34",
+                                    "designerId": "9d057830-732c-4132-a044-79d8e4729aed",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "pielClara",
+                                                "text": "My Label"
+                                            },
+                                            "name": "MyLabel10",
+                                            "designerId": "1031994e-60af-4309-ac2b-6d7feeebc9f2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "container|align": "center",
+                                        "container|pack": "center",
+                                        "id": "ctn_pielOscura",
+                                        "layout": "vbox",
+                                        "layout|flex": 1
+                                    },
+                                    "name": "MyContainer35",
+                                    "designerId": "5ec086b5-dec7-4fc9-90c3-8f07365f61bd",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "pielOscura",
+                                                "text": "My Label"
+                                            },
+                                            "name": "MyLabel11",
+                                            "designerId": "9cd37e95-2baa-4b84-a6a2-9433db32d7c7"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "container|pack": "center",
+                        "id": "ctn_recomendacion",
+                        "layout": "vbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer7",
+                    "designerId": "32d77dc5-a6e7-423a-8e3c-b5e102dbfdbb",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "recomendacion",
+                                "text": "My Label"
+                            },
+                            "name": "MyLabel12",
+                            "designerId": "44cdcd1f-bdfd-46c3-90fc-1a2f79f2b3fa"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "datos"
+                ],
+                "fn": "cargarTemplate",
+                "implHandler": [
+                    "Ext.getCmp(\"imagenUVI\").setSrc(datos.img);",
+                    "Ext.getCmp(\"pielClara\").setValue(datos.pielClara);",
+                    "Ext.getCmp(\"pielOscura\").setValue(datos.pielOscura);",
+                    "Ext.getCmp(\"recomendacion\").setValue(recomendacion);",
+                    "",
+                    "this.show();",
+                    ""
+                ]
+            },
+            "name": "cargarTemplate",
+            "designerId": "53a76683-0045-4daf-b7cb-6114b46240cb"
+        }
+    ]
+}

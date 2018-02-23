@@ -33,7 +33,7 @@
             "userConfig": {
                 "container|align": "stretch",
                 "flex": 1,
-                "html": "<script> function initMap() {         var uluru = {lat: 2.9376189, lng: -75.3074082};         var map = new google.maps.Map(document.getElementById('mapa'), {           zoom: 4,           center: uluru         });         var marker = new google.maps.Marker({           position: uluru,           map: map         });       } </script> <script async defer   src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyABnlrfH6S8yVjN1Onis3zCSqstiymlN5g&callback=initMap\"> </script>  <div id=\"mapa\"></div>",
+                "html": "<div id=\"map\"></div>",
                 "id": "mapa",
                 "layout": "vbox",
                 "layout|flex": null
@@ -55,7 +55,7 @@
                 "fn": "cargar_mapa",
                 "implHandler": [
                     "var uluru = {lat: 2.9376189, lng: -75.3074082};",
-                    "  var map = new google.maps.Map(document.getElementById('mapa'), {",
+                    "  var map = new google.maps.Map(document.getElementById('map'), {",
                     "    zoom: 10,",
                     "    center: uluru",
                     "  });",

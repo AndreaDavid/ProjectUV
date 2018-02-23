@@ -174,26 +174,14 @@
                     "codeClass": null,
                     "userConfig": {
                         "container|align": "middle",
-                        "container|pack": "center",
+                        "container|pack": "end",
+                        "dock": "left",
                         "layout": "hbox",
                         "layout|flex": 3
                     },
                     "name": "MyContainer12",
                     "designerId": "b3a2041f-ff2e-489e-a08d-feb0e7f53169",
                     "cn": [
-                        {
-                            "type": "Ext.container.Container",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "layout|flex": 2
-                            },
-                            "name": "MyContainer17",
-                            "designerId": "7b8caf38-99e2-4905-a2a8-7f56ce8975d7"
-                        },
                         {
                             "type": "Ext.form.Label",
                             "reference": {
@@ -205,6 +193,7 @@
                                 "border": "5 0 0 0",
                                 "dock": null,
                                 "layout|flex": null,
+                                "layout|margins": "",
                                 "margin": null,
                                 "style": "background: #37474F;   color: #ffffff;   font-weight: bold;  text-align: center;",
                                 "text": "Usuario",
@@ -228,8 +217,8 @@
                                     "nameUser"
                                 ],
                                 "dock": null,
-                                "layout|flex": 1,
-                                "margin": "0 0 0 10",
+                                "layout|flex": null,
+                                "margin": "10 0 10 10",
                                 "text": "Nombre del Usuario"
                             },
                             "name": "MyLabel",
@@ -570,7 +559,7 @@
                         "id": "ctn_container",
                         "layout": "fit",
                         "layout|flex": 1,
-                        "margin": "30 10 0 20",
+                        "margin": "0 10 0 20",
                         "scrollable": true
                     },
                     "name": "MyPanel1",
