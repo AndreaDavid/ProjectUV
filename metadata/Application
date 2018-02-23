@@ -368,23 +368,6 @@
             },
             "name": "fn_fondo_main",
             "designerId": "1d45ad80-f579-486c-babf-5e3c759f5f51"
-        },
-        {
-            "type": "Ext.Loader",
-            "reference": {
-                "name": "loader",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "paths": [
-                    "{",
-                    "'Ext.map':'resources/js/ux/map/google'",
-                    "}"
-                ]
-            },
-            "name": "Loader15",
-            "designerId": "cffbf0cc-654b-4580-aacf-d29ac4e27a38"
         }
     ]
 }

@@ -9,7 +9,7 @@
         "defer": false,
         "designer|userClassName": "js_pln00qwz",
         "id": "google",
-        "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyABnlrfH6S8yVjN1Onis3zCSqstiymlN5g&callback=initMap",
+        "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyABnlrfH6S8yVjN1Onis3zCSqstiymlN5g",
         "x-compile": true
     },
     "name": "js2",
