@@ -218,7 +218,7 @@
                                 ],
                                 "dock": null,
                                 "layout|flex": null,
-                                "margin": "10 0 10 10",
+                                "margin": "10 30 10 10",
                                 "text": "Nombre del Usuario"
                             },
                             "name": "MyLabel",
@@ -559,7 +559,8 @@
                         "id": "ctn_container",
                         "layout": "fit",
                         "layout|flex": 1,
-                        "margin": "0 10 0 20",
+                        "margin": "",
+                        "padding": "0 0 0 10",
                         "scrollable": true
                     },
                     "name": "MyPanel1",

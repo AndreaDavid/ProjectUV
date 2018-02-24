@@ -77,30 +77,43 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "container|align": "middle",
-                        "container|pack": "center",
                         "id": "img_uvi",
-                        "layout": "hbox",
                         "layout|flex": 1
                     },
                     "name": "MyContainer5",
                     "designerId": "acb03e2e-033e-4646-9623-6123b869da9d",
                     "cn": [
                         {
-                            "type": "Ext.Img",
+                            "type": "Ext.container.Container",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "height": 201,
-                                "id": "imagenUVI",
-                                "src": "resources/image/imgWebUVI/UVindex.jpg",
-                                "width": 201
+                                "dock": null,
+                                "layout": "card"
                             },
-                            "name": "MyImg",
-                            "designerId": "e59467f2-7b36-48d0-b395-d36a1c324b25"
+                            "name": "MyContainer36",
+                            "designerId": "9e95c3f5-697f-43b0-bdbd-4f73a0570727",
+                            "cn": [
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 201,
+                                        "id": "imagenUVI",
+                                        "src": "resources/image/imgWebUVI/UVindex.jpg",
+                                        "width": 201
+                                    },
+                                    "name": "MyImg",
+                                    "designerId": "e59467f2-7b36-48d0-b395-d36a1c324b25"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -286,9 +299,9 @@
                 "fn": "cargarTemplate",
                 "implHandler": [
                     "Ext.getCmp(\"imagenUVI\").setSrc(datos.img);",
-                    "Ext.getCmp(\"pielClara\").setValue(datos.pielClara);",
-                    "Ext.getCmp(\"pielOscura\").setValue(datos.pielOscura);",
-                    "Ext.getCmp(\"recomendacion\").setValue(datos.recomendacion); //estaba mal",
+                    "Ext.getCmp(\"pielClara\").setText(datos.pielClara);",
+                    "Ext.getCmp(\"pielOscura\").setText(datos.pielOscura);",
+                    "Ext.getCmp(\"recomendacion\").setText(datos.recomendacion); //estaba mal",
                     "",
                     "this.show();",
                     ""

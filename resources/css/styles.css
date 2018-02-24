@@ -89,14 +89,6 @@ color:#E64A19;
 .pnl-principal-style{
     background: white !important;
 }
-.imgLogo{
-    background: url('../image/imgWebUVI/uscoLogo.png') no-repeat !important;
-    background-size: contain !important; 
-    -webkit-background-size: contain !important;
-    -moz-background-size: contain !important;
-    -o-background-size: contain !important;
-}
-
 .justifyText{
     text-align : justify; 
 }

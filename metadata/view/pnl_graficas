@@ -19,7 +19,7 @@
         "id": "pnl_graficas",
         "layout": "vbox",
         "minHeight": null,
-        "scrollable": true,
+        "scrollable": false,
         "width": null
     },
     "name": "MyPanel",
@@ -38,19 +38,64 @@
             },
             "codeClass": null,
             "userConfig": {
-                "cls": [
-                    "imgLogo"
-                ],
-                "container|align": "center",
-                "container|pack": "center",
+                "container|align": "stretch",
                 "height": 80,
-                "layout": "vbox",
+                "layout": "hbox",
                 "layout|flex": 1,
                 "maxHeight": 80,
                 "minHeight": 80
             },
             "name": "MyContainer17",
-            "designerId": "fc9f18be-130b-4273-a8ae-cbcf1142d0c8"
+            "designerId": "fc9f18be-130b-4273-a8ae-cbcf1142d0c8",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "flex": 2,
+                        "layout|flex": 2
+                    },
+                    "name": "MyContainer39",
+                    "designerId": "7e49a8c3-a627-4398-9738-4a8784b590af"
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "flex": null,
+                        "height": 201,
+                        "layout|flex": null,
+                        "maxWidth": 180,
+                        "minWidth": 180,
+                        "src": "resources/image/imgWebUVI/uscoLogo.png",
+                        "width": 180
+                    },
+                    "name": "MyImg2",
+                    "designerId": "6d437d7d-642a-4b75-8d15-fe776757e02a"
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "flex": 2,
+                        "layout|flex": 2
+                    },
+                    "name": "MyContainer38",
+                    "designerId": "0b1a5f8d-abf1-46cc-aa5f-cd7a86569d99"
+                }
+            ]
         },
         {
             "type": "Ext.container.Container",
@@ -118,7 +163,7 @@
                 "height": 480,
                 "layout": "hbox",
                 "layout|flex": null,
-                "margin": "40 0 0 0",
+                "margin": "10 0 0 0",
                 "maxHeight": null,
                 "minHeight": null
             },
@@ -180,7 +225,7 @@
                                 "height": 40,
                                 "layout": "hbox",
                                 "layout|flex": null,
-                                "margin": "10 0 0 0"
+                                "margin": "0 0 0 0"
                             },
                             "name": "MyContainer31",
                             "designerId": "fb4efb8f-0bbf-4b26-9f46-f88a9bc94d37",
@@ -341,7 +386,7 @@
                             "userConfig": {
                                 "layout|flex": 1
                             },
-                            "name": "map_panel2",
+                            "name": "map_panel3",
                             "designerId": "3dd2b67c-f1b5-49b1-8cce-f2241baadfc7",
                             "masterInstanceId": "576e487d-fdc9-4512-8dc1-7d258e266744"
                         }
