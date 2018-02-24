@@ -416,8 +416,8 @@
                                                     "                            tabPanel = Ext.getCmp(\"ctn_container\");",
                                                     "                            tabPanel.removeAll();",
                                                     "                            tabPanel.add(Ext.widget('pnl_graficas'));",
-                                                    "                            tabPanel.add(Ext.widget(\"pnl_UVI\"));",
-                                                    "                            tabPanel.add(Ext.widget(\"panellinks\"));",
+                                                    "                            //tabPanel.add(Ext.widget(\"pnl_UVI\"));",
+                                                    "                            //tabPanel.add(Ext.widget(\"panellinks\"));",
                                                     "                            tabPanel.show();",
                                                     "                            break;",
                                                     "                        case 'informacion':",
@@ -581,7 +581,7 @@
             "userConfig": {
                 "fn": "onPnl_mainAfterRender",
                 "implHandler": [
-                    ""
+                    "Ext.getCmp(\"ctn_container\").getScrollable().setX(false);"
                 ],
                 "name": "afterrender",
                 "scope": "me"
