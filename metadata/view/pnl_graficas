@@ -71,12 +71,12 @@
                     "codeClass": null,
                     "userConfig": {
                         "flex": null,
-                        "height": 201,
+                        "height": 170,
                         "layout|flex": null,
-                        "maxWidth": 180,
-                        "minWidth": 180,
+                        "maxWidth": 250,
+                        "minWidth": 250,
                         "src": "resources/image/imgWebUVI/uscoLogo.png",
-                        "width": 180
+                        "width": 250
                     },
                     "name": "MyImg2",
                     "designerId": "6d437d7d-642a-4b75-8d15-fe776757e02a"
@@ -386,7 +386,7 @@
                             "userConfig": {
                                 "layout|flex": 1
                             },
-                            "name": "map_panel3",
+                            "name": "map_panel1",
                             "designerId": "3dd2b67c-f1b5-49b1-8cce-f2241baadfc7",
                             "masterInstanceId": "576e487d-fdc9-4512-8dc1-7d258e266744"
                         }

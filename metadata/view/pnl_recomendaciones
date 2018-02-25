@@ -105,7 +105,7 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "height": 201,
+                                        "height": 180,
                                         "id": "imagenUVI",
                                         "src": "resources/image/imgWebUVI/UVindex.jpg",
                                         "width": 201

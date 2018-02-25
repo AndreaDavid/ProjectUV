@@ -7,6 +7,9 @@
     "codeClass": null,
     "userConfig": {
         "border": false,
+        "cls": [
+            "border"
+        ],
         "container|align": "stretch",
         "container|pack": "center",
         "designer|userAlias": "pnl_UVI",
@@ -30,9 +33,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "border": null,
                 "container|align": "stretch",
                 "layout": "hbox",
-                "layout|flex": 1
+                "layout|flex": 1,
+                "layout|margins": "10 0 0 0"
             },
             "name": "MyContainer14",
             "designerId": "f252f237-753c-4793-af6c-4d86f907c3a7",
@@ -152,7 +157,8 @@
                         "container|align": "stretch",
                         "container|pack": "center",
                         "layout": "vbox",
-                        "layout|flex": 1
+                        "layout|flex": 1,
+                        "margin": "0 20 0 0"
                     },
                     "name": "MyContainer24",
                     "designerId": "4dbead8a-709e-404d-a339-2b6b7ded8c4c",
