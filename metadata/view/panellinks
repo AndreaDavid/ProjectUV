@@ -54,8 +54,9 @@
                         "container|align": "middle",
                         "container|pack": "center",
                         "dock": null,
+                        "flex": 1.2,
                         "layout": "hbox",
-                        "layout|flex": 0.4
+                        "layout|flex": 1.2
                     },
                     "name": "MyContainer28",
                     "designerId": "94402ac0-1444-4ed4-87a3-cec4a7cfa7f5",
@@ -88,8 +89,9 @@
                     "codeClass": null,
                     "userConfig": {
                         "container|align": "stretch",
+                        "flex": 9,
                         "layout": "hbox",
-                        "layout|flex": 2
+                        "layout|flex": 9
                     },
                     "name": "MyContainer18",
                     "designerId": "75646daa-91a9-4fa9-a020-e78c52197710",
@@ -141,8 +143,9 @@
                     "userConfig": {
                         "container|align": "stretch",
                         "container|pack": "center",
+                        "flex": 6,
                         "layout": "hbox",
-                        "layout|flex": 1
+                        "layout|flex": 6
                     },
                     "name": "MyContainer19",
                     "designerId": "bc1e8baa-7c56-4034-9209-a98f49b8334c",
@@ -193,8 +196,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "height": 10,
-                        "layout|flex": null
+                        "flex": 1,
+                        "height": null,
+                        "layout|flex": 1
                     },
                     "name": "MyContainer29",
                     "designerId": "44fe8de1-7d55-4cb8-b1d0-306ef2950f27"
@@ -219,6 +223,7 @@
                             "    baseCls: 'general-template-container',",
                             "    cls: 'ctn-paneles-aplicaciones',",
                             "    scrollable: false,",
+                            "    margin:30,",
                             "    width: '',",
                             "    defaultListenerScope: true,",
                             "",
@@ -306,7 +311,7 @@
                             "                    scrollable: false,",
                             "                    text: record.abstract,",
                             "                    baseCls:'justifyText'",
-                            "                    ",
+                            "",
                             "                }",
                             "            ]",
                             "        }",

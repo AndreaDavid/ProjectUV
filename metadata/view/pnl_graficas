@@ -15,7 +15,7 @@
         "designer|userAlias": "pnl_graficas",
         "designer|userClassName": "pnl_graficas",
         "flex": 1,
-        "height": null,
+        "height": 630,
         "id": "pnl_graficas",
         "layout": "vbox",
         "minHeight": null,
@@ -163,10 +163,10 @@
             "userConfig": {
                 "container|align": "stretch",
                 "designer|displayName": "ctn_contenido",
-                "flex": null,
-                "height": 500,
+                "flex": 1,
+                "height": null,
                 "layout": "hbox",
-                "layout|flex": null,
+                "layout|flex": 1,
                 "margin": "",
                 "maxHeight": null,
                 "minHeight": null
@@ -226,12 +226,12 @@
                             "userConfig": {
                                 "container|align": "stretch",
                                 "container|pack": "center",
-                                "height": 30,
+                                "height": 35,
                                 "layout": "hbox",
                                 "layout|flex": null,
                                 "margin": "",
-                                "maxHeight": 30,
-                                "minHeight": 30
+                                "maxHeight": 35,
+                                "minHeight": 35
                             },
                             "name": "MyContainer31",
                             "designerId": "fb4efb8f-0bbf-4b26-9f46-f88a9bc94d37",
