@@ -1,4 +1,5 @@
 ﻿@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300');
 .main{
     background: url('../image/fondo1.gif') no-repeat !important;
      background-size: cover !important; 
@@ -91,6 +92,14 @@ color:#E64A19;
 }
 .justifyText{
     text-align : justify; 
+    font-size: 1em;
+
+}
+.textGe{
+    font-family: Dosis, serif;
+    font-size: 20px; 
+    font-weight: 600;
+
 }
 /*Estilos pnl_UVI*/
 .text_var{
@@ -110,6 +119,7 @@ color:#E64A19;
     color:#E64A19;
     font-family: sofia-pro, sans-serif,;
     width:400px;
+    line-height:16px;
 }
 #map {
   height: 400px;

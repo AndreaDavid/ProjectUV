@@ -71,7 +71,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "flex": null,
-                        "height": 170,
+                        "height": null,
                         "layout|flex": null,
                         "maxWidth": 250,
                         "minWidth": 250,
@@ -110,7 +110,7 @@
                 "componentCls": null,
                 "container|align": "middle",
                 "container|pack": "center",
-                "container|padding": "0 5 0 0",
+                "container|padding": null,
                 "designer|displayName": "ctn_header",
                 "disabledCls": null,
                 "height": 50,
@@ -136,9 +136,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "cls": [
+                            "general-panel-header-container"
+                        ],
+                        "html": "",
                         "layout|flex": null,
                         "margin": null,
-                        "style": "font-family: sofia-pro, sans-serif;   letter-spacing: 5px;   font-size: 3em;   color: hsla(33, 95%, 45%, 1);",
+                        "style": "font-family: sofia-pro, sans-serif; letter-spacing: 5px; font-size: 3em; color: hsla(33, 95%, 45%, 1);",
                         "text": "REGISTROS RADIACIÓN ULTRAVIOLETA"
                     },
                     "name": "MyLabel",
@@ -160,10 +164,10 @@
                 "container|align": "stretch",
                 "designer|displayName": "ctn_contenido",
                 "flex": null,
-                "height": 480,
+                "height": 500,
                 "layout": "hbox",
                 "layout|flex": null,
-                "margin": "10 0 0 0",
+                "margin": "",
                 "maxHeight": null,
                 "minHeight": null
             },
@@ -222,10 +226,12 @@
                             "userConfig": {
                                 "container|align": "stretch",
                                 "container|pack": "center",
-                                "height": 40,
+                                "height": 30,
                                 "layout": "hbox",
                                 "layout|flex": null,
-                                "margin": "0 0 0 0"
+                                "margin": "",
+                                "maxHeight": 30,
+                                "minHeight": 30
                             },
                             "name": "MyContainer31",
                             "designerId": "fb4efb8f-0bbf-4b26-9f46-f88a9bc94d37",
@@ -371,6 +377,10 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "cls": [
+                                    "textGe"
+                                ],
+                                "margin": "0 0 5 0",
                                 "text": "Ubicacion"
                             },
                             "name": "MyLabel1",
