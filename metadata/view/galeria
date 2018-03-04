@@ -1,0 +1,328 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "galeria",
+        "designer|userClassName": "galeria",
+        "header": false,
+        "height": null,
+        "id": "galeria",
+        "layout": "vbox",
+        "title": "My Panel",
+        "width": null
+    },
+    "name": "MyPanel",
+    "designerId": "ef0ba109-5ea6-4d0e-99c5-9ae4f09489e0",
+    "viewControllerInstanceId": "1dc0674a-feb9-452b-a847-bd6bc0086482",
+    "viewModelInstanceId": "4c25cb4e-48c0-4c05-abfd-4b6297e763e8",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "margin": "70 100 70 100"
+            },
+            "name": "MyContainer1",
+            "designerId": "72154acc-c173-45ad-99d7-69fbff6081ea",
+            "cn": [
+                {
+                    "type": "Ext.tab.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "activeTab": 0,
+                        "bodyBorder": true,
+                        "bodyPadding": 10,
+                        "scrollable": true
+                    },
+                    "name": "MyTabPanel",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "56466345-5cf6-4746-83f6-78174748c2ba",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "layout": "vbox",
+                                "title": "Foto 1"
+                            },
+                            "name": "MyPanel2",
+                            "designerId": "6d0361f1-f4a7-4c20-a9e1-b08d313ff3dc",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig",
+                                    "designerId": "a12ab3f5-d12f-40d7-9aea-5ccea61b823a"
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 30,
+                                        "layout|flex": 1,
+                                        "margin": "30 0 20 0"
+                                    },
+                                    "name": "MyContainer3",
+                                    "designerId": "241139ef-c225-486c-93aa-4567a2c24def",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": [
+                                                    "textInfTitle"
+                                                ],
+                                                "height": 30,
+                                                "text": "Imagen circuito de adquisicion de datos"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "17972ac2-9f4f-4c4d-9782-ca3340fd315f"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1
+                                    },
+                                    "name": "MyContainer5",
+                                    "designerId": "506aaff8-d897-475b-ace0-e847efe0b638",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Img",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 201,
+                                                "width": 201
+                                            },
+                                            "name": "MyImg",
+                                            "designerId": "0464a778-a020-45f8-85b2-de72b689e183"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "layout": "vbox",
+                                "title": "foto 2"
+                            },
+                            "name": "MyPanel3",
+                            "designerId": "90750e0e-f627-4a94-a5c6-c51520376562",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig1",
+                                    "designerId": "ba398257-8128-402c-bc56-61fe4afffe6c"
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 30,
+                                        "margin": "30 0 20 0"
+                                    },
+                                    "name": "MyContainer6",
+                                    "designerId": "ec1cd24a-c4b2-4576-a704-29d600513678",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": [
+                                                    "textInfTitle"
+                                                ],
+                                                "height": 30,
+                                                "margin": null,
+                                                "text": "Imagen montege del circuito"
+                                            },
+                                            "name": "MyLabel2",
+                                            "designerId": "eef9f8c4-3731-48c2-a683-9ecdbf1aa780"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyContainer7",
+                                    "designerId": "f900ccd7-e84f-46c8-97e6-d085b7e736bd",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Img",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 201,
+                                                "width": 201
+                                            },
+                                            "name": "MyImg1",
+                                            "designerId": "f8d0c82d-0c55-4265-a3e9-36048adcafdd"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "layout": "vbox",
+                                "title": "foto 3"
+                            },
+                            "name": "MyPanel4",
+                            "designerId": "ac14a0e0-45f2-4dfe-8890-60143b3bc33e",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig2",
+                                    "designerId": "52930c7c-9660-4cec-a019-0a1d2c0727e9"
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 30,
+                                        "margin": "30 0 20 0"
+                                    },
+                                    "name": "MyContainer11",
+                                    "designerId": "48de7902-bb82-42fb-b235-2bd2faf93281",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": [
+                                                    "textInfTitle"
+                                                ],
+                                                "height": 30,
+                                                "text": "sistema conectado"
+                                            },
+                                            "name": "MyLabel3",
+                                            "designerId": "39c7976f-c381-46df-b69e-55c3626c98f4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyContainer14",
+                                    "designerId": "bb47d4dc-8ba8-4e37-9803-f8efd0b35cd0",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Img",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 201,
+                                                "width": 201
+                                            },
+                                            "name": "MyImg2",
+                                            "designerId": "eb547e86-a2cd-4b4b-a645-10fc9c86df9a"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

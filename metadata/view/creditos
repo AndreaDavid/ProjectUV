@@ -1,0 +1,179 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "creditos",
+        "designer|userClassName": "creditos",
+        "header": false,
+        "height": null,
+        "id": "creditos",
+        "layout": "vbox",
+        "title": "My Panel",
+        "width": null
+    },
+    "name": "MyPanel3",
+    "designerId": "53c2ebae-6a20-4b74-9a67-74234252f86b",
+    "viewControllerInstanceId": "ea2f8b82-dbd5-44a5-accd-013483967192",
+    "viewModelInstanceId": "872dfd06-1cd0-4957-960f-c54e257e0b5f",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "vbox",
+                "layout|flex": 1,
+                "margin": "40 40 40 40"
+            },
+            "name": "MyContainer47",
+            "designerId": "b0c85314-49ee-4d4b-9be9-ce0275583cb0",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "layout": "hbox",
+                        "layout|flex": 4
+                    },
+                    "name": "MyContainer48",
+                    "designerId": "440459ca-c740-42ad-a2de-c899e26f8007",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 130,
+                                "src": "resources/image/imgWebUVI/uscoLogo.png",
+                                "width": 430
+                            },
+                            "name": "MyImg4",
+                            "designerId": "e5a66130-6cfe-49b8-b2b5-276558d9f400"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "layout": "hbox",
+                        "layout|flex": 4
+                    },
+                    "name": "MyContainer49",
+                    "designerId": "eddde99e-be7b-4168-aed5-e280be1bbfa3",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 190,
+                                "layout|flex": 1,
+                                "maxHeight": 190,
+                                "maxWidth": 270,
+                                "minHeight": 190,
+                                "minWidth": 270,
+                                "src": "resources/image/imgWebUVI/ingenieria.png",
+                                "width": 270
+                            },
+                            "name": "MyImg5",
+                            "designerId": "31b762eb-1d48-4682-9363-0c4156364323"
+                        },
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 210,
+                                "layout|flex": 1,
+                                "maxHeight": 210,
+                                "maxWidth": 220,
+                                "minHeight": 210,
+                                "minWidth": 220,
+                                "src": "resources/image/imgWebUVI/electronica.png",
+                                "width": 220
+                            },
+                            "name": "MyImg6",
+                            "designerId": "14d117cd-6924-422f-b01c-f17f9d153c93"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "layout": "vbox",
+                        "layout|flex": 1
+                    },
+                    "name": "MyContainer50",
+                    "designerId": "676951ae-4527-4b92-a182-ddc434e0919e",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Autora: Paola Andrea David "
+                            },
+                            "name": "MyLabel21",
+                            "designerId": "7b010e50-d31a-4294-b796-6049d1473c3f"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "text": "Director: Doc. Albeiro Cabezas"
+                            },
+                            "name": "MyLabel22",
+                            "designerId": "b4146a6f-a042-4819-a993-39f2ed60f892"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "galeria",
+        "designer|userClassName": "galeriaViewController"
+    },
+    "designerId": "1dc0674a-feb9-452b-a847-bd6bc0086482"
+}

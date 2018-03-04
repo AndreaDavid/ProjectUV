@@ -34,7 +34,9 @@
                 "container|pack": "center",
                 "id": "title_uvi",
                 "layout": "hbox",
-                "layout|flex": 1
+                "layout|flex": 1,
+                "layout|margins": null,
+                "margin": "0 0 5 0"
             },
             "name": "MyContainer1",
             "designerId": "b2f9e194-f5a2-4126-9391-ff4cc8fc2f2c",
@@ -50,6 +52,10 @@
                         "cls": [
                             "textGe"
                         ],
+                        "height": 26,
+                        "margin": null,
+                        "maxHeight": 26,
+                        "minHeight": 26,
                         "text": "Recomendaciones segun el UVI presente"
                     },
                     "name": "MyLabel8",
@@ -116,9 +122,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "cls": [
+                            "ctnBorder"
+                        ],
                         "container|align": "stretch",
                         "layout": "vbox",
-                        "layout|flex": 1
+                        "layout|flex": 1,
+                        "margin": "20 20 0 20"
                     },
                     "name": "MyContainer6",
                     "designerId": "7d6c47de-ff73-491a-aee1-72394e825115",
@@ -132,12 +142,15 @@
                             "codeClass": null,
                             "userConfig": {
                                 "border": "",
+                                "cls": [
+                                    "ctnBorder"
+                                ],
                                 "container|align": "middle",
                                 "container|pack": "center",
                                 "id": "title_FPS",
                                 "layout": "hbox",
                                 "layout|flex": 1,
-                                "margin": "5 5 5 5"
+                                "margin": null
                             },
                             "name": "MyContainer32",
                             "designerId": "2cbc1013-2a53-453f-a29e-49faa075bafe",
@@ -153,6 +166,9 @@
                                         "cls": [
                                             "textGe"
                                         ],
+                                        "height": 25,
+                                        "maxHeight": 25,
+                                        "minHeight": 25,
                                         "text": "Factor de proteccion (FPS) indicado"
                                     },
                                     "name": "MyLabel9",
@@ -183,11 +199,15 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "cls": [
+                                            "ctnBorder"
+                                        ],
                                         "container|align": "center",
                                         "container|pack": "center",
                                         "id": "ctn_pielClara",
                                         "layout": "vbox",
                                         "layout|flex": 1,
+                                        "margin": null,
                                         "padding": "15 20 15 20"
                                     },
                                     "name": "MyContainer34",
@@ -218,7 +238,14 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
+                                                "cls": [
+                                                    "textRe"
+                                                ],
+                                                "height": 25,
                                                 "id": "pielClara",
+                                                "margin": "8 0 0 0",
+                                                "maxHeight": 25,
+                                                "minHeight": 25,
                                                 "text": "My Label"
                                             },
                                             "name": "MyLabel10",
@@ -234,6 +261,10 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "baseCls": null,
+                                        "cls": [
+                                            "ctnBorder"
+                                        ],
                                         "container|align": "center",
                                         "container|pack": "center",
                                         "id": "ctn_pielOscura",
@@ -269,7 +300,14 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
+                                                "cls": [
+                                                    "textRe"
+                                                ],
+                                                "height": 25,
                                                 "id": "pielOscura",
+                                                "margin": "8 0 0 0",
+                                                "maxHeight": 25,
+                                                "minHeight": 25,
                                                 "text": "My Label",
                                                 "width": null
                                             },
@@ -290,8 +328,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "container|align": "center",
-                        "container|pack": "center",
+                        "container|align": "stretch",
                         "id": "ctn_recomendacion",
                         "layout": "vbox",
                         "layout|flex": 1,
@@ -309,7 +346,14 @@
                             "codeClass": null,
                             "userConfig": {
                                 "baseCls": "justifyText",
+                                "cls": [
+                                    "textRe"
+                                ],
+                                "height": 100,
                                 "id": "recomendacion",
+                                "margin": "4 0 0 0",
+                                "maxHeight": 100,
+                                "minHeight": 100,
                                 "text": "My Label",
                                 "width": 400
                             },

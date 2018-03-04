@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "creditos",
+        "designer|userClassName": "creditosViewModel"
+    },
+    "designerId": "872dfd06-1cd0-4957-960f-c54e257e0b5f"
+}

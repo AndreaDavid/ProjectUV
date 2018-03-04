@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "galeria",
+        "designer|userClassName": "galeriaViewModel"
+    },
+    "designerId": "4c25cb4e-48c0-4c05-abfd-4b6297e763e8"
+}

@@ -27,9 +27,6 @@
 .icon-usuario:before {
   content: "\e901";
 }
-.icon-home:before {
-  content: "\e900";
-}
 .icon-folder-download:before {
   content: "\e933";
 }
@@ -38,9 +35,6 @@
 }
 .icon-stats-dots:before {
   content: "\e99b";
-}
-.icon-leaf:before {
-  content: "\e9a4";
 }
 .icon-switch:before {
   content: "\e9b6";
@@ -66,9 +60,19 @@
 .icon-exit:before {
   content: "\ea14";
 }
-.iconLocation{
-  content: "\e947";
+.icon-newspaper:before {
+  content: "\e904";
 }
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-clipboard:before {
+  content: "\e9b8";
+}
+
 .iconInf{
   content: "\e904";
 }

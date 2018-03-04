@@ -14,7 +14,7 @@
         "height": null,
         "id": "panellinks",
         "layout": "vbox",
-        "margin": "20 20 20 20",
+        "margin": "30 20 30 20",
         "title": "My Panel",
         "width": null
     },
@@ -91,7 +91,8 @@
                         "container|align": "stretch",
                         "flex": 9,
                         "layout": "hbox",
-                        "layout|flex": 9
+                        "layout|flex": 9,
+                        "margin": "15 0 0 0"
                     },
                     "name": "MyContainer18",
                     "designerId": "75646daa-91a9-4fa9-a020-e78c52197710",
@@ -187,21 +188,6 @@
                             "designerId": "5adc22f9-56b9-4d35-be8b-9ec68952ad2b"
                         }
                     ]
-                },
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "flex": 1,
-                        "height": null,
-                        "layout|flex": 1
-                    },
-                    "name": "MyContainer29",
-                    "designerId": "44fe8de1-7d55-4cb8-b1d0-306ef2950f27"
                 },
                 {
                     "type": "basicfunction",
@@ -333,24 +319,24 @@
                         "fn": "fn_load_links",
                         "implHandler": [
                             "var templatelink3=this.fn_create_template({",
-                            "    titulo:\"¿Qué es la radiación ultravioleta (UV)?\",",
-                            "    url:\"https://www.cancer.org/es/cancer/cancer-de-piel/prevencion-y-deteccion-temprana/que-es-la-radiacion-de-luz-ultravioleta.html\",",
-                            "    abstract:\"La exposición a la radiación ultravioleta (UV) es un factor de riesgo principal para la mayoría de los cánceres de piel. La luz solar es la fuente principal de la radiación ultravioleta.\",",
-                            "    icono:\"http://2.bp.blogspot.com/_mkz6NJSN43s/S0slwr26X-I/AAAAAAAAAM4/pCDV7_5nYbo/s320/070105radiacion_solar.jpg\"",
+                            "    titulo:\"Pronóstico del índice ultravioleta máximo para Neiva\",",
+                            "    url:\"http://bart.ideam.gov.co/wrfideam/indiceuv/indice.php?ciudad=NEIVA\",",
+                            "    abstract:\"IDEAM. Datos del índice UV, válidos en el supuesto de cielo despejado. Este indicador alcanza los niveles más altos alrededor del medio día (entre las 10 a.m y las 2 p.m) y cuanto más alto, mayor es la probabilidad de lesiones cutáneas y oculares.\",",
+                            "    icono:\"https://upload.wikimedia.org/wikipedia/commons/6/6f/Ideam_%28Colombia%29_logo.png\"",
                             "",
                             "});",
                             "var templatelink2=this.fn_create_template({",
                             "    titulo:\"¿Son algunas personas más propensas a los daños de la piel causados por el sol?\",",
                             "    url:\"https://www.cancer.org/es/cancer/cancer-de-piel/prevencion-y-deteccion-temprana/danos-ocasionados-por-el-sol.html\",",
-                            "    abstract:\"La piel y los ojos de toda persona pueden ser afectados por el sol y por otras formas de rayos ultravioleta (UV). Las personas con piel blanca tienen una probabilidad mucho mayor de presentar daños causados por el sol\",",
+                            "    abstract:\"La piel y los ojos de toda persona pueden ser afectados por el sol y por otras formas de rayos ultravioleta (UV). Las personas con piel blanca tienen una probabilidad mucho mayor de presentar daños causados por el sol.\",",
                             "    icono:\"https://www.cancer.org/etc/designs/cancer.org/images/acs-logo.svg\"",
                             "",
                             "});",
                             "var templatelink=this.fn_create_template({",
-                            "    titulo:\"Detectar a tiempo el cancer de piel, una forma de convatir esta enfermedad\",",
-                            "    url:\"http://caracol.com.co/programa/2016/07/30/sanamente/1469831760_330228.html\",",
-                            "    abstract:\"El Cáncer de Piel es principalmente causado por la exposición prolongada a rayos ultravioleta, por esta razón la educación es una herramienta importante para la prevención de la enfermedad, lo que lograría una detección temprana que podría cambiar la calidad de vida de un paciente.\",",
-                            "    icono:\"http://cr00.epimg.net/programa/imagenes/2016/07/30/sanamente/1469831760_330228_1469832149_noticia_normal.jpg\"",
+                            "    titulo:\"Manual para la prevención del cáncer de piel dirigido al entorno laboral\",",
+                            "    url:\"https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VS/PP/ENT/manual-prevencion-ca-piel-entorno-laboral.pdf\",",
+                            "    abstract:\"Manual para la prevención del cáncer de piel no melanoma dirigido al entorno laboral. Hospital universitario centro dermatologico Federico Lleras Acosta\",",
+                            "    icono:\"resources/image/imgWebUVI/minSalud.JPG\"",
                             "",
                             "});",
                             "",

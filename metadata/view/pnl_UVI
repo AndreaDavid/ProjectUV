@@ -17,6 +17,7 @@
         "header": false,
         "height": null,
         "layout": "vbox",
+        "margin": "15 0 15 0",
         "title": "My Panel",
         "width": null
     },
@@ -50,9 +51,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "cls": [
+                            "ctnBorder"
+                        ],
                         "container|align": "stretch",
                         "layout": "vbox",
-                        "layout|flex": 1
+                        "layout|flex": 1,
+                        "margin": "0 5 0 0"
                     },
                     "name": "MyContainer16",
                     "designerId": "b515dd74-a3e9-4eb8-9762-c241df234008",
@@ -154,11 +159,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "cls": [
+                            "ctnBorder"
+                        ],
                         "container|align": "stretch",
                         "container|pack": "center",
                         "layout": "vbox",
                         "layout|flex": 1,
-                        "margin": "0 20 0 0"
+                        "margin": "0 25 0 5"
                     },
                     "name": "MyContainer24",
                     "designerId": "4dbead8a-709e-404d-a339-2b6b7ded8c4c",
@@ -224,7 +232,7 @@
                                     "userConfig": {
                                         "height": null
                                     },
-                                    "name": "pnl_recomendaciones3",
+                                    "name": "pnl_recomendaciones1",
                                     "designerId": "209af2fe-ed09-454f-9649-fb8b30784208",
                                     "masterInstanceId": "95fcd542-6b31-48b5-af03-3ef1d06a9813"
                                 }

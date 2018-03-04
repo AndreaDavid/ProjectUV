@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "creditos",
+        "designer|userClassName": "creditosViewController"
+    },
+    "designerId": "ea2f8b82-dbd5-44a5-accd-013483967192"
+}

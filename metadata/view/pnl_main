@@ -183,6 +183,39 @@
                     "designerId": "b3a2041f-ff2e-489e-a08d-feb0e7f53169",
                     "cn": [
                         {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "dock": "right",
+                                "layout": "hbox",
+                                "layout|flex": null
+                            },
+                            "name": "MyContainer1",
+                            "designerId": "0e6293ee-1caf-4ca6-95ba-1379cf2c20b6",
+                            "cn": [
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": null,
+                                        "layout|flex": 1,
+                                        "src": "resources/image/usuario.svg"
+                                    },
+                                    "name": "MyImg9",
+                                    "designerId": "8617d51f-ec86-41c7-a670-e0cff56d9f9b"
+                                }
+                            ]
+                        },
+                        {
                             "type": "Ext.form.Label",
                             "reference": {
                                 "name": "items",
@@ -409,39 +442,25 @@
                                                     "                            tabPanel.add(Ext.widget(\"panellinks\"));",
                                                     "                            tabPanel.show();",
                                                     "                            break;",
-                                                    "                        case 'graficasSemana':",
                                                     "",
-                                                    "                            break;",
-                                                    "                        case 'graficasMes':",
+                                                    "                        case 'informacionMenu':",
                                                     "                            tabPanel = Ext.getCmp(\"ctn_container\");",
                                                     "                            tabPanel.removeAll();",
-                                                    "                            tabPanel.add(Ext.widget('pnl_graficas'));",
-                                                    "                            //tabPanel.add(Ext.widget(\"pnl_UVI\"));",
-                                                    "                            //tabPanel.add(Ext.widget(\"panellinks\"));",
-                                                    "                            tabPanel.show();",
-                                                    "                            break;",
-                                                    "                        case 'informacion':",
-                                                    "                            tabPanel = Ext.getCmp(\"ctn_container\");",
-                                                    "                            tabPanel.removeAll();",
-                                                    "                            tabPanel.add(Ext.widget('map_panel'));",
+                                                    "                            tabPanel.add(Ext.widget('informacion'));",
                                                     "                            tabPanel.show();",
                                                     "                            break;",
                                                     "",
-                                                    "                        case 'inf2':",
+                                                    "                        case 'galeriaMenu':",
                                                     "                            tabPanel = Ext.getCmp(\"ctn_container\");",
                                                     "                            tabPanel.removeAll();",
-                                                    "                            tabPanel.add(Ext.widget('pnl_graficas'));",
-                                                    "                            tabPanel.add(Ext.widget(\"pnl_UVI\"));",
-                                                    "                            tabPanel.add(Ext.widget(\"panellinks\"));",
+                                                    "                            tabPanel.add(Ext.widget('galeria'));",
                                                     "                            tabPanel.show();",
                                                     "                            break;",
                                                     "",
-                                                    "                        case 'inf1':",
+                                                    "                        case 'creditosMenu':",
                                                     "                            tabPanel = Ext.getCmp(\"ctn_container\");",
                                                     "                            tabPanel.removeAll();",
-                                                    "                            tabPanel.add(Ext.widget('pnl_graficas'));",
-                                                    "                            tabPanel.add(Ext.widget(\"pnl_UVI\"));",
-                                                    "                            tabPanel.add(Ext.widget(\"panellinks\"));",
+                                                    "                            tabPanel.add(Ext.widget('creditos'));",
                                                     "                            tabPanel.show();",
                                                     "                            break;",
                                                     "",

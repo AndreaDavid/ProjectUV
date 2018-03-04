@@ -95,11 +95,23 @@ color:#E64A19;
     font-size: 1em;
 
 }
+.textUbicacion{
+    font-family: Dosis, serif;
+    font-size: 20px; 
+}
 .textGe{
     font-family: Dosis, serif;
     font-size: 20px; 
     font-weight: 600;
-
+}
+.textRe{
+    font-family: Dosis, bold;
+    font-size: 25px;
+    line-height: 20px; 
+}
+.ctnBorder{
+    border-style:ridge;
+    border-color: rgb(180, 179, 218);
 }
 /*Estilos pnl_UVI*/
 .text_var{
@@ -114,16 +126,35 @@ color:#E64A19;
     text-align: right;
     letter-spacing: 1px;
 }
+.txtButton{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+}
 .text_title_infUVI{
     font-size: 2em;
     color:#E64A19;
     font-family: sofia-pro, sans-serif,;
     width:400px;
-    line-height:16px;
+    line-height:20px;
 }
 #map {
   height: 400px;
   width: 100%;
+ }
+
+ .textInf{
+    font-family: Dosis, bold;   
+    font-size: 20px;
+    color: #2c1547 ;
+    text-align: justify;
+    line-height: 24px;
+ }
+ .textInfTitle{
+    font-size: 2em;
+    color:#E64A19;
+    font-family: sofia-pro, sans-serif,;
+    line-height: 20px;
+    
  }
 
 
