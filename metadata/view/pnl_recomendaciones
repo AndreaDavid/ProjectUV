@@ -36,7 +36,7 @@
                 "layout": "hbox",
                 "layout|flex": 1,
                 "layout|margins": null,
-                "margin": "0 0 5 0"
+                "margin": "5 0 0 0"
             },
             "name": "MyContainer1",
             "designerId": "b2f9e194-f5a2-4126-9391-ff4cc8fc2f2c",
@@ -86,6 +86,53 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "container|align": "stretch",
+                        "container|pack": "center",
+                        "height": null,
+                        "id": "ctn_recomendacion",
+                        "layout": "vbox",
+                        "layout|flex": 1,
+                        "maxHeight": null,
+                        "minHeight": null,
+                        "padding": "25 30 5 30"
+                    },
+                    "name": "MyContainer7",
+                    "designerId": "32d77dc5-a6e7-423a-8e3c-b5e102dbfdbb",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": "justifyText",
+                                "cls": [
+                                    "textRe"
+                                ],
+                                "dock": "bottom",
+                                "height": 100,
+                                "id": "recomendacion",
+                                "margin": "4 0 0 0",
+                                "maxHeight": 100,
+                                "minHeight": 100,
+                                "text": "My Label",
+                                "width": 400
+                            },
+                            "name": "MyLabel12",
+                            "designerId": "44cdcd1f-bdfd-46c3-90fc-1a2f79f2b3fa"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
                         "container|align": "middle",
                         "container|pack": "center",
                         "id": "img_uvi",
@@ -105,7 +152,7 @@
                             "userConfig": {
                                 "height": 150,
                                 "id": "imagenUVI",
-                                "margin": "2 2 2 2",
+                                "margin": " 2 2 2",
                                 "src": "resources/image/imgWebUVI/UVindex.jpg",
                                 "width": 350
                             },
@@ -128,7 +175,7 @@
                         "container|align": "stretch",
                         "layout": "vbox",
                         "layout|flex": 1,
-                        "margin": "20 20 0 20"
+                        "margin": "8 20 0 20"
                     },
                     "name": "MyContainer6",
                     "designerId": "7d6c47de-ff73-491a-aee1-72394e825115",
@@ -317,48 +364,6 @@
                                     ]
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "container|align": "stretch",
-                        "id": "ctn_recomendacion",
-                        "layout": "vbox",
-                        "layout|flex": 1,
-                        "padding": "25 30 25 30"
-                    },
-                    "name": "MyContainer7",
-                    "designerId": "32d77dc5-a6e7-423a-8e3c-b5e102dbfdbb",
-                    "cn": [
-                        {
-                            "type": "Ext.form.Label",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "baseCls": "justifyText",
-                                "cls": [
-                                    "textRe"
-                                ],
-                                "height": 100,
-                                "id": "recomendacion",
-                                "margin": "4 0 0 0",
-                                "maxHeight": 100,
-                                "minHeight": 100,
-                                "text": "My Label",
-                                "width": 400
-                            },
-                            "name": "MyLabel12",
-                            "designerId": "44cdcd1f-bdfd-46c3-90fc-1a2f79f2b3fa"
                         }
                     ]
                 }

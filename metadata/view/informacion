@@ -150,7 +150,6 @@
                             "codeClass": null,
                             "userConfig": {
                                 "container|align": "center",
-                                "container|pack": "center",
                                 "layout": "vbox",
                                 "layout|flex": 1,
                                 "margin": "0 0 10 10"
@@ -171,7 +170,7 @@
                                         ],
                                         "margin": "15 0 0 0",
                                         "text": "¿Cual es la radiacion que llega a la superficie terrestre?",
-                                        "width": 550
+                                        "width": 540
                                     },
                                     "name": "MyLabel15",
                                     "designerId": "bbaa7435-f6e2-4bf5-8ed7-ea194d1f5dde"
@@ -202,9 +201,9 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "height": 280,
+                                        "height": 250,
                                         "src": "resources/image/imgWebUVI/UVABC.JPG",
-                                        "width": 300
+                                        "width": 280
                                     },
                                     "name": "MyImg7",
                                     "designerId": "c4525ac6-e22d-4f98-8497-7d041e710429"
@@ -217,13 +216,11 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "dock": "right",
-                                        "layout|flex": null,
-                                        "margin": null,
+                                        "layout|flex": 1,
                                         "text": "OBSERVATORIO DE SALUD AMBIENTAL DE BOGOTÁ"
                                     },
                                     "name": "MyLabel24",
-                                    "designerId": "675ef2ea-e4ca-47d0-98f5-03a8937757ec"
+                                    "designerId": "845f8599-15ad-4f73-a616-04ee97760770"
                                 }
                             ]
                         }
@@ -273,7 +270,7 @@
                                         ],
                                         "margin": "15 0 0 0",
                                         "text": "¿Qué es el indice de radiación ultravioleta (UVI)?",
-                                        "width": null
+                                        "width": 470
                                     },
                                     "name": "MyLabel17",
                                     "designerId": "03bbc956-bc1c-41ee-9e3d-d72fd68e0d3c"
@@ -297,20 +294,6 @@
                                     "designerId": "af9539f0-42ef-4312-9664-73621c8c6e8a"
                                 },
                                 {
-                                    "type": "Ext.form.Label",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "layout|flex": null,
-                                        "text": "Escala UVI"
-                                    },
-                                    "name": "MyLabel28",
-                                    "designerId": "7849ce5c-77e6-44a6-9183-db36b41b3e1c"
-                                },
-                                {
                                     "type": "Ext.Img",
                                     "reference": {
                                         "name": "items",
@@ -322,7 +305,7 @@
                                         "layout|flex": null,
                                         "margin": "10 0 0 0",
                                         "src": "resources/image/imgWebUVI/UVindex.jpg",
-                                        "width": 350
+                                        "width": 370
                                     },
                                     "name": "MyImg8",
                                     "designerId": "9148664d-6811-4dac-91f8-1707bf4c73f4"
@@ -373,7 +356,8 @@
                                         ],
                                         "id": null,
                                         "margin": "15 0 0 0",
-                                        "text": "Recomendaciones básicas sobre fotoproteccion"
+                                        "text": "Recomendaciones básicas sobre fotoproteccion",
+                                        "width": 440
                                     },
                                     "name": "MyLabel19",
                                     "designerId": "02616784-5eb6-4972-8de6-1e952864a97a"
@@ -397,6 +381,23 @@
                                     "designerId": "12277173-76f9-41a5-b5bf-e749850c00af"
                                 },
                                 {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 120,
+                                        "layout|flex": null,
+                                        "margin": "18 0 5 0",
+                                        "src": "resources/image/imgWebUVI/infFoto.JPG",
+                                        "width": 370
+                                    },
+                                    "name": "MyImg10",
+                                    "designerId": "b39fc1bb-d94c-482a-beb5-713b7c9150fd"
+                                },
+                                {
                                     "type": "Ext.form.Label",
                                     "reference": {
                                         "name": "items",
@@ -406,7 +407,7 @@
                                     "userConfig": {
                                         "dock": "right",
                                         "layout|flex": null,
-                                        "margin": "10 0 0 0",
+                                        "margin": "7 0 0 0",
                                         "text": "OMS.INDICE SOLAR ULTRAVIOLETA MUNDIAL"
                                     },
                                     "name": "MyLabel27",

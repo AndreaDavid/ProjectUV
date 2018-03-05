@@ -202,7 +202,7 @@
                                         "layout|flex": 1,
                                         "margin": "15 0 0 0",
                                         "maxWidth": null,
-                                        "text": "Recomendaciones sobre protección solar"
+                                        "text": "Recomendaciones sobre exposición solar y protección"
                                     },
                                     "name": "MyLabel2",
                                     "designerId": "809fab46-5a12-4195-9cbf-82ef650cd97e"
@@ -232,7 +232,7 @@
                                     "userConfig": {
                                         "height": null
                                     },
-                                    "name": "pnl_recomendaciones1",
+                                    "name": "pnl_recomendaciones2",
                                     "designerId": "209af2fe-ed09-454f-9649-fb8b30784208",
                                     "masterInstanceId": "95fcd542-6b31-48b5-af03-3ef1d06a9813"
                                 }

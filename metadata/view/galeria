@@ -30,7 +30,7 @@
             "codeClass": null,
             "userConfig": {
                 "layout|flex": 1,
-                "margin": "70 100 70 100"
+                "margin": "70 150 70 150"
             },
             "name": "MyContainer1",
             "designerId": "72154acc-c173-45ad-99d7-69fbff6081ea",
@@ -135,8 +135,9 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "height": 201,
-                                                "width": 201
+                                                "height": 250,
+                                                "src": "resources/image/imgWebUVI/electronica.png",
+                                                "width": 250
                                             },
                                             "name": "MyImg",
                                             "designerId": "0464a778-a020-45f8-85b2-de72b689e183"
