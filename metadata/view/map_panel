@@ -52,9 +52,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
                 "fn": "cargar_mapa",
                 "implHandler": [
-                    "var uluru = {lat: 2.9376189, lng: -75.3074082};",
+                    "var uluru = {lat: record.data.latitudPosicion, lng: record.data.longitudPosicion};",
                     "var map = new google.maps.Map(document.getElementById('map'), {",
                     "    zoom: 10,",
                     "    center: uluru",
@@ -67,24 +70,6 @@
             },
             "name": "cargar_mapa",
             "designerId": "ae90c4fe-2694-47b7-8221-a32d0cb33dae"
-        },
-        {
-            "type": "basiceventbinding",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "onMap_panelAfterRender",
-                "implHandler": [
-                    "Ext.getCmp(\"map_panel\").cargar_mapa();"
-                ],
-                "name": "afterrender",
-                "scope": "me"
-            },
-            "name": "onMap_panelAfterRender",
-            "designerId": "5ee0d9a8-131b-4589-a555-40ea3d72d7bd"
         }
     ]
 }

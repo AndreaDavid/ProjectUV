@@ -232,7 +232,7 @@
                                     "userConfig": {
                                         "height": null
                                     },
-                                    "name": "pnl_recomendaciones2",
+                                    "name": "pnl_recomendaciones1",
                                     "designerId": "209af2fe-ed09-454f-9649-fb8b30784208",
                                     "masterInstanceId": "95fcd542-6b31-48b5-af03-3ef1d06a9813"
                                 }
@@ -258,6 +258,9 @@
                     "        if(success){",
                     "            if(records.length>0){",
                     "                ProjectUV.app.fn_actualizar_uvi(records[0].data.uvi);",
+                    "                if(Ext.getCmp(\"map_panel\")!==undefined){",
+                    "                    Ext.getCmp(\"map_panel\").cargar_mapa(records[0]);",
+                    "                }",
                     "            }",
                     "        }",
                     "        else{",
