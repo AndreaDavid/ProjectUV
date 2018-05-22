@@ -244,9 +244,11 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "cls": "txtButton",
+                                        "baseCls": "my-x-btn-day",
+                                        "cls": null,
                                         "layout|flex": 1,
                                         "margin": "0 20 0 25",
+                                        "overCls": "my-x-btn-over",
                                         "text": "último dia",
                                         "width": 85
                                     },
@@ -263,7 +265,7 @@
                                             "userConfig": {
                                                 "fn": "onButtonClick",
                                                 "implHandler": [
-                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.DEFAULTRANGE);",
+                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.DEFAULTRANGE,\"#aa0000\");",
                                                     ""
                                                 ],
                                                 "name": "click",
@@ -282,11 +284,13 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "cls": "txtButton",
+                                        "baseCls": "my-x-btn-week",
+                                        "cls": null,
                                         "id": "semana",
                                         "layout|flex": 1,
                                         "layout|margins": null,
                                         "margin": "0 23 0 23",
+                                        "overCls": "my-x-btn-over",
                                         "style": null,
                                         "text": "última semana",
                                         "width": 85
@@ -307,7 +311,7 @@
                                             "userConfig": {
                                                 "fn": "onSemanaClick",
                                                 "implHandler": [
-                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.SEMANA);",
+                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.SEMANA,\"#00aa00\");",
                                                     ""
                                                 ],
                                                 "name": "click",
@@ -326,10 +330,12 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "baseCls": "my-x-btn-month",
                                         "cls": "txtButton",
                                         "id": "mes",
                                         "layout|flex": 1,
                                         "margin": "0 25 0 20",
+                                        "overCls": "my-x-btn-over",
                                         "text": "último mes",
                                         "width": 85
                                     },
@@ -346,7 +352,7 @@
                                             "userConfig": {
                                                 "fn": "onMesClick",
                                                 "implHandler": [
-                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.MES);",
+                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.MES,\"#1100aa\");",
                                                     ""
                                                 ],
                                                 "name": "click",
@@ -406,7 +412,7 @@
                             "userConfig": {
                                 "layout|flex": 1
                             },
-                            "name": "map_panel2",
+                            "name": "map_panel1",
                             "designerId": "3dd2b67c-f1b5-49b1-8cce-f2241baadfc7",
                             "masterInstanceId": "576e487d-fdc9-4512-8dc1-7d258e266744"
                         }
@@ -423,7 +429,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|params": [
-                    "rango"
+                    "rango",
+                    "colorLinea"
                 ],
                 "fn": "fn_create_linechart",
                 "implHandler": [
@@ -456,7 +463,7 @@
                     "            series.push({",
                     "                name: \"lectura\",",
                     "                data: data,",
-                    "                color:'#a9d479',",
+                    "                color: colorLinea,",
                     "                visible: true",
                     "            });",
                     "",
@@ -517,6 +524,17 @@
                     "                series: series",
                     "            });",
                     "",
+                    "        }else{",
+                    "            if(Ext.getCmp(\"toast\")===undefined){",
+                    "                        Ext.toast({",
+                    "                            timeout: 2000,",
+                    "                            id:\"toast\",",
+                    "                            html: '<center>No hay datos para mostrar</center>',",
+                    "                            title: 'Alerta',",
+                    "                            width: 300,",
+                    "                            align: 't'",
+                    "                        });",
+                    "             }",
                     "        }",
                     "    }",
                     "});"
@@ -535,7 +553,7 @@
             "userConfig": {
                 "fn": "onPnl_highchartRender",
                 "implHandler": [
-                    "this.fn_create_linechart(ProjectUV.globals.DEFAULTRANGE);"
+                    "this.fn_create_linechart(ProjectUV.globals.DEFAULTRANGE,\"#aa0000\");"
                 ],
                 "name": "render",
                 "scope": "me"
