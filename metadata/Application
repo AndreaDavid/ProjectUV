@@ -198,6 +198,7 @@
                     "        var datos;",
                     "        var width;",
                     "        var height;",
+                    "        val=Math.trunc(val);",
                     "        switch(val) {",
                     "            case 0:",
                     "                color = \"#4eb400\";",

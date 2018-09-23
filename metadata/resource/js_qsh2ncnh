@@ -9,7 +9,7 @@
         "defer": false,
         "designer|userClassName": "js_qsh2ncnh",
         "id": "Highchart",
-        "url": "https://code.highcharts.com/highcharts.js",
+        "url": "resources/js/highchart/highcharts.js",
         "x-compile": true
     },
     "name": "js",
