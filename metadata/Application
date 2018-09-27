@@ -422,8 +422,8 @@
                 "implHandler": [
                     "if(Ext.getCmp(\"pnl_graficas\")!==undefined){",
                     "",
-                    "",
-                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(rango,\"#aa0000\");",
+                    "var estado = Ext.getCmp(\"btn_cambio\").estado;",
+                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(rango,\"#aa0000\",estado);",
                     "",
                     "",
                     "}"

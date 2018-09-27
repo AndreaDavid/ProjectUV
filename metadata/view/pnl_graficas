@@ -244,6 +244,68 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "id": "btn_cambio",
+                                        "layout|flex": 1,
+                                        "text": "UVI"
+                                    },
+                                    "name": "MyButton3",
+                                    "designerId": "56052baf-ea4c-4482-a3ef-3f4987937df8",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick1",
+                                                "implHandler": [
+                                                    "if(button.estado){",
+                                                    "    button.estado=false;",
+                                                    "    button.setText(\"Lectura\");",
+                                                    "    Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.DEFAULTRANGE,\"#aa0000\",false);",
+                                                    "}else{",
+                                                    "     button.estado=true;",
+                                                    "    button.setText(\"UVI\");",
+                                                    "    Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.DEFAULTRANGE,\"#aa0000\",true);",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick1",
+                                            "designerId": "4b80e760-be9f-4f74-8969-5563355b0513"
+                                        },
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtn_cambioRender",
+                                                "implHandler": [
+                                                    "component.estado=true;",
+                                                    "component.setText(\"UVI\");"
+                                                ],
+                                                "name": "render",
+                                                "scope": "me"
+                                            },
+                                            "name": "onBtn_cambioRender",
+                                            "designerId": "37a78a97-592d-4520-b230-fd0e63eb5518"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
                                         "baseCls": "my-x-btn-day",
                                         "cls": null,
                                         "layout|flex": 1,
@@ -265,7 +327,8 @@
                                             "userConfig": {
                                                 "fn": "onButtonClick",
                                                 "implHandler": [
-                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.DEFAULTRANGE,\"#aa0000\");",
+                                                    "var estado = Ext.getCmp(\"btn_cambio\").estado;",
+                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.DEFAULTRANGE,\"#aa0000\",estado);",
                                                     ""
                                                 ],
                                                 "name": "click",
@@ -311,7 +374,8 @@
                                             "userConfig": {
                                                 "fn": "onSemanaClick",
                                                 "implHandler": [
-                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.SEMANA,\"#00aa00\");",
+                                                    "var estado = Ext.getCmp(\"btn_cambio\").estado;",
+                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.SEMANA,\"#00aa00\",estado);",
                                                     ""
                                                 ],
                                                 "name": "click",
@@ -352,7 +416,8 @@
                                             "userConfig": {
                                                 "fn": "onMesClick",
                                                 "implHandler": [
-                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.MES,\"#1100aa\");",
+                                                    "var estado = Ext.getCmp(\"btn_cambio\").estado;",
+                                                    "Ext.getCmp(\"pnl_graficas\").fn_create_linechart(ProjectUV.globals.MES,\"#1100aa\",estado);",
                                                     ""
                                                 ],
                                                 "name": "click",
@@ -430,7 +495,8 @@
             "userConfig": {
                 "designer|params": [
                     "rango",
-                    "colorLinea"
+                    "colorLinea",
+                    "uvi"
                 ],
                 "fn": "fn_create_linechart",
                 "implHandler": [
@@ -454,14 +520,14 @@
                     "                var fecha = records[r].data.fechaServidor;",
                     "                var arrfecha = fecha.split(\"/\");",
                     "                var fechaParse = Date.UTC(parseInt(arrfecha[0]),parseInt(arrfecha[1])-1,parseInt(arrfecha[2]),parseInt(arrfecha[3]),parseInt(arrfecha[4]),parseInt(arrfecha[5]));",
-                    "                data.push([fechaParse,parseFloat(records[r].data.lectura)]);",
+                    "                data.push([fechaParse,parseFloat(uvi?records[r].data.lectura:records[r].data.uvi)]);",
                     "                //fechas.push(fechaParse);",
                     "",
                     "                //data.push(r,r*r);",
                     "            }",
                     "",
                     "            series.push({",
-                    "                name: \"lectura\",",
+                    "                name: uvi?\"lectura\":\"UVI\",",
                     "                data: data,",
                     "                color: colorLinea,",
                     "                visible: true",
@@ -506,7 +572,7 @@
                     "                },",
                     "                yAxis: {",
                     "                    title: {",
-                    "                        text: ''",
+                    "                        text: uvi?'W/m2':\"UVI\"",
                     "                    }",
                     "                },",
                     "                tooltip: {",
@@ -553,7 +619,7 @@
             "userConfig": {
                 "fn": "onPnl_highchartRender",
                 "implHandler": [
-                    "this.fn_create_linechart(ProjectUV.globals.DEFAULTRANGE,\"#aa0000\");"
+                    "this.fn_create_linechart(ProjectUV.globals.DEFAULTRANGE,\"#aa0000\",true);"
                 ],
                 "name": "render",
                 "scope": "me"
